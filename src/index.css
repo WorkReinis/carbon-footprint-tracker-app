@@ -1,0 +1,33 @@
+#root {
+  height: 100vh;
+ 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Source Code Pro', monospace; */
+  font-family: 'Inter', sans-serif;
+
+}
+
+
+
+:root {
+  --primary-color: #5A5AC1;
+  --secondary-color: #E2E9FF;
+  --light-gray: #E0E0E0;
+  --dark-gray: #4A4A4A;
+  --top-padding: 2em;
+  --bottom-padding: 2em;
+
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
