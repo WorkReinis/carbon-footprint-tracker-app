@@ -9,19 +9,18 @@ import {
     ResponsiveContainer,
 } from "recharts";
 
+import CustomTooltip01 from '../custom-tooltip-01'
 // Sample Data
 const data = [
-    { name: "Jan", value: 60 },
-    { name: "Feb", value: 90 },
-    { name: "Mar", value: 50 },
-    { name: "Apr", value: 70 },
-    { name: "May", value: 60 },
-    { name: "Jun", value: 65 },
-    { name: "Jul", value: 20 },
+    { name: "Jan", value: 60, max: 100 },
+    { name: "Feb", value: 90,  max: 100},
+    { name: "Mar", value: 50,  max: 100 },
+    { name: "Apr", value: 70,  max: 100 },
+    { name: "May", value: 60,  max: 100 },
+    { name: "Jun", value: 65,  max: 100 },
+    { name: "Jul", value: 20,  max: 100 },
 ];
 
-// 100% value for background bars
-const backgroundData = data.map((item) => ({ ...item, value: 100 }));
 
 function ComposedChart01() {
     return (
@@ -84,13 +83,13 @@ function ComposedChart01() {
                         </linearGradient>
                     </defs>
                     <Bar
-                        dataKey="value"
-                        data={backgroundData} // Use the background data with 100% values
+                        dataKey="max"
+                        data={data} // Use the background data with 100% values
                         fill="url(#gradient1)" // Light gray for background
                         radius={[10, 10, 10, 10]} // Rounded corners for style
                         barSize={60}
                     />
-
+                    <Tooltip content={<CustomTooltip01 />}/>
                     {/* Line for actual data */}
                     <Line
                         type="monotone"

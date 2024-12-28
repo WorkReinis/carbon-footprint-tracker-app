@@ -82,7 +82,7 @@ function BarChart01() {
                     <Bar
                         dataKey="value"
                         fill="url(#gradientBar)"
-                        
+                        barSize={25}
                         radius={[15, 15, 15, 15]} // Rounded top corners
                     >
                         <LabelList

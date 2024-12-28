@@ -1,15 +1,86 @@
 .analytics-page {
-    padding-bottom: 5em;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    padding-top: 2em;
-    background-color: var(--secondary-color)
+    
+    background-color: var(--secondary-color);
+
+
+ 
 }
 
-.chart {
+
+.cards-container {
+    
+    padding: 1.5em;
+
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    
+}
+
+.card-small {
+    background-color: white;
+    padding: 1.25em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc((100% - 4em - 2em) / 2); 
+}
+
+.card-regular {
     background-color: white;
     padding: 2em 2em 2em 2em;
     border-radius: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2em;
+    width: 100%;
 }
+
+.footer {
+    border-radius: 1.25em 1.25em 0 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 7em;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    margin: 0
+
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    from {
+         opacity: 0;
+    }
+    to {
+         opacity: 1;
+    }
+  }
+  
+  .fade-in-1 {
+    animation: fadeIn 0.4s ease-in;
+  }
+  
+  .fade-in-2 {
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+  }
+  
+  .fade-in-3 {
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+  }
+  
+  

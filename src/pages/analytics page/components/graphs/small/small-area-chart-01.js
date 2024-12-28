@@ -11,27 +11,27 @@ import {
     Area,
 } from "recharts";
 
-function AreaChart01() {
+function SmallAreaChart01() {
     const data = [
-        { name: "Jan", value: 60 },
-        { name: "Feb", value: 62 },
-        { name: "Mar", value: 70 },
-        { name: "Apr", value: 77 },
-        { name: "May", value: 68 },
-        { name: "Jun", value: 40 },
-        { name: "Jul", value: 22 },
+        { name: "Jan", value: 18 },
+        { name: "Feb", value: 22 },
+        { name: "Mar", value: 30 },
+        { name: "Apr", value: 25 },
+        { name: "May", value: 22 },
+        { name: "Jun", value: 18 },
+        { name: "Jul", value: 35 },
 
 
     ];
 
     return (
        
-            <div style={{ width: "100%", height: "14em" }}>
+            <div style={{ width: "100%", height: "8em" }}>
                 <ResponsiveContainer>
                     <AreaChart
                         data={data}
                         margin={{
-                            top: 0,
+                            top: 15,
                             right: 0,
                             left: 0,
                             bottom: 0,
@@ -81,20 +81,17 @@ function AreaChart01() {
                             }
                             return null; // Skip every second label
                         }}
+                        hide
                     />
                         <YAxis
                             axisLine={false} // Removes the Y-axis line
                             tickLine={false}
                             width={36}
                             tickFormatter={(value, index) => (index === 0 ? '' : value)}
+                            hide
                         />
 
-                        <CartesianGrid
-                            horizontal={true}
-                            vertical={false}
-                            stroke="lightgray"
-                            strokeWidth={1}
-                        />
+                        
                         <Area
                             type="monotone"
                             dataKey="value"
@@ -109,4 +106,4 @@ function AreaChart01() {
     );
 }
 
-export default AreaChart01;
+export default SmallAreaChart01;

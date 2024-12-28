@@ -1,0 +1,12 @@
+.circle-icon {
+    background-color: var(--light-gray);
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    padding: 0.5em;
+    transition: transform 0.2s;
+}
+
+.circle-icon:hover {
+    transform: scale(1.1); /* Slight shrink on click */
+}

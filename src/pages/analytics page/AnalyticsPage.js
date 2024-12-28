@@ -1,70 +1,204 @@
-import BarChart01 from "./components/bar-chart-01";
-import BarChart02 from "./components/bar-chart-02";
-import BarChart03 from "./components/bar-chart-03";
-import AreaChart01 from "./components/area-chart-01";
-import ComposedChart01 from "./components/composed-chart-01";
-import PieChart01 from "./components/pie-chart-01";
-import ComparisonChart01 from "./components/comparison-chart-01";
+import BarChart01 from "./components/graphs/regular/bar-chart-01";
+import BarChart02 from "./components/graphs/regular/bar-chart-02";
+import BarChart03 from "./components/graphs/regular/bar-chart-03";
+import SmallCard01 from "./components/cards/small/small-card-01";
+import RegularCard01 from "./components/cards/regular/regular-card-01";
+import AreaChart01 from "./components/graphs/regular/area-chart-01";
+import ComposedChart01 from "./components/graphs/regular/composed-chart-01";
+import PieChart01 from "./components/graphs/regular/pie-chart-01";
+import ComparisonChart01 from "./components/graphs/regular/comparison-chart-01";
+import SmallComparisonChart01 from "./components/graphs/small/small-comparison-chart-01";
+import RadialBarChart01 from "./components/graphs/regular/radial-bar-chart-01";
+
+import SmallBarChart01 from "./components/graphs/small/small-bar-chart-01";
+import SmallComposedChart01 from "./components/graphs/small/small-composed-chart-01";
+import SmallRadialBarChart01 from "./components/graphs/small/small-radial-bar-chart-01";
+import SmallAreaChart01 from "./components/graphs/small/small-area-chart-01";
+import SmallPieChart01 from "./components/graphs/small/small-pie-chart-01";
+
+import Footer01 from "./components/cards/regular/footer-01";
+
 import "./AnalyticsPage.css";
+
+import { MdCardTravel } from "react-icons/md";
+import { MdHistory } from "react-icons/md";
+import { TbCalendarWeek } from "react-icons/tb";
+import { MdCompareArrows } from "react-icons/md";
+import { MdOutlineCategory } from "react-icons/md";
+import { LuTrees } from "react-icons/lu";
+import { FaArrowTrendDown } from "react-icons/fa6";
+import { BsExclamationTriangle } from "react-icons/bs";
+import { GiFootprint } from "react-icons/gi";
+import { PiRanking } from "react-icons/pi";
 
 function AnalyticsPage() {
     return (
         <>
             <div className="analytics-page">
-                <div className="chart">
-                    <h1 className="flex font-bold text-xl">
-                        Your carbon footprint
-                    </h1>
-                    <span className="flex text-md mb-5">
-                        You have emitted 20 kg CO₂ this month, down 300% from
-                        last month.
-                    </span>
+                <div className="cards-container">
+                    <RegularCard01
+                        fade="fade-in-1"
+                        title="Your Carbon Footprint"
+                        units=""
+                        context="kg CO₂"
+                        graph={<AreaChart01 />}
+                        icon={
+                            <GiFootprint
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+                    <SmallCard01
+                        fade="fade-in-2"
+                        title="History"
+                        value="4.000"
+                        units="kg CO₂"
+                        context="last entry"
+                        graph={<SmallBarChart01 />}
+                        icon={
+                            <MdHistory
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
 
-                    <AreaChart01 />
+                    <SmallCard01
+                        fade="fade-in-2"
+                        title="Travel"
+                        value="2.400"
+                        units="kg CO₂"
+                        context="this week"
+                        graph={<SmallComposedChart01 />}
+                        icon={
+                            <MdCardTravel
+                                size={26}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+
+                    <RegularCard01
+                        fade="fade-in-3"
+                        title="Footprint Breakdown"
+                        units=""
+                        context="kg CO₂"
+                        graph={<BarChart02 />}
+                        icon={
+                            <MdOutlineCategory
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+
+                    <RegularCard01
+                        title="Top Emission Sources"
+                        units=""
+                        context=""
+                        graph={<PieChart01 />}
+                        icon={
+                            <PiRanking
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+
+                    <RegularCard01
+                        title="Impact Trend"
+                        units=""
+                        context="kg CO₂"
+                        graph={<ComposedChart01 />}
+                        icon={
+                            <FaArrowTrendDown
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+
+                    <RegularCard01
+                        title="Carbon Offset Effort"
+                        units=""
+                        context="kg CO₂"
+                        graph={<BarChart01 />}
+                        icon={
+                            <LuTrees
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+
+                    <RegularCard01
+                        title="Comparing Your Carbon Footprint"
+                        units=""
+                        context=""
+                        graph={<ComparisonChart01 />}
+                        icon={
+                            <MdCompareArrows
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+
+                    <RegularCard01
+                        title="Week Breakdown"
+                        context="kg CO₂"
+                        graph={<BarChart03 />}
+                        icon={
+                            <TbCalendarWeek
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+
+                    <SmallCard01
+                        title="Comparison"
+                        value="2.400"
+                        units="kg CO₂"
+                        context="this week"
+                        graph={<SmallPieChart01 />}
+                        icon={
+                            <MdCardTravel
+                                size={26}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+
+                    <SmallCard01
+                        title="Travel"
+                        value="2.400"
+                        units="kg CO₂"
+                        context="this week"
+                        graph={<SmallAreaChart01 />}
+                        icon={
+                            <MdCardTravel
+                                size={26}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+
+                    <RegularCard01
+                        title="Week Breakdown"
+                        context="kg CO₂"
+                        graph={<RadialBarChart01 />}
+                        icon={
+                            <TbCalendarWeek
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
                 </div>
 
-                <div className="chart">
-                    <h1 className="flex font-bold text-xl">
-                        Top Emission Sources
-                    </h1>
-
-                    <PieChart01 />
-                </div>
-                <div className="chart">
-                    <h1 className="flex font-bold text-xl">
-                        Impact Trend (kg CO₂)
-                    </h1>
-                    <ComposedChart01 />
-                </div>
-
-                <div className="chart">
-                    <h1 className="flex font-bold text-xl">
-                        Carbon Offset Effort (kg CO₂)
-                    </h1>
-                    <BarChart01 />
-                </div>
-
-                <div className="chart">
-                    <h1 className="flex font-bold text-xl">
-                        Footprint Breakdown (kg CO₂)
-                    </h1>
-                    <BarChart02 />
-                </div>
-
-                <div className="chart">
-                    <h1 className="flex font-bold text-xl">
-                        Comparing Your CO₂ Footprint
-                    </h1>
-
-                    <ComparisonChart01 />
-                </div>
-
-                <div className="chart">
-                    <h1 className="flex font-bold text-xl">
-                        Week Breakdown (kg CO₂)
-                    </h1>
-                    <BarChart03 />
-                </div>
+                <Footer01 />
             </div>
         </>
     );

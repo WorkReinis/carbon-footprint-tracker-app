@@ -10,20 +10,19 @@ import {
     Line,
 } from "recharts";
 
-function BarChart01() {
+function SmallBarChart01() {
     const data = [
-        { name: "M", value: 12, maxValue: 100 },
+        { name: "M", value: 45, maxValue: 100 },
         { name: "T", value: 65, maxValue: 100 },
         { name: "W", value: 30, maxValue: 100 },
         { name: "T", value: 35, maxValue: 100 },
-        { name: "F", value: 90, maxValue: 100 },
-        { name: "Sa", value: 25, maxValue: 100 },
-        { name: "Su", value: 75, maxValue: 100 },
+        { name: "F", value: 20, maxValue: 100 },
+
 
     ];
 
     return (
-        <div style={{ height: "16em" }}>
+        <div style={{ height: "8em" }}>
             <ResponsiveContainer>
                 <BarChart
                     data={data}
@@ -33,28 +32,24 @@ function BarChart01() {
                         left: 0,
                         bottom: 0,
                     }}
-                    barGap={-10}
+                    barGap={-12}
                 >
-                    <XAxis dataKey="name" axisLine={false} tickLine={false} />
+                    <XAxis dataKey="name" axisLine={false} tickLine={false} hide/>
 
                     <Bar
                         dataKey="maxValue"
                         fill="var(--light-gray)" // Background bar color
-                        barSize={10} // Same size as foreground bar
+                        barSize={12} // Same size as foreground bar
                         radius={[5, 5, 5, 5]} // Rounded corners for style
                     />
 
                     <Bar
                         dataKey="value"
                         fill="var(--primary-color)"
-                        barSize={10} // Matches the size of the background bar
+                        barSize={12} // Matches the size of the background bar
                         radius={[15, 15, 15, 15]} // Rounded top corners
                     >
-                        <LabelList
-                            dataKey="value"
-                            position="top"
-                            style={{ fontSize: "0.9em" }}
-                        />
+                     
                     </Bar>
                 </BarChart>
             </ResponsiveContainer>
@@ -62,4 +57,4 @@ function BarChart01() {
     );
 }
 
-export default BarChart01;
+export default SmallBarChart01;

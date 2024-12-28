@@ -6,6 +6,7 @@ import {
     Legend,
     ResponsiveContainer,
 } from "recharts";
+import CustomTooltip01 from '../custom-tooltip-01'
 
 const COLORS = [
     "#5A5AC1" /* --primary-color */,
@@ -20,7 +21,7 @@ const COLORS = [
     "#E0E0E0" /* --light-gray */,
 ];
 
-function AreaChart01() {
+function PieChart01() {
     const data = [
         { name: "Long-haul flights", value: 400 }, // High emission from air travel
         { name: "Car Travel", value: 300 }, // Significant emission from personal car usage
@@ -32,7 +33,7 @@ function AreaChart01() {
     
     return (
         <div style={{ width: "100%", height: "24em" }}>
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer>
                 <PieChart>
                     <Pie
                         data={data}
@@ -45,43 +46,14 @@ function AreaChart01() {
                         fill="black"
                         paddingAngle={5}
                         labelLine={false}
-                        label={({ value, cx, cy, midAngle, outerRadius }) => {
-                            const RADIAN = Math.PI / 180;
+                        label={true}
                         
-                            // Adjust label position by adding an offset from the outerRadius
-                            const labelRadius = outerRadius + 5; // Adjust 20px for spacing between the label and pie slice
-                            const x = cx + labelRadius * Math.cos(-RADIAN * midAngle);
-                            const y = cy + labelRadius * Math.sin(-RADIAN * midAngle);
-                        
-                            return (
-                                <g>
-                                    <circle
-                                        cx={x}
-                                        cy={y}
-                                        r={18} // Circle radius around the label
-                                        fill="white"
-                                        stroke="var(--dark-gray)" // Circle border color
-                                        strokeWidth="1"
-                                    />
-                                    <text
-                                        x={x}
-                                        y={y}
-                                        textAnchor="middle"
-                                        dominantBaseline="middle"
-                                        fill="black"
-                                        fontSize="14"
-                                    >
-                                        {value} {/* Value in the label */}
-                                    </text>
-                                </g>
-                            );
-                        }}
                     >
                         {data.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index]} />
                         ))}
                     </Pie>
-    
+                    <Tooltip content={<CustomTooltip01 />}/>
                     <Legend
                         layout="horizontal"
                         verticalAlign="bottom"
@@ -95,4 +67,4 @@ function AreaChart01() {
     );
 }
 
-export default AreaChart01;
+export default PieChart01;
