@@ -1,0 +1,113 @@
+.home-page {
+
+  padding-bottom: 5em;
+}
+
+
+@keyframes fadeIn {
+  from {
+       opacity: 0;
+  }
+  to {
+       opacity: 1;
+  }
+}
+
+.fade-in-1 {
+  animation: fadeIn 0.4s ease-in;
+}
+
+.fade-in-2 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+
+
+.greeting-dashboard {
+  background: linear-gradient(180deg, var(--secondary-color) 0%, var(--dark-secondary-color) 80%);
+  padding: 2em;  
+  display: flex; 
+  flex-direction: column; 
+  gap: 0; 
+  border-radius: 0 0 2em 2em;
+}
+
+.greeting-text-box {
+  background-color: white;
+  border-radius: 1em 1em 1em 0;
+  padding: 1em;
+  width: 85%;
+  z-index: 1;
+}
+
+/* 
+.greeting-text-box-triangle {
+  width: 0;
+  height: 0;
+  border-left: 3em solid white;  
+  border-bottom: 2em solid transparent;  
+  left: 60%;  
+  z-index: 1;
+} */
+
+.avatar-img-container {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(
+        circle,
+        var(--primary-color) 0%,
+        rgba(0, 0, 255, 0) 70%
+    ); 
+    overflow: hidden;
+    margin-top: -2em; /* Overlaps by moving the container up */
+}
+
+.avatar-img {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    transition: transform 0.3s ease;
+}
+
+.avatar-img:hover:not(:active) {
+     transform: scale(1.05);
+}
+
+.avatar-img:active {
+     transform: rotate(15deg) scale(1.05);
+     cursor: grabbing;
+}
+
+.footprint-value {
+  z-index: 1;
+  margin-top: -3em; /* Overlaps by moving the container up */
+  margin-bottom: 2em;
+}
+
+.badge {
+     background-color: white;
+     color: var(--primary-color);
+     border-radius: 1em;
+     padding: 0.8em;
+     width: 48%;
+     
+}
+
+
+
+
+
+
+.activities-card {
+  padding: 2em;
+}
+
+.image-placeholder {
+  height: 2.8rem;
+  aspect-ratio: 1 / 1;
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+}
+

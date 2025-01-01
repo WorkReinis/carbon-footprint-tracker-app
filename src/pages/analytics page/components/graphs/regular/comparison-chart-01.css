@@ -1,0 +1,20 @@
+.comparison-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+.circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+}
+

@@ -1,0 +1,8 @@
+
+.card-small-02 {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc((100% - 4em - 2em) / 2);
+}
