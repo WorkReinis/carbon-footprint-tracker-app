@@ -25,11 +25,11 @@ const backgroundData = data.map((item) => ({ ...item, value: 100 }));
 
 function SmallComposedChart01() {
     return (
-        <div style={{ width: "100%", height: "8em" }}>
+        <div style={{ width: "100%", height: "4em" }}>
             <ResponsiveContainer>
                 <ComposedChart
                     data={data}
-                    margin={{ top: 20, right: 0, left: 0, bottom: 5 }}
+                    margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
                 >
                     <XAxis
                         dataKey="name"
@@ -90,7 +90,7 @@ function SmallComposedChart01() {
                         data={backgroundData} // Use the background data with 100% values
                         fill="url(#gradient1)" // Light gray for background
                         radius={[10, 10, 10, 10]} // Rounded corners for style
-                        barSize={60}
+                        barSize={14}
                     />
 
                     

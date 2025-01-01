@@ -1,11 +1,14 @@
 import "./InputPage.css";
 import { IoMicOutline } from "react-icons/io5";
+import React, { useState, useEffect, useContext } from "react";
+import { MyContext } from '../../context/pages';
 import InputPopup from "./InputPopup";
-import React, { useState, useEffect } from "react";
 
 function InputPage({ sendDataToParent }) {
      const [isListening, setIsListening] = useState(false);
      const [isPopupVisible, setIsPopupVisible] = useState(false);
+     const { navBar, setNavBar } = useContext(MyContext);
+     const { page, setPage } = useContext(MyContext);
 
      useEffect(() => {
           const button = document.querySelector(".speech-input-btn");
@@ -20,7 +23,10 @@ function InputPage({ sendDataToParent }) {
           const handleAnimationEnd = () => {
                button.classList.remove("pulsing");
                setIsListening(false);
-               setIsPopupVisible(true);
+               // setIsPopupVisible(true);
+               setNavBar(false);
+               setPage("input-edit");
+               
                //sendData();   // Call function for the Input Confirmation Page Display
           };
 
@@ -42,12 +48,13 @@ function InputPage({ sendDataToParent }) {
      //      sendDataToParent(data);
      //  };
 
+     
      const closePopup = (boolean) => {
           setIsPopupVisible(boolean);
      };
 
      return (
-          <div className="input-page">
+          <div className="input-page fade-in-1">
                <div className="greetings-text">
                     <h3 className="font-bold">
                          Please tell me what did you do today
@@ -71,7 +78,7 @@ function InputPage({ sendDataToParent }) {
                     )}
                </div>
 
-               {isPopupVisible && <InputPopup sendCloseButton={closePopup} />}
+               {/* {isPopupVisible && <InputPopup sendCloseButton={closePopup} />} */}
           </div>
      );
 }

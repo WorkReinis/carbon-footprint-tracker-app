@@ -1,0 +1,41 @@
+.ql-container {
+    height: 100%;
+    overflow: hidden; 
+}
+
+/* The actual Quill editor */
+.ql-editor {
+    width: 100%;
+    font-size: 3.5em;
+    line-height: 1.2;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.ql-container,
+.ql-editor {
+    border: none !important;
+}
+
+/* Remove the scrollbar styling for WebKit-based browsers (Chrome, Safari, Edge) */
+.ql-editor::-webkit-scrollbar {
+    width: 0; /* No scrollbar width */
+    height: 0; /* No scrollbar height */
+}
+
+/* Remove the scrollbar styling for Firefox */
+.ql-editor {
+    scrollbar-width: none; /* No scrollbar in Firefox */
+}
+
+/* Remove the scrollbar styling for Internet Explorer and older Edge */
+.ql-editor {
+    -ms-overflow-style: none; /* No scrollbar in IE/Edge */
+}
+
+/* Ensure no borders or shadows for the editor and container */
+.ql-container,
+.ql-editor {
+    border: none !important;
+    box-shadow: none !important;
+}

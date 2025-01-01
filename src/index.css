@@ -1,28 +1,38 @@
 #root {
   height: 100vh;
- 
 }
 
 html {
   scroll-behavior: smooth;
+
 }
 
 body {
-
   padding: 0;
   margin: 0;
   /* font-family: 'Source Code Pro', monospace; */
+   /* font-family: 'Inter', sans-serif; */
   font-family: 'Lato', sans-serif;
-
-  /* font-family: 'Inter', sans-serif; */
-
 }
 
 
+body, html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
 
 :root {
+  --light-primary-color: #7F81D5;
   --primary-color: #5A5AC1;
+  --dark-primary-color: #2C2C74;
   --secondary-color: #E2E9FF;
+  --dark-secondary-color: #c6d3ff;
   --light-gray: #f1f2f6;
   --dark-gray: #4A4A4A;
   --normal-gray: #a4adbc;

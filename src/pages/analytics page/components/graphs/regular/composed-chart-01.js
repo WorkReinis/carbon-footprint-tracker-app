@@ -24,16 +24,17 @@ const data = [
 
 function ComposedChart01() {
     return (
-        <div style={{ width: "100%", height: "14em" }}>
+        <div style={{ width: "100%", height: "10em" }}>
             <ResponsiveContainer>
                 <ComposedChart
                     data={data}
-                    margin={{ top: 20, right: 0, left: 0, bottom: 5 }}
+                    margin={{ top: 10, right: 0, left: 0, bottom: 5 }}
                 >
                     <XAxis
                         dataKey="name"
                         axisLine={false}
                         tickLine={false}
+                        
                         tick={({ index, x, y, payload }) => {
                             // Only show every second label
                             if (index % 2 === 0) {
@@ -43,6 +44,7 @@ function ComposedChart01() {
                                         y={y + 10}
                                         textAnchor="middle"
                                         fill="var(--dark-gray)"
+                                        fontSize="0.80em"
                                     >
                                         {payload.value}
                                     </text>
@@ -54,6 +56,7 @@ function ComposedChart01() {
                     <YAxis
                         axisLine={false}
                         tickLine={false}
+                        style={{ fontSize: "0.80em" }}
                         width={36}
                         tickFormatter={(value, index) =>
                             index === 0 ? "" : value
@@ -87,7 +90,7 @@ function ComposedChart01() {
                         data={data} // Use the background data with 100% values
                         fill="url(#gradient1)" // Light gray for background
                         radius={[10, 10, 10, 10]} // Rounded corners for style
-                        barSize={60}
+                        barSize={32}
                     />
                     <Tooltip content={<CustomTooltip01 />}/>
                     {/* Line for actual data */}

@@ -32,7 +32,7 @@ function PieChart01() {
 
     
     return (
-        <div style={{ width: "100%", height: "24em" }}>
+        <div style={{ width: "100%", height: "20em" }}>
             <ResponsiveContainer>
                 <PieChart>
                     <Pie
@@ -53,7 +53,7 @@ function PieChart01() {
                             <Cell key={`cell-${index}`} fill={COLORS[index]} />
                         ))}
                     </Pie>
-                    <Tooltip content={<CustomTooltip01 />}/>
+                    
                     <Legend
                         layout="horizontal"
                         verticalAlign="bottom"

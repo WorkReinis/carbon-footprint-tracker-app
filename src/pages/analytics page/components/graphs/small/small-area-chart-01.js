@@ -26,12 +26,12 @@ function SmallAreaChart01() {
 
     return (
        
-            <div style={{ width: "100%", height: "8em" }}>
+            <div style={{ width: "100%", height: "4em" }}>
                 <ResponsiveContainer>
                     <AreaChart
                         data={data}
                         margin={{
-                            top: 15,
+                            top: 0,
                             right: 0,
                             left: 0,
                             bottom: 0,

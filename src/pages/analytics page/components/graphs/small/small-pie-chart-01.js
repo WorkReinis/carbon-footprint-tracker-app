@@ -21,11 +21,12 @@ const COLORS = [
 
 function SmallPieChart01() {
     return (
-        <div style={{ height: "8em" }}>
+        <div style={{ height: "4em" }}>
             <ResponsiveContainer>
                 <PieChart>
                     <Pie
                         data={data}
+                        margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
                         cx="50%" // Center the pie chart horizontally
                         cy="50%" // Center the pie chart vertically
                         outerRadius="90%" // Outer radius of the pie

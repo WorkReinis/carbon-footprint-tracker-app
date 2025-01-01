@@ -10,58 +10,68 @@ import { useState } from "react";
 import { MyContext } from "../context/pages";
 
 function NavBar() {
-     const { page, setPage } = useContext(MyContext);
-     const { key, setKey } = useContext(MyContext);
-     const [activeButton, setActiveButton] = useState("home");
+    const { page, setPage } = useContext(MyContext);
+    const { key, setKey } = useContext(MyContext);
+    const { activeButton, setActiveButton } = useContext(MyContext);
 
-     return (
-          <nav id="navbar" style={{ width: `calc(100% - 2em)` }}>
-               <button
-                    onClick={() => {
-                         setPage("home");
-                         setKey((prev) => prev + 1);
-                         setActiveButton("home");
-                    }}
-                    className={activeButton === "home" ? "active" : ""}
-               >
-                    <GoHome size={24} style={{ strokeWidth: 0.3, stroke: "currentColor" }}/>
-               </button>
+    return (
+        <nav id="navbar" >
+            <button
+                onClick={() => {
+                    setPage("home");
+                    setKey((prev) => prev + 1);
+                    setActiveButton("home");
+                }}
+                className={activeButton === "home" ? "active" : ""}
+            >
+                <GoHome
+                    size={24}
+                    style={{ strokeWidth: 0, stroke: "currentColor" }}
+                />
+            </button>
 
-               <button
-                    onClick={() => {
-                         setPage("analytics");
-                         setActiveButton("analytics");
-                    }}
-                    className={activeButton === "analytics" ? "active" : ""}
-               >
-                    <GrAnalytics size={20} />
-               </button>
+            <button
+                onClick={() => {
+                    setPage("analytics");
+                    setActiveButton("analytics");
+                }}
+                className={activeButton === "analytics" ? "active" : ""}
+            >
+                <GrAnalytics size={22} />
+            </button>
 
-               <button className="add-button pulse" onClick={() => setPage("input")}>
-                    <IoAddCircle size={50} />
-               </button>
+            <button
+                
+                onClick={() => {
+                    setPage("input");
+                    setActiveButton("input");
+                }}
+                className={activeButton === "input" ? "active" : ""}
+            >
+                <IoAddCircle size={50} />
+            </button>
 
-               <button 
-               onClick={() => {
-                  setPage("reduce")
-                  setActiveButton("reduce")}
-                  
-                }
-                className={activeButton === "reduce" ? "active" : ""}>
-                    <LuLeaf size={24} />
-               </button>
+            <button
+                onClick={() => {
+                    setPage("reduce");
+                    setActiveButton("reduce");
+                }}
+                className={activeButton === "reduce" ? "active" : ""}
+            >
+                <LuLeaf size={24} />
+            </button>
 
-               <button onClick={() => {
-                setPage("settings")
-                setActiveButton("settings")
-              }
-              }
-              className={activeButton === "settings" ? "active" : ""}>
-
-                    <IoSettingsOutline size={24} />
-               </button>
-          </nav>
-     );
+            <button
+                onClick={() => {
+                    setPage("settings");
+                    setActiveButton("settings");
+                }}
+                className={activeButton === "settings" ? "active" : ""}
+            >
+                <IoSettingsOutline size={24} />
+            </button>
+        </nav>
+    );
 }
 
 export default NavBar;

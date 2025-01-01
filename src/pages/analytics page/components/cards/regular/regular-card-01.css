@@ -1,0 +1,13 @@
+
+.card-regular {
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+
+.regular-card-01-text {
+    margin-bottom: 0.5em;
+}

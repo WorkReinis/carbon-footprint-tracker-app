@@ -1,25 +1,15 @@
-import "../../element-styles.css";
+import "./regular-card-01.css";
 
 function RegularCard01({ title, value, units, context, icon, graph, fade }) {
-    const data = [
-        { name: "M", value: 12, maxValue: 100 },
-        { name: "T", value: 65, maxValue: 100 },
-        { name: "W", value: 30, maxValue: 100 },
-        { name: "T", value: 35, maxValue: 100 },
-        { name: "F", value: 20, maxValue: 100 },
-    ];
-
     return (
         <div className={`card-regular ${fade}`}>
-            <div className="flex justify-between items-center ">
+            <div className="regular-card-01-text flex justify-between items-center ">
                 <div>
-                    
-
                     <div className="flex justify-start items-end gap-1">
-                        <h1 className="font-bold text-xl">{title}</h1>
+                        <h1 className="font-bold text-lg">{title}</h1>
                         <span
                             className="flex align-baseline"
-                            style={{ fontSize: "0.85em" }}
+                            style={{ fontSize: "0.80em" }}
                         >
                             {units}
                         </span>
@@ -29,7 +19,7 @@ function RegularCard01({ title, value, units, context, icon, graph, fade }) {
                         lassName="text-xs"
                         style={{
                             color: "var(--normal-gray)",
-                            fontSize: "0.85em",
+                            fontSize: "0.80em",
                         }}
                     >
                         {context}

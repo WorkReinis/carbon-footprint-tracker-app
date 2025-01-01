@@ -9,14 +9,16 @@ import PieChart01 from "./components/graphs/regular/pie-chart-01";
 import ComparisonChart01 from "./components/graphs/regular/comparison-chart-01";
 import SmallComparisonChart01 from "./components/graphs/small/small-comparison-chart-01";
 import RadialBarChart01 from "./components/graphs/regular/radial-bar-chart-01";
-
+import BarChart04 from "./components/graphs/regular/bar-chart-04";
 import SmallBarChart01 from "./components/graphs/small/small-bar-chart-01";
 import SmallComposedChart01 from "./components/graphs/small/small-composed-chart-01";
 import SmallRadialBarChart01 from "./components/graphs/small/small-radial-bar-chart-01";
 import SmallAreaChart01 from "./components/graphs/small/small-area-chart-01";
 import SmallPieChart01 from "./components/graphs/small/small-pie-chart-01";
 
+
 import Footer01 from "./components/cards/regular/footer-01";
+import Header01 from "./components/cards/regular/header-01";
 
 import "./AnalyticsPage.css";
 
@@ -35,20 +37,16 @@ function AnalyticsPage() {
     return (
         <>
             <div className="analytics-page">
+                <Header01
+                    user="Hailey"
+                    fade="fade-in-1"
+                    title="Your Carbon Footprint"
+                    units=""
+                    context=""
+                    
+                />
+
                 <div className="cards-container">
-                    <RegularCard01
-                        fade="fade-in-1"
-                        title="Your Carbon Footprint"
-                        units=""
-                        context="kg CO₂"
-                        graph={<AreaChart01 />}
-                        icon={
-                            <GiFootprint
-                                size={30}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    />
                     <SmallCard01
                         fade="fade-in-2"
                         title="History"
@@ -58,7 +56,7 @@ function AnalyticsPage() {
                         graph={<SmallBarChart01 />}
                         icon={
                             <MdHistory
-                                size={30}
+                                size={28}
                                 style={{ color: "var(--normal-gray)" }}
                             />
                         }
@@ -73,7 +71,7 @@ function AnalyticsPage() {
                         graph={<SmallComposedChart01 />}
                         icon={
                             <MdCardTravel
-                                size={26}
+                                size={24}
                                 style={{ color: "var(--normal-gray)" }}
                             />
                         }
@@ -81,91 +79,40 @@ function AnalyticsPage() {
 
                     <RegularCard01
                         fade="fade-in-3"
-                        title="Footprint Breakdown"
-                        units=""
-                        context="kg CO₂"
-                        graph={<BarChart02 />}
-                        icon={
-                            <MdOutlineCategory
-                                size={30}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    />
-
-                    <RegularCard01
-                        title="Top Emission Sources"
-                        units=""
-                        context=""
-                        graph={<PieChart01 />}
-                        icon={
-                            <PiRanking
-                                size={30}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    />
-
-                    <RegularCard01
                         title="Impact Trend"
                         units=""
                         context="kg CO₂"
                         graph={<ComposedChart01 />}
                         icon={
                             <FaArrowTrendDown
-                                size={30}
+                                size={28}
                                 style={{ color: "var(--normal-gray)" }}
                             />
                         }
                     />
 
                     <RegularCard01
-                        title="Carbon Offset Effort"
+                        title="Footprint Breakdown"
                         units=""
                         context="kg CO₂"
-                        graph={<BarChart01 />}
+                        graph={<BarChart02 />}
                         icon={
-                            <LuTrees
-                                size={30}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    />
-
-                    <RegularCard01
-                        title="Comparing Your Carbon Footprint"
-                        units=""
-                        context=""
-                        graph={<ComparisonChart01 />}
-                        icon={
-                            <MdCompareArrows
-                                size={30}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    />
-
-                    <RegularCard01
-                        title="Week Breakdown"
-                        context="kg CO₂"
-                        graph={<BarChart03 />}
-                        icon={
-                            <TbCalendarWeek
-                                size={30}
+                            <MdOutlineCategory
+                                size={28}
                                 style={{ color: "var(--normal-gray)" }}
                             />
                         }
                     />
 
                     <SmallCard01
-                        title="Comparison"
+                        title="Compare"
                         value="2.400"
                         units="kg CO₂"
                         context="this week"
                         graph={<SmallPieChart01 />}
                         icon={
                             <MdCardTravel
-                                size={26}
+                                size={24}
                                 style={{ color: "var(--normal-gray)" }}
                             />
                         }
@@ -179,11 +126,76 @@ function AnalyticsPage() {
                         graph={<SmallAreaChart01 />}
                         icon={
                             <MdCardTravel
-                                size={26}
+                                size={24}
                                 style={{ color: "var(--normal-gray)" }}
                             />
                         }
                     />
+
+                    {/* <RegularCard01
+                        fade="fade-in-1"
+                        title="Your Carbon Footprint"
+                        units=""
+                        context="kg CO₂"
+                        graph={<AreaChart01 />}
+                        icon={
+                            <GiFootprint
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    /> */}
+                    {/* 
+                    <RegularCard01
+                        title="Top Emission Sources"
+                        units=""
+                        context=""
+                        graph={<PieChart01 />}
+                        icon={
+                            <PiRanking
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    /> */}
+
+                    <RegularCard01
+                        title="Carbon Offset Effort"
+                        units=""
+                        context="kg CO₂"
+                        graph={<BarChart01 />}
+                        icon={
+                            <LuTrees
+                                size={28}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+                    {/* 
+                    <RegularCard01
+                        title="Comparing Your Carbon Footprint"
+                        units=""
+                        context=""
+                        graph={<ComparisonChart01 />}
+                        icon={
+                            <MdCompareArrows
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    /> */}
+                    {/* 
+                    <RegularCard01
+                        title="Week Breakdown"
+                        context="kg CO₂"
+                        graph={<BarChart03 />}
+                        icon={
+                            <TbCalendarWeek
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    /> */}
 
                     <RegularCard01
                         title="Week Breakdown"
@@ -191,7 +203,7 @@ function AnalyticsPage() {
                         graph={<RadialBarChart01 />}
                         icon={
                             <TbCalendarWeek
-                                size={30}
+                                size={28}
                                 style={{ color: "var(--normal-gray)" }}
                             />
                         }

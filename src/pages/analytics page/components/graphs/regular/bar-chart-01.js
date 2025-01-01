@@ -22,12 +22,12 @@ function BarChart01() {
     ];
 
     return (
-        <div style={{ height: "16em" }}>
+        <div style={{ height: "10em" }}>
             <ResponsiveContainer>
                 <BarChart
                     data={data}
                     margin={{
-                        top: 30,
+                        top: 15,
                         right: 0,
                         left: 0,
                         bottom: 0,
@@ -61,6 +61,7 @@ function BarChart01() {
                         dataKey="name"
                         axisLine={false}
                         tickLine={false}
+                        
                         tick={({ index, x, y, payload }) => {
                             // Only show every second label
                             if (index % 2 === 0) {
@@ -70,6 +71,8 @@ function BarChart01() {
                                         y={y + 10}
                                         textAnchor="middle"
                                         fill="var(--dark-gray)"
+                                        fontSize="0.80em"
+                                        
                                     >
                                         {payload.value}
                                     </text>
@@ -82,13 +85,13 @@ function BarChart01() {
                     <Bar
                         dataKey="value"
                         fill="url(#gradientBar)"
-                        barSize={25}
+                        barSize={15}
                         radius={[15, 15, 15, 15]} // Rounded top corners
                     >
                         <LabelList
                             dataKey="value"
                             position="top"
-                            style={{ fontSize: "0.9em" }}
+                            style={{ fontSize: "0.80em" }}
                         />
                     </Bar>
                 </BarChart>

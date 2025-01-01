@@ -4,9 +4,9 @@
     align-items: center;
 
     border-radius: 1.5em 1.5em 1.5em 1.5em;
-    
+    position: absolute;
     background-color: #f4f4f4;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -14,6 +14,9 @@
     padding-right: 0;
     margin: 1em;
     z-index: 2000;
+
+    width: calc(100% - 2em);
+    height: 4.5em;
   }
   
 button {
@@ -23,9 +26,7 @@ button {
     padding: 0;
   }
   
-.add-button {
-  color: var(--primary-color)
-}
+
 
 button.active {
   color: var(--primary-color); /* White text */

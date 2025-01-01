@@ -34,8 +34,8 @@ function HomePage( {avatarNumber} ) {
                          
                          <div>
                               <div className="greeting-text-box">
-                                   <h2 className="font-bold text-xl">Hello user,</h2>
-                                   <h3 className="text-sm">
+                                   <h2 className="font-bold text-3xl">Hello user</h2>
+                                   <h3 className="text-lg leading-tight">
                                         Your emissions are looking <b>{avatarText[avatarNumber-1]}</b> this month.
                                    </h3> 
                               </div>

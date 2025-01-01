@@ -20,12 +20,12 @@ const data = [
 
 function BarChart02() {
     return (
-        <div style={{ height: "12em" }}>
+        <div style={{ height: "9em" }}>
             <ResponsiveContainer >
                 <BarChart
                     data={data}
                     layout="vertical"
-                    margin={{ top: 20, right: 10, left: 30, bottom: 0 }}
+                    margin={{ top: 0, right: 10, left: 0, bottom: 0 }}
                     barGap={-10} // No gap between bars within a category (if relevant)
                 >
                     <XAxis type="number" hide />
@@ -37,6 +37,7 @@ function BarChart02() {
                         tickMargin={10} // Add space between ticks and Y-axis labels
                         axisLine={false}
                         tickLine={false}
+                        style={{ fontSize: "0.8em" }}
                     />
 
                     <Bar
@@ -57,7 +58,7 @@ function BarChart02() {
                             position="right" // Place value above the bar
                             fill="#000" // Text color for value labels
                             offset={5} // Space above the bar
-                            style={{ fontSize: "0.9em" }}
+                            style={{ fontSize: "0.8em" }}
                         />
                     </Bar>
                 </BarChart>

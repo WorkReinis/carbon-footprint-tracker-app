@@ -1,5 +1,6 @@
 .home-page {
-     padding-bottom: 40px;
+
+  padding-bottom: 5em;
 }
 
 
@@ -26,11 +27,12 @@
 
 
 .greeting-dashboard {
-  background-color: var(--secondary-color);
-  padding: 2em;  /* Adjust padding if necessary */
-  display: flex;  /* Use flexbox */
-  flex-direction: column; /* Stack child elements vertically */
-  gap: 0;  /* You can adjust this gap for normal spacing */
+  background: linear-gradient(180deg, var(--secondary-color) 0%, var(--dark-secondary-color) 80%);
+  padding: 2em;  
+  display: flex; 
+  flex-direction: column; 
+  gap: 0; 
+  border-radius: 0 0 2em 2em;
 }
 
 .greeting-text-box {

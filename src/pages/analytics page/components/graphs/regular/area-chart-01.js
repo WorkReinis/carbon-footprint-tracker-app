@@ -27,12 +27,12 @@ function AreaChart01() {
 
     return (
        
-            <div style={{ width: "100%", height: "16em" }}>
+            <div style={{ width: "100%", height: "12em" }}>
                 <ResponsiveContainer>
                     <AreaChart
                         data={data}
                         margin={{
-                            top: 40,
+                            top: 0,
                             right: 0,
                             left: 0,
                             bottom: 0,
@@ -75,6 +75,7 @@ function AreaChart01() {
                                         y={y + 10}
                                         textAnchor="middle"
                                         fill="var(--dark-gray)"
+                                        fontSize="0.80em"
                                     >
                                         {payload.value}
                                     </text>

@@ -1,6 +1,114 @@
 .page-div {
-  height: 100vh;
-  padding-bottom: 73px;
+  height: 100%;
+  /* padding-bottom: 73px; */
   box-sizing: border-box;
 }
 
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.slide-in {
+  animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+  from {
+       opacity: 0;
+  }
+  to {
+       opacity: 1;
+  }
+}
+
+.fade-in-1 {
+  animation: fadeIn 0.4s ease-in;
+}
+
+.fade-in-2 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-3 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the phone frame */
+.phone-frame {
+  width: 375px; /* iPhone Pro width */
+  height: 812px; /* iPhone Pro height */
+  border-radius: 30px;
+  background-color: #000; 
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the phone bezel */
+.phone-bezel {
+  width: 360px; /* Inner bezel width */
+  height: 796px; /* Inner bezel height */
+  border-radius: 25px;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+/* App content */
+.app-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-y: scroll; /* Allow vertical scrolling */
+  scrollbar-width: none; /* Firefox */
+}
+
+.app-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Edge */
+}
