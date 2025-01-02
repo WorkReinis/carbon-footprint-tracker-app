@@ -21,7 +21,7 @@ function RadialBarChart01() {
 
     return (
         <div style={{ height: "16em" }}>
-            <ResponsiveContainer >
+            <ResponsiveContainer>
                 <RadialBarChart
                     cx="50%"
                     cy="50%"
@@ -32,8 +32,6 @@ function RadialBarChart01() {
                     endAngle={-35}
                     margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
                 >
-                   
-
                     <RadialBar
                         minAngle={15}
                         clockWise={true}
@@ -48,9 +46,7 @@ function RadialBarChart01() {
                         verticalAlign="bottom"
                         align="center"
                         wrapperStyle={{
-                            
                             fontSize: "0.9em",
-                           
                         }}
                     />
                 </RadialBarChart>

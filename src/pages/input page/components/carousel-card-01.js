@@ -12,12 +12,14 @@ function CarouselCard01({
         backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0)), url(${img})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        overflow: 'hidden',
+        overflow: "hidden",
     };
 
     return (
-        <div className={`carousel-card flex flex-col justify-end  ${fade}`} style={divStyle}>
-            
+        <div
+            className={`carousel-card flex flex-col justify-end  ${fade}`}
+            style={divStyle}
+        >
             <div className="flex justify-between items-center pb-1">
                 <h1 className="font-bold text-sm">{title}</h1>
                 {/* <div className="circle-icon flex justify-center items-center">
@@ -26,13 +28,15 @@ function CarouselCard01({
             </div>
 
             <div className="flex justify-start items-end gap-1">
-                <span className="flex font-bold text-3xl align-baseline"
-                style={{ color: "white"}}>
+                <span
+                    className="flex font-bold text-3xl align-baseline"
+                    style={{ color: "white" }}
+                >
                     {value}
                 </span>
                 <span
                     className="flex align-baseline"
-                    style={{ fontSize: "0.80em"}}
+                    style={{ fontSize: "0.80em" }}
                 >
                     {units}
                 </span>
@@ -40,7 +44,7 @@ function CarouselCard01({
 
             <span
                 className="text-xs"
-                style={{ color: "white", fontSize: "0.8em", }}
+                style={{ color: "white", fontSize: "0.8em" }}
             >
                 {context}
             </span>

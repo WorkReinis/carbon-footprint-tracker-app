@@ -9,9 +9,7 @@
 
 .textarea-container {
     height: 100%;
-    /* overflow: auto;  */
-    
-    
+    /* overflow: auto;  */ 
 }
 
 .input-box {
@@ -43,7 +41,7 @@
 }
 
 .button-edit-page:active {
-    transform: scale(0.95); /* Slight shrink on click */
+    transform: scale(0.95);
 }
 
 .button-restart {

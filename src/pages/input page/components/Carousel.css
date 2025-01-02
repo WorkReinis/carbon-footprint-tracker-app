@@ -1,4 +1,3 @@
-/* Carousel.css */
 .carousel-container {
     position: relative;
     width: 100%;
@@ -15,7 +14,6 @@
 
 .carousel-slide {
     flex: 0 0 calc(100% / 2.5); /* Each slide takes 40% width for 2.5 slides */
-
     box-sizing: border-box;
 }
 

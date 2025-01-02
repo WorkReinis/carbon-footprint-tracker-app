@@ -1,9 +1,7 @@
 import "./footer-01.css";
 import { IoMdAdd } from "react-icons/io";
 
-
 function Footer01() {
-    
     return (
         <div className="footer-container flex flex-row justify-between items-center gap-8 mt-4">
             <div className="flex flex-row justify-between items-center">
@@ -13,9 +11,6 @@ function Footer01() {
             </div>
 
             <div className="flex flex-row gap-3 items-start">
-                
-                    
-
                 <div className="flex flex-col justify-center items-center gap-1">
                     <div className="circle-avatar rounded-full overflow-hidden">
                         <img
@@ -39,11 +34,13 @@ function Footer01() {
                 </div>
 
                 <div className="flex flex-col justify-center items-center gap-1">
-                        <div className="flex justify-center items-center circle-add rounded-full overflow-hidden">
-                            <IoMdAdd size={36} style={{ color: "var(--normal-gray)" }}/>
-                        </div>
+                    <div className="flex justify-center items-center circle-add rounded-full overflow-hidden">
+                        <IoMdAdd
+                            size={36}
+                            style={{ color: "var(--normal-gray)" }}
+                        />
                     </div>
-                
+                </div>
             </div>
         </div>
     );

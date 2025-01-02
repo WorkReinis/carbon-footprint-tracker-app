@@ -9,7 +9,6 @@ function Header01({ title, value, units, context, icon, fade, user }) {
             <div className="flex justify-between items-center ">
                 <div>
                     <div className="flex justify-between items-center">
-                        
                         <h1 className="font-bold text-lg">Analytics</h1>
                         {/* <div className="circle-avatar rounded-full overflow-hidden">
                             <img
@@ -40,8 +39,6 @@ function Header01({ title, value, units, context, icon, fade, user }) {
                         {context}
                     </span>
                 </div>
-
-                
             </div>
 
             <BarChart04 />
@@ -55,7 +52,6 @@ function Header01({ title, value, units, context, icon, fade, user }) {
                     context="last entry"
                     graph=""
                     icon=""
-                    
                 />
 
                 <SmallCard02

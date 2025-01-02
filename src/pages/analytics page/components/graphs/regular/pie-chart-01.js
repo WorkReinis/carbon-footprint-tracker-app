@@ -6,7 +6,7 @@ import {
     Legend,
     ResponsiveContainer,
 } from "recharts";
-import CustomTooltip01 from '../custom-tooltip-01'
+import CustomTooltip01 from "../custom-tooltip-01";
 
 const COLORS = [
     "#5A5AC1" /* --primary-color */,
@@ -23,14 +23,13 @@ const COLORS = [
 
 function PieChart01() {
     const data = [
-        { name: "Long-haul flights", value: 400 }, // High emission from air travel
-        { name: "Car Travel", value: 300 }, // Significant emission from personal car usage
-        { name: "Meat-based products", value: 350 }, // High emission from animal farming (beef, lamb)
-        { name: "Dairy products", value: 250 }, // Emission from dairy production
-        { name: "Public transport", value: 100 }, // Lower emission than cars or flights
+        { name: "Long-haul flights", value: 400 },
+        { name: "Car Travel", value: 300 },
+        { name: "Meat-based products", value: 350 },
+        { name: "Dairy products", value: 250 },
+        { name: "Public transport", value: 100 },
     ];
 
-    
     return (
         <div style={{ width: "100%", height: "20em" }}>
             <ResponsiveContainer>
@@ -47,19 +46,16 @@ function PieChart01() {
                         paddingAngle={5}
                         labelLine={false}
                         label={true}
-                        
                     >
                         {data.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index]} />
                         ))}
                     </Pie>
-                    
+
                     <Legend
                         layout="horizontal"
                         verticalAlign="bottom"
                         align="center"
-
-
                     />
                 </PieChart>
             </ResponsiveContainer>

@@ -19,7 +19,6 @@ function BarChart03() {
         { name: "F", value: 90, maxValue: 100 },
         { name: "Sa", value: 25, maxValue: 100 },
         { name: "Su", value: 75, maxValue: 100 },
-
     ];
 
     return (
@@ -39,18 +38,16 @@ function BarChart03() {
 
                     <Bar
                         dataKey="maxValue"
-                        fill="var(--light-gray)" // Background bar color
-                        barSize={10} // Same size as foreground bar
-                        radius={[5, 5, 5, 5]} // Rounded corners for style
-                        
+                        fill="var(--light-gray)"
+                        barSize={10}
+                        radius={[5, 5, 5, 5]}
                     />
 
                     <Bar
                         dataKey="value"
                         fill="var(--primary-color)"
-                        barSize={10} // Matches the size of the background bar
-                        radius={[15, 15, 15, 15]} // Rounded top corners
-                        
+                        barSize={10}
+                        radius={[15, 15, 15, 15]}
                     >
                         <LabelList
                             dataKey="value"

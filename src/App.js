@@ -1,5 +1,10 @@
 import React, { useState, useContext } from "react";
+import { MyProvider, MyContext } from "./context/pages";
+
 import "./App.css";
+import './styles/phone-frame.css';
+import './styles/variables/color-variables.css'
+
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/home page/HomePage";
 import AnalyticsPage from "./pages/analytics page/AnalyticsPage";
@@ -8,7 +13,7 @@ import InputConfirmationPage from "./pages/input page/InputConfirmationPage";
 import InputEditPage from "./pages/input page/InputEditPage";
 import ReducePage from "./pages/reduce page/ReducePage";
 import SettingsPage from "./pages/settings page/SettingsPage";
-import { MyProvider, MyContext } from "./context/pages";
+
 
 function App() {
     const { page } = useContext(MyContext);
@@ -63,7 +68,7 @@ function App() {
     );
 }
 
-export default function AppWrapper() {
+function AppWrapper() {
     // Wrap the entire app in the PageProvider to make context available
     return (
         <MyProvider>
@@ -71,3 +76,5 @@ export default function AppWrapper() {
         </MyProvider>
     );
 }
+
+export default AppWrapper;

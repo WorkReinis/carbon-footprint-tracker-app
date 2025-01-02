@@ -28,5 +28,5 @@
 
 .circle-avatar:hover,
 .circle-add:hover {
-    transform: scale(1.1); /* Slight shrink on click */
+    transform: scale(1.1); 
 }

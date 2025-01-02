@@ -9,18 +9,17 @@ import {
     ResponsiveContainer,
 } from "recharts";
 
-import CustomTooltip01 from '../custom-tooltip-01'
-// Sample Data
+import CustomTooltip01 from "../custom-tooltip-01";
+
 const data = [
     { name: "Jan", value: 60, max: 100 },
-    { name: "Feb", value: 90,  max: 100},
-    { name: "Mar", value: 50,  max: 100 },
-    { name: "Apr", value: 70,  max: 100 },
-    { name: "May", value: 60,  max: 100 },
-    { name: "Jun", value: 65,  max: 100 },
-    { name: "Jul", value: 20,  max: 100 },
+    { name: "Feb", value: 90, max: 100 },
+    { name: "Mar", value: 50, max: 100 },
+    { name: "Apr", value: 70, max: 100 },
+    { name: "May", value: 60, max: 100 },
+    { name: "Jun", value: 65, max: 100 },
+    { name: "Jul", value: 20, max: 100 },
 ];
-
 
 function ComposedChart01() {
     return (
@@ -34,7 +33,6 @@ function ComposedChart01() {
                         dataKey="name"
                         axisLine={false}
                         tickLine={false}
-                        
                         tick={({ index, x, y, payload }) => {
                             // Only show every second label
                             if (index % 2 === 0) {
@@ -50,7 +48,7 @@ function ComposedChart01() {
                                     </text>
                                 );
                             }
-                            return null; // Skip every second label
+                            return null;
                         }}
                     />
                     <YAxis
@@ -62,8 +60,6 @@ function ComposedChart01() {
                             index === 0 ? "" : value
                         }
                     />
-
-                    {/* Background Bar (always at 100%) */}
 
                     <defs>
                         <linearGradient
@@ -87,19 +83,19 @@ function ComposedChart01() {
                     </defs>
                     <Bar
                         dataKey="max"
-                        data={data} // Use the background data with 100% values
-                        fill="url(#gradient1)" // Light gray for background
-                        radius={[10, 10, 10, 10]} // Rounded corners for style
+                        data={data}
+                        fill="url(#gradient1)"
+                        radius={[10, 10, 10, 10]}
                         barSize={32}
                     />
-                    <Tooltip content={<CustomTooltip01 />}/>
-                    {/* Line for actual data */}
+                    <Tooltip content={<CustomTooltip01 />} />
+
                     <Line
                         type="monotone"
                         dataKey="value"
-                        stroke="var(--primary-color)" // Line color
+                        stroke="var(--primary-color)"
                         strokeWidth={3}
-                        dot={false} // Hide dots
+                        dot={false}
                     />
                 </ComposedChart>
             </ResponsiveContainer>

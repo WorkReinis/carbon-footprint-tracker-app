@@ -1,20 +1,19 @@
 import React, { useEffect, useRef } from "react";
 import Quill from "quill";
-import "quill/dist/quill.snow.css"; // Or 'quill.bubble.css' depending on your theme
-import "./QuillEditor.css"; // Import your custom CSS
+import "quill/dist/quill.snow.css";
+import "./QuillEditor.css";
 
 function QuillEditor() {
     const editorRef = useRef(null);
 
     useEffect(() => {
         const quill = new Quill(editorRef.current, {
-            theme: "bubble", // 'snow' or 'bubble'
+            theme: "bubble",
             modules: {
-                toolbar: false, // No toolbar
+                toolbar: false,
             },
         });
 
-        // Set the initial content
         const initialContent = [
             { insert: "I drove my car for " },
             {

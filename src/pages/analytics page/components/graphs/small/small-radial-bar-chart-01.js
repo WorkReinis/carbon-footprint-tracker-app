@@ -21,9 +21,8 @@ function SmallRadialBarChart01() {
 
     return (
         <div style={{ height: "16em" }}>
-            <ResponsiveContainer >
+            <ResponsiveContainer>
                 <RadialBarChart
-
                     innerRadius="20%"
                     outerRadius="100%"
                     data={data}
@@ -31,8 +30,6 @@ function SmallRadialBarChart01() {
                     endAngle={-90}
                     margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
                 >
-                    
-
                     <RadialBar
                         minAngle={15}
                         clockWise={true}
@@ -40,8 +37,6 @@ function SmallRadialBarChart01() {
                         cornerRadius={15}
                         background
                     />
-                   
-                    
                 </RadialBarChart>
             </ResponsiveContainer>
         </div>

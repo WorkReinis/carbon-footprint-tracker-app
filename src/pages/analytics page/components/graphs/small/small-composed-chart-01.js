@@ -9,7 +9,6 @@ import {
     ResponsiveContainer,
 } from "recharts";
 
-// Sample Data
 const data = [
     { name: "Jan", value: 60 },
     { name: "Feb", value: 90 },
@@ -20,7 +19,6 @@ const data = [
     { name: "Jul", value: 20 },
 ];
 
-// 100% value for background bars
 const backgroundData = data.map((item) => ({ ...item, value: 100 }));
 
 function SmallComposedChart01() {
@@ -49,7 +47,7 @@ function SmallComposedChart01() {
                                     </text>
                                 );
                             }
-                            return null; // Skip every second label
+                            return null;
                         }}
                         hide
                     />
@@ -62,8 +60,6 @@ function SmallComposedChart01() {
                         }
                         hide
                     />
-
-                    {/* Background Bar (always at 100%) */}
 
                     <defs>
                         <linearGradient
@@ -87,19 +83,18 @@ function SmallComposedChart01() {
                     </defs>
                     <Bar
                         dataKey="value"
-                        data={backgroundData} // Use the background data with 100% values
-                        fill="url(#gradient1)" // Light gray for background
-                        radius={[10, 10, 10, 10]} // Rounded corners for style
+                        data={backgroundData}
+                        fill="url(#gradient1)"
+                        radius={[10, 10, 10, 10]}
                         barSize={14}
                     />
 
-                    
                     <Line
                         type="monotone"
                         dataKey="value"
-                        stroke="var(--primary-color)" // Line color
+                        stroke="var(--primary-color)"
                         strokeWidth={3}
-                        dot={false} // Hide dots
+                        dot={false}
                     />
                 </ComposedChart>
             </ResponsiveContainer>

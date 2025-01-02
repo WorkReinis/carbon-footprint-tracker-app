@@ -2,14 +2,11 @@
     width: 100%;
     height: 100%;
     /* background: linear-gradient(180deg, var(--secondary-color) 0%, var(--dark-secondary-color) 80%); */
-
 }
 
 .carbon-result {
-    
     /* background-color: white; */
-/* 
-    border-radius: 50em; */
+    /* border-radius: 50em; */
     z-index: 1;
     margin-top: -3em;
 }
@@ -80,23 +77,13 @@
     transform: scale(0.9); /* Slight shrink on click */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-in-1 {
-    animation: fadeIn 0.4s ease-in;
-}
-
-
 .upper-container {
     /* background: linear-gradient(180deg, var(--light-primary-color) 0%, var(--primary-color) 80%); */
-    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--dark-secondary-color) 80%);
+    background: linear-gradient(
+        180deg,
+        var(--secondary-color) 0%,
+        var(--dark-secondary-color) 80%
+    );
     border-radius: 0 0 2em 2em;
     padding: 1.5em;
     padding-top: 4em;
@@ -104,9 +91,6 @@
     color: black;
 }
 
-
 .lower-container {
-   
     padding: 1.5em;
-
 }

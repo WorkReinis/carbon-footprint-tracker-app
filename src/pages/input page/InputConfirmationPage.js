@@ -39,13 +39,13 @@ function InputConfirmationPage({ avatarNumber }) {
     }, []);
 
     const handleInput = () => {
-        setPage("input"); // Update the context value
+        setPage("input");
         setNavBar(true);
         setActiveButton("input");
     };
 
     const handleAnalytics = () => {
-        setPage("reduce"); // Update the context value
+        setPage("reduce");
         setNavBar(true);
         setActiveButton("reduce");
     };
@@ -71,12 +71,12 @@ function InputConfirmationPage({ avatarNumber }) {
                             <LuTrees size={22} color={"var(--dark-gray)"} />
                         </div> */}
                         <div className="flex flex-col justify-center items-center ">
-                        <h1 className="text-3xl font-bold">CO₂</h1>
+                            <h1 className="text-3xl font-bold">CO₂</h1>
                             <div className="flex flex-row justify-center items-end gap-2">
                                 <h1 className="text-6xl font-bold">140</h1>
                                 <h1 className="text-4xl font-bold">kg</h1>
                             </div>
-                            <div className='flex flex-row justify-center items-center'>
+                            <div className="flex flex-row justify-center items-center">
                                 <h1 className="text-lg ">
                                     Your carbon footprint is{" "}
                                     {avatarText[avatarNumber - 1]}

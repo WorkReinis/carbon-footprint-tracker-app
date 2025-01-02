@@ -1,14 +1,14 @@
 import "./comparison-chart-01.css";
 
 const dataset = {
-    personalEmissions: 400, // Example personal emissions in kg CO₂
-    globalEmissions: 1000, // Example global emissions in kg CO₂
+    personalEmissions: 400, 
+    globalEmissions: 1000, 
 };
 
 function ComparisonChart01() {
     const personalPercentage =
         (dataset.personalEmissions / dataset.globalEmissions) * 100;
-    const globalPercentage = 100; // The global emissions circle will always be 100%
+    const globalPercentage = 100; 
 
     return (
         <div className="comparison-container">

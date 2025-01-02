@@ -6,10 +6,10 @@ const MyContext = createContext();
 // Provider component to wrap the entire app. It will provide the shared states to all components.
 function MyProvider({ children }) {
      // States to be shared via context
-     const [page, setPage] = useState("home"); // Set page to render
-     const [key, setKey] = useState(1); //Set avatar to render on home button click
-     const [navBar, setNavBar] = useState("true"); // Set navbar to render
-     const [activeButton, setActiveButton] = useState("home"); // Set active button on navbar
+     const [page, setPage] = useState("home"); // Set page for React to render
+     const [key, setKey] = useState(1); //State update to trigger rerender of homepage
+     const [navBar, setNavBar] = useState("true"); // Set navbar for React to render
+     const [activeButton, setActiveButton] = useState("home"); // Set "active" button on navbar
      
      //<MyContext.Provider> is the provider component created by createContext. It makes the context's value available to all child components.
      return (

@@ -16,11 +16,10 @@ import SmallRadialBarChart01 from "./components/graphs/small/small-radial-bar-ch
 import SmallAreaChart01 from "./components/graphs/small/small-area-chart-01";
 import SmallPieChart01 from "./components/graphs/small/small-pie-chart-01";
 
-
 import Footer01 from "./components/cards/regular/footer-01";
 import Header01 from "./components/cards/regular/header-01";
 
-import "./AnalyticsPage.css";
+import "./styles/AnalyticsPage.css";
 
 import { MdCardTravel } from "react-icons/md";
 import { MdHistory } from "react-icons/md";
@@ -43,7 +42,6 @@ function AnalyticsPage() {
                     title="Your Carbon Footprint"
                     units=""
                     context=""
-                    
                 />
 
                 <div className="cards-container">

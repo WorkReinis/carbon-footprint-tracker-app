@@ -1,4 +1,4 @@
-import "../../element-styles.css";
+import "../../../styles/element-styles.css";
 import "./small-card-01.css";
 
 function SmallCard01({ title, value, units, context, icon, graph, fade }) {

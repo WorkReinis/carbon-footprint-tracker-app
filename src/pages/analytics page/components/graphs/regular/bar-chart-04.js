@@ -40,29 +40,26 @@ function BarChart04() {
                         tickLine={false}
                         tick={{
                             fill: "white",
-                            
                         }}
                     />
 
                     <Bar
                         dataKey="maxValue"
-                        fill="rgba(255, 255, 255, 0.2)" // Background bar color
-                        barSize={16} // Same size as foreground bar
-                        radius={[15, 15, 15, 15]} // Rounded corners for style
-                        
+                        fill="rgba(255, 255, 255, 0.2)"
+                        barSize={16}
+                        radius={[15, 15, 15, 15]}
                     />
 
                     <Bar
                         dataKey="value"
                         fill="white"
-                        barSize={16} // Matches the size of the background bar
-                        radius={[15, 15, 15, 15]} // Rounded top corners
+                        barSize={16}
+                        radius={[15, 15, 15, 15]}
                     >
                         <LabelList
                             dataKey="value"
                             position="top"
                             style={{ fontSize: "0.9em", fill: "white" }}
-                            
                         />
                     </Bar>
                 </BarChart>

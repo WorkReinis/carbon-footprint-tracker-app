@@ -17,8 +17,6 @@ function SmallBarChart01() {
         { name: "W", value: 30, maxValue: 100 },
         { name: "T", value: 35, maxValue: 100 },
         { name: "F", value: 20, maxValue: 100 },
-
-
     ];
 
     return (
@@ -34,23 +32,26 @@ function SmallBarChart01() {
                     }}
                     barGap={-9}
                 >
-                    <XAxis dataKey="name" axisLine={false} tickLine={false} hide/>
+                    <XAxis
+                        dataKey="name"
+                        axisLine={false}
+                        tickLine={false}
+                        hide
+                    />
 
                     <Bar
                         dataKey="maxValue"
-                        fill="var(--light-gray)" // Background bar color
-                        barSize={9} // Same size as foreground bar
-                        radius={[5, 5, 5, 5]} // Rounded corners for style
+                        fill="var(--light-gray)"
+                        barSize={9}
+                        radius={[5, 5, 5, 5]}
                     />
 
                     <Bar
                         dataKey="value"
                         fill="var(--primary-color)"
-                        barSize={9} // Matches the size of the background bar
-                        radius={[15, 15, 15, 15]} // Rounded top corners
-                    >
-                     
-                    </Bar>
+                        barSize={9}
+                        radius={[15, 15, 15, 15]}
+                    ></Bar>
                 </BarChart>
             </ResponsiveContainer>
         </div>

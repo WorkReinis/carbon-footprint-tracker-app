@@ -61,7 +61,6 @@ function BarChart01() {
                         dataKey="name"
                         axisLine={false}
                         tickLine={false}
-                        
                         tick={({ index, x, y, payload }) => {
                             // Only show every second label
                             if (index % 2 === 0) {
@@ -72,13 +71,12 @@ function BarChart01() {
                                         textAnchor="middle"
                                         fill="var(--dark-gray)"
                                         fontSize="0.80em"
-                                        
                                     >
                                         {payload.value}
                                     </text>
                                 );
                             }
-                            return null; // Skip every second label
+                            return null;
                         }}
                     />
 
@@ -86,7 +84,7 @@ function BarChart01() {
                         dataKey="value"
                         fill="url(#gradientBar)"
                         barSize={15}
-                        radius={[15, 15, 15, 15]} // Rounded top corners
+                        radius={[15, 15, 15, 15]}
                     >
                         <LabelList
                             dataKey="value"

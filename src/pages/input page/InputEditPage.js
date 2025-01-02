@@ -22,13 +22,11 @@ Oh and I also had a nice stake yesterday.`);
 
     const handleConfirm = () => {
         setPage("input-confirm");
-        
     };
 
     const handleBack = () => {
         setPage("input");
         setNavBar(true);
-        
     };
 
     const today = new Date();

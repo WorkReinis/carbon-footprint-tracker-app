@@ -15,14 +15,14 @@ function NavBar() {
     const { activeButton, setActiveButton } = useContext(MyContext);
 
     return (
-        <nav id="navbar" >
+        <nav id="navbar">
             <button
                 onClick={() => {
                     setPage("home");
                     setKey((prev) => prev + 1);
                     setActiveButton("home");
                 }}
-                className={activeButton === "home" ? "active" : ""}
+                className={`${activeButton === "home" ? "active" : ""} nav-button`}
             >
                 <GoHome
                     size={24}
@@ -35,18 +35,17 @@ function NavBar() {
                     setPage("analytics");
                     setActiveButton("analytics");
                 }}
-                className={activeButton === "analytics" ? "active" : ""}
+                className={`${activeButton === "analytics" ? "active" : ""} nav-button`}
             >
                 <GrAnalytics size={22} />
             </button>
 
             <button
-                
                 onClick={() => {
                     setPage("input");
                     setActiveButton("input");
                 }}
-                className={activeButton === "input" ? "active" : ""}
+                className={`${activeButton === "input" ? "active" : ""} nav-button`}
             >
                 <IoAddCircle size={50} />
             </button>
@@ -56,7 +55,7 @@ function NavBar() {
                     setPage("reduce");
                     setActiveButton("reduce");
                 }}
-                className={activeButton === "reduce" ? "active" : ""}
+                className={`${activeButton === "reduce" ? "active" : ""} nav-button`}
             >
                 <LuLeaf size={24} />
             </button>
@@ -66,7 +65,7 @@ function NavBar() {
                     setPage("settings");
                     setActiveButton("settings");
                 }}
-                className={activeButton === "settings" ? "active" : ""}
+                className={`${activeButton === "settings" ? "active" : ""} nav-button`}
             >
                 <IoSettingsOutline size={24} />
             </button>
