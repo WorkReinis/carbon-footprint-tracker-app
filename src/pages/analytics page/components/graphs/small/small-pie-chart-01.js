@@ -1,4 +1,5 @@
 import { ResponsiveContainer, PieChart, Pie, Tooltip, Cell } from "recharts";
+import CustomTooltip01 from "../custom-tooltip-01";
 
 const data = [
     { name: "Category A", value: 500 },
@@ -38,6 +39,7 @@ function SmallPieChart01() {
                             <Cell key={`cell-${index}`} fill={COLORS[index]} />
                         ))}
                     </Pie>
+                    <Tooltip content={<CustomTooltip01 />} />
                 </PieChart>
             </ResponsiveContainer>
         </div>

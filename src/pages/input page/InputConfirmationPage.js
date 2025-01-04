@@ -113,8 +113,8 @@ function InputConfirmationPage({ avatarNumber }) {
                 <span className="text-xl font-bold">That equates to:</span>
             </div> */}
             </div>
-            <div className="lower-container flex flex-col justify-between gap-1 fade-in-2">
-                <h2 className="font-bold text-md pb-2">That equates to:</h2>
+            <div className="lower-container flex flex-col justify-between fade-in-2">
+                <h2 className="font-bold text-md ">That equates to:</h2>
                 <Carousel />
                 <div className="lower-container-button-container w-100">
                     <button

@@ -92,13 +92,13 @@ function InputPage({ sendDataToParent }) {
 
     return (
         <div className="input-container flex flex-col justify-center align - center gap-10 fade-in-1">
-            <div className="greetings-text flex justify-center align-center">
+            <div className="greetings-text flex justify-center items-center">
                 <h3 className="font-bold text-lg">
                     Please tell me what did you do today
                 </h3>
             </div>
 
-            <div className="button-container flex justify-center align-center">
+            <div className="button-container flex justify-center items-center">
             <button
                     className={`speech-input-btn `}   //{isAnimating ? "pulsing" : ""}
                     // onMouseDown={handleMouseDown}

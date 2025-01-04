@@ -1,0 +1,30 @@
+.slider-container {
+    height: 100%;
+}
+
+.slider {
+
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 2em;
+    width: 85%;
+    overflow: hidden;
+    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.1);
+}
+
+.slider-item {
+    flex: 1;
+    text-align: center;
+    padding: 0.5em;
+    cursor: pointer;
+    color: var(--dark-gray);
+    transition: all 0.3s ease;
+    user-select: none; 
+}
+
+.slider-item.active {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 10em; 
+    transition: all 0.3s ease;
+}

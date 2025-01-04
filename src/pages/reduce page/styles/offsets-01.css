@@ -1,0 +1,19 @@
+.offsets-container {
+    padding: 1.5em;
+    width: 100%;
+     
+}
+
+.offsets-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    flex-wrap: wrap;
+    gap: 0.75em; 
+}
+
+.offsets-button {
+    color: var(--dark-gray)
+}
+

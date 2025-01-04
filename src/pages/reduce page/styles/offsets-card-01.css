@@ -1,0 +1,33 @@
+.offsets-card {
+
+    Background-color: white;
+    border-radius: 1em;
+    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc((100% - 4em - 2em) / 2); 
+    transition: transform 0.3s ease;
+}
+
+.offsets-card-img {
+    width: 100%;
+    aspect-ratio: 7 / 6;
+    background-color: var(--light-gray);
+    border-radius: 1em;
+
+    
+}
+
+.offsets-card-text {
+    padding: 0.75em;
+}
+
+.offsets-value {
+    width: 7em;
+}
+
+.offsets-card:hover {
+    transform: scale(1.05);
+}
+
+.offsets-card:active {
+    transform: scale(0.95);
+}
