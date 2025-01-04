@@ -119,7 +119,7 @@ function InputConfirmationPage({ avatarNumber }) {
                 <div className="lower-container-button-container w-100">
                     <button
                         onClick={handleAnalytics}
-                        className="text-md button-primary"
+                        className="text-md button-primary ripple-btn "
                     >
                         Suggestions
                     </button>

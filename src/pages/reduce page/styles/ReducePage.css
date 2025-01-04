@@ -1,0 +1,81 @@
+.suggestions-page {
+    font-family: Arial, sans-serif;
+    padding: 16px;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: #e2e9ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5a5ac1;
+    margin-bottom: 8px;
+  }
+  
+  .header-subtitle {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .suggestions-section,
+  .offsets-section {
+    margin-bottom: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .suggestion-item,
+  .offset-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .suggestion-item:last-child,
+  .offset-item:last-child {
+    border-bottom: none;
+  }
+  
+  .emission-saved,
+  .offset-cost {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-top: 4px;
+  }
+  
+  .offset-button {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background-color: #5a5ac1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .offset-button:hover {
+    background-color: #4a4ab0;
+  }
+  

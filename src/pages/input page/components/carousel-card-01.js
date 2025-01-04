@@ -21,7 +21,7 @@ function CarouselCard01({
         <div className="carousel-card-container flex flex-col justify-between">
             <div className="carousel-card-img" style={imgStyle}></div>
             <div className="carousel-card-text flex flex-col justify-center align-center">
-                <span className="font-bold text-xl">{value}</span>
+                <span className="font-bold text-lg">{value}</span>
                 <span className="text-xs">{context}</span>
             </div>
         </div>

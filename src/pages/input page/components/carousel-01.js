@@ -48,7 +48,7 @@ function Carousel() {
 
         <CarouselCard01
             heading=""
-            value="70 times"
+            value="70 showers"
             units=""
             context="taking a hot shower at home"
             img="https://static.vecteezy.com/system/resources/previews/006/403/160/non_2x/happy-man-taking-shower-in-bathroom-wash-head-and-hair-with-shampoo-soap-flat-cartoon-design-vector.jpg"

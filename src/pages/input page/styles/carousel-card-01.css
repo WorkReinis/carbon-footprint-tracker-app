@@ -5,7 +5,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: white;
-  
+    cursor: grabbing;
+    transition: transform 0.3s ease;
 }
 
 .carousel-card-img {
@@ -16,4 +17,8 @@
 .carousel-card-text {
     padding: 0.5em;
     line-height: 0.6;
+}
+
+.carousel-card-container:hover {
+    transform: scale(1.05);
 }

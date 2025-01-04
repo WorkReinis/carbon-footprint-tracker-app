@@ -99,3 +99,7 @@
 .button-primary:active {
     transform: scale(0.9); /* Slight shrink on click */
 }
+
+.button-primary:hover {
+    background-color: var(--darkish-primary-color)
+}
