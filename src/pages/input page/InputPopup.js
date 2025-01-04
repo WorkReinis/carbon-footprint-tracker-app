@@ -1,4 +1,4 @@
-import "./InputPopup.css";
+import "./styles/InputPopup.css";
 import { useContext } from 'react';
 import { MyContext } from '../../context/pages'; 
 

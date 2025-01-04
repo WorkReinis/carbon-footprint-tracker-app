@@ -1,12 +1,9 @@
 import { useContext, useEffect } from "react";
 import { MyContext } from "../../context/pages";
 
-import "./InputConfirmationPage.css";
-import { LuTreeDeciduous } from "react-icons/lu";
-import { CiCloudOn } from "react-icons/ci";
-import { LuTrees } from "react-icons/lu";
+import "./styles/InputConfirmationPage.css";
 
-import Carousel from "./components/Carousel";
+import Carousel from "./components/carousel-01";
 
 function InputConfirmationPage({ avatarNumber }) {
     const { page, setPage } = useContext(MyContext);
@@ -53,9 +50,9 @@ function InputConfirmationPage({ avatarNumber }) {
     return (
         <div className="confirmation-container flex flex-col justify-between ">
             <div className="upper-container flex justify-between items-center flex-col fade-in-1">
-                <div className="flex justify-center items-center">
+                {/* <div className="flex justify-center items-center">
                     <h1 className="text-lg">Data uploaded!</h1>
-                </div>
+                </div> */}
 
                 <div className="input-avatar-container flex justify-center items-center ">
                     <img
@@ -71,15 +68,25 @@ function InputConfirmationPage({ avatarNumber }) {
                             <LuTrees size={22} color={"var(--dark-gray)"} />
                         </div> */}
                         <div className="flex flex-col justify-center items-center ">
-                            <h1 className="text-3xl font-bold">CO₂</h1>
+                            <h1 className="text-2xl ">CO₂</h1>
                             <div className="flex flex-row justify-center items-end gap-2">
                                 <h1 className="text-6xl font-bold">140</h1>
-                                <h1 className="text-4xl font-bold">kg</h1>
+                                <h1 className="text-3xl font-bold">kg</h1>
                             </div>
-                            <div className="flex flex-row justify-center items-center">
+                            <div className="flex flex-col justify-center items-center ">
                                 <h1 className="text-lg ">
-                                    Your carbon footprint is{" "}
-                                    {avatarText[avatarNumber - 1]}
+                                    Emissions from your actions
+                                    {/* Your carbon footprint is{" "} */}
+                                    {/* {avatarText[avatarNumber - 1]} */}
+                                </h1>
+                                <h1 className="text-lg">
+                                    That's a{" "}
+                                    <span className="font-bold">
+                                        {avatarText[avatarNumber - 1]}
+                                    </span>{" "}
+                                    effort!
+                                    {/* Your carbon footprint is{" "} */}
+                                    {/* {avatarText[avatarNumber - 1]} */}
                                 </h1>
                             </div>
                         </div>
@@ -107,11 +114,9 @@ function InputConfirmationPage({ avatarNumber }) {
             </div> */}
             </div>
             <div className="lower-container flex flex-col justify-between gap-1 fade-in-2">
-                <h2 className="font-bold text-md pb-2">
-                    Your emissions equate to:
-                </h2>
+                <h2 className="font-bold text-md pb-2">That equates to:</h2>
                 <Carousel />
-                <div className="w-100">
+                <div className="lower-container-button-container w-100">
                     <button
                         onClick={handleAnalytics}
                         className="text-md button-primary"

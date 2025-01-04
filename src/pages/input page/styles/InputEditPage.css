@@ -3,13 +3,17 @@
     height: 100%;
     padding: 1.5em;
     padding-top: 4em;
-    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--dark-secondary-color) 80%);
-    
+    background: linear-gradient(
+        180deg,
+        var(--secondary-color) 0%,
+        var(--dark-secondary-color) 80%
+    );
 }
 
+/* Textarea styling */
 .textarea-container {
     height: 100%;
-    /* overflow: auto;  */ 
+    /* overflow: auto;  */
 }
 
 .input-box {
@@ -22,7 +26,6 @@
     resize: none;
     border-radius: 0.5em;
     padding: 0.4em;
-    
 }
 
 .input-box::-webkit-scrollbar {
@@ -30,6 +33,7 @@
     height: 0px !important;
 }
 
+/* Button styling */
 .button-edit-page {
     border: none;
     transition: transform 0.2s;
@@ -47,11 +51,10 @@
 .button-restart {
     background-color: white;
     color: var(--primary-color);
-
 }
 
 .button-edit {
-    background-color:var(--light-gray);
+    background-color: var(--light-gray);
     color: black;
 }
 

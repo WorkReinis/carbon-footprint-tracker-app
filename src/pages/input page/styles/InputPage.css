@@ -1,29 +1,15 @@
-*,
-*:before,
-*:after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-.input-page {
+.input-container {
     padding-left: 2em;
     padding-right: 2em;
-    padding-top: var(--top-padding);
-    padding-bottom: var(--bottom-padding);
+    padding-top: 4em;
+    padding-bottom: 7em;
     height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .greetings-text {
-    height: calc(25% - var(--top-padding));
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    text-align: center;
+   
+
 }
 
 .button-container {
@@ -32,7 +18,8 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    height: calc(50% - var(--top-padding) - var(--bottom-padding));
+   
+    
 }
 
 .loading-response {
@@ -60,7 +47,7 @@
     transition: transform 0.2s;
 }
 
-
+/* 
 .speech-input-btn:before,
 .speech-input-btn:after {
     content: "";
@@ -73,25 +60,6 @@
     z-index: -1;
     opacity: 0.7;
     pointer-events: none; 
+    animation: pulse 1.2s ease-out infinite;
 }
-
-
-@keyframes pulse {
-    100% {
-        transform: scale(1.6);
-        opacity: 0;
-    }
-}
-
-/* When button has the "pulsing" class, trigger pulse animation for pseudo-elements */
-.speech-input-btn.pulsing:before {
-    animation: pulse 1.2s ease-out 8; /* Attributes: keyframe-name animation-duration animation-style repeats */
-}
-
-.speech-input-btn.pulsing:after {
-    animation: pulse 1.2s ease-out 0.3s 8; /* 0.3s is delay */
-}
-
-.speech-input-btn:active {
-    transform: scale(0.95); /* Slight shrink on click */
-}
+ */

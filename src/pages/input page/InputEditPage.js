@@ -1,12 +1,15 @@
 import { MyContext } from "../../context/pages";
 import React, { useState, useContext } from "react";
-import "./InputEditPage.css";
+
+import "./styles/InputEditPage.css";
+import "./styles/quill-editor-01.css";
+
+import { IoMdRecording } from "react-icons/io";
 import { FaRegEdit } from "react-icons/fa";
 import { VscDebugRestart } from "react-icons/vsc";
 import { FaCheck } from "react-icons/fa6";
-import QuillEditor from "./components/QuillEditor";
-import "./components/QuillEditor.css";
-import { IoMdRecording } from "react-icons/io";
+
+import QuillEditor from "./components/quill-editor-01";
 
 function InputEditPage() {
     const { navBar, setNavBar } = useContext(MyContext);

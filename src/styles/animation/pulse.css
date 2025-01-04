@@ -1,0 +1,19 @@
+
+@keyframes pulse {
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+/* .speech-input-btn.pulsing:before {
+    animation: pulse 1.2s ease-out 8;
+}
+
+.speech-input-btn.pulsing:after {
+    animation: pulse 1.2s ease-out 0.3s 8; 
+} */
+
+.speech-input-btn:active {
+    transform: scale(0.95); 
+}

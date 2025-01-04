@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import "./Carousel.css";
+import "../styles/carousel-01.css";
 import CarouselCard01 from "./carousel-card-01";
 
 function Carousel() {
@@ -9,42 +9,50 @@ function Carousel() {
     const slides = [
         <CarouselCard01
             heading=""
-            value="1-2"
+            value="1-2 trees"
             units=""
-            context="Trees absorb this in a year"
-            img="https://images.unsplash.com/photo-1514116799412-5876d319c242"
+            context="absorb this amount in a year"
+            img="https://cdn.dribbble.com/users/1338391/screenshots/15339530/forest_landscape_wallpaper_background_flat_design_art_4x.jpg"
+            // img="https://images.unsplash.com/photo-1514116799412-5876d319c242"
             icon=""
         />,
         <CarouselCard01
             heading=""
-            value="700"
+            value="700 km"
             units=""
-            context="Kilometers of driving with a vehicle"
-            img="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d"
+            context="of urban driving with a vehicle"
+            img="https://st4.depositphotos.com/1832477/29984/v/450/depositphotos_299842512-stock-illustration-car-interior-drivers-place-view.jpg"
+            //img="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d"
             icon=""
         />,
+
         <CarouselCard01
             heading=""
-            value="2.800"
+            value="20 steaks"
             units=""
-            context="Kilometers traveled with a train"
-            img="https://images.unsplash.com/photo-1518735391375-e4745c43c4b9"
+            context="enjoyed at a fine restaurant"
+            img="https://cbx-prod.b-cdn.net/COLOURBOX36658680.jpg?width=800&height=800&quality=70"
+            //img="https://images.unsplash.com/photo-1592768116796-f2c356806033"
             icon=""
         />,
+        
         <CarouselCard01
             heading=""
-            value="20"
+            value="2.800 km"
             units=""
-            context="Steak meals at a restaurant"
-            img="https://images.unsplash.com/photo-1592768116796-f2c356806033"
+            context="traveled with NS trains"
+            img="https://thumbs.dreamstime.com/b/woman-going-out-train-walking-platform-background-modern-arriving-station-vector-flat-design-67447700.jpg"
+            //img="https://images.unsplash.com/photo-1518735391375-e4745c43c4b9"
             icon=""
         />,
+
         <CarouselCard01
             heading=""
-            value="70"
+            value="70 times"
             units=""
-            context="Hot showers taken at home"
-            img="https://images.unsplash.com/photo-1652662700928-5a4685e87d64"
+            context="taking a hot shower at home"
+            img="https://static.vecteezy.com/system/resources/previews/006/403/160/non_2x/happy-man-taking-shower-in-bathroom-wash-head-and-hair-with-shampoo-soap-flat-cartoon-design-vector.jpg"
+            //img="https://images.unsplash.com/photo-1652662700928-5a4685e87d64"
             icon=""
         />,
     ];
@@ -53,7 +61,7 @@ function Carousel() {
     const handleMouseDown = (e) => {
         setIsDragging(true);
         setStartX(e.clientX);
-        document.body.style.userSelect = "none"; 
+        document.body.style.userSelect = "none";
     };
 
     const handleMouseMove = (e) => {
@@ -71,7 +79,7 @@ function Carousel() {
 
     const handleMouseUp = () => {
         setIsDragging(false);
-        document.body.style.userSelect = "auto"; 
+        document.body.style.userSelect = "auto";
     };
 
     const goToNext = () => {

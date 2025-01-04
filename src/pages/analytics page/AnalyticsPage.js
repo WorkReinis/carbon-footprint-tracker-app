@@ -20,6 +20,7 @@ import Footer01 from "./components/cards/regular/footer-01";
 import Header01 from "./components/cards/regular/header-01";
 
 import "./styles/AnalyticsPage.css";
+import "../../styles/animation/fade-in.css"
 
 import { MdCardTravel } from "react-icons/md";
 import { MdHistory } from "react-icons/md";

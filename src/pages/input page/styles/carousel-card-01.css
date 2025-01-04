@@ -1,0 +1,19 @@
+
+.carousel-card-container {
+    border-radius: 1em;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+  
+}
+
+.carousel-card-img {
+    width:100%;
+    aspect-ratio: 4 / 3;
+}
+
+.carousel-card-text {
+    padding: 0.5em;
+    line-height: 0.6;
+}
