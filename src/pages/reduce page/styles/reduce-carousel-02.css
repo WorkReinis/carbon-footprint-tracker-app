@@ -1,0 +1,31 @@
+/* General Swiper container styles */
+.swiper-container {
+    width: 100%;
+   max-width: 360px;
+   margin: 0;
+   padding-left: 1.5em !important;
+   padding-right: 1.5em !important;
+  }
+  
+  /* Swiper slide styles */
+  .swiper-slide {
+    height: 16em;
+    padding: 0;
+    border-radius: 1em;
+    user-select: none;
+    cursor: grabbing;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.1);
+  }
+ 
+
+  .swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+  
+
+.swiper-pagination {
+    display: none;
+}

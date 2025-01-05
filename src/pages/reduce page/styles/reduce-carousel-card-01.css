@@ -1,0 +1,38 @@
+.reduce-carousel-card-container {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.reduce-visuals-container {
+    height: 10em;
+}
+
+.reduce-carousel-card-img {
+    width: 100%; /* Ensure it takes up the full width of the container */
+    height: auto; /* Maintains the original aspect ratio */
+    position: relative;
+    left: 2em; /* Moves the image slightly to the right */
+    object-fit: contain;
+    top: 1em;
+}
+
+.reduce-carousel-card-text {
+    padding-bottom: 0.75em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+
+.reduce-carousel-card-heart {
+    background-color: white;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    color: #b97d7d;
+    transition: transform 0.2ss;
+}
+
+.reduce-carousel-card-heart:active {
+    transform: scale(1.2);
+}

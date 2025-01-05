@@ -1,0 +1,8 @@
+.reduce-header-container {
+    /* background: linear-gradient(180deg, var(--light-primary-color) 0%, var(--primary-color) 60%); */
+   padding-top: 4em;
+   padding-bottom: 2em;
+    width: 100%;
+    color: white;
+}
+

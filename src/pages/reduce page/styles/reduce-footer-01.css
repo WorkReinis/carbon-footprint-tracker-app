@@ -1,0 +1,25 @@
+.reduce-footer-container {
+    border-radius: 2em 2em 0 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 7em;
+    background: linear-gradient(180deg, var(--light-primary-color) 0%, var(--primary-color) 60%);
+    color: white
+}
+
+.reduce-footer-button {
+    border: none;
+    transition: transform 0.2s;
+    padding: 0.75em;
+    width: 75%;
+    cursor: pointer;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.reduce-footer-button:active {
+    transform: scale(0.95);
+}

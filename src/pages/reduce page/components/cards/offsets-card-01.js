@@ -21,7 +21,7 @@ function OffsetsCard01({
         <button className="offsets-card flex flex-col justify-between">
             <div className="offsets-card-img" style={imgStyle}></div>
             <div className="offsets-card-text flex flex-col justify-center items-start gap-2">
-                <span className="font-bold text-md leading-tight ">{value}</span>
+                <span className="text-left font-bold text-md leading-tight ">{value}</span>
                 <span className="text-xs">{context}</span>
             </div>
         </button>

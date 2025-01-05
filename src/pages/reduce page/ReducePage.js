@@ -1,31 +1,33 @@
 import React from "react";
+import { useEffect } from "react";
 import "./styles/ReducePage.css";
 
-
-import ReduceHeader01 from "./components/header-01";
-import ReduceFooter01 from "./components/footer-01";
-import Challenges01 from "./components/challenges-01";
-import Classes01 from "./components/classes-01";
-import Offsets01 from "./components/offsets-01";
-import Suggestions01 from "./components/suggestions-01";
+import ReduceHeader01 from "./components/containers/reduce-header-01";
+import ReduceFooter01 from "./components/containers/reduce-footer-01";
+import Challenges01 from "./components/containers/challenges-01";
+import Classes01 from "./components/containers/classes-01";
+import Offsets01 from "./components/containers/offsets-01";
+import Suggestions01 from "./components/containers/suggestions-01";
 
 function ReducePage() {
-  const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+    const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
 
-  const handleDismiss = (index) => {
-    console.log(`Item at index ${index} dismissed`);
-  };
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scrolls to the top of the page
+    }, []);
+
     return (
-        <div className="suggestions-page">
+        <div className="reduce-page">
             <ReduceHeader01 />
-            <Suggestions01 />
-
-            <Offsets01 />
-            <Challenges01 />
-            <Classes01 />
-
-            <ReduceFooter01 />
-
+            <div className="reduce-content-container">
+                <Suggestions01 />
+                <Offsets01 />
+                <Challenges01 />
+                <Classes01 />
+                <div>
+                    <ReduceFooter01 />
+                </div>
+            </div>
         </div>
     );
 }
