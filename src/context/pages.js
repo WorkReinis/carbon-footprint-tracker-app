@@ -10,10 +10,10 @@ function MyProvider({ children }) {
      const [key, setKey] = useState(1); //State update to trigger rerender of homepage
      const [navBar, setNavBar] = useState("true"); // Set navbar for React to render
      const [activeButton, setActiveButton] = useState("home"); // Set "active" button on navbar
-     
+     const [text, setText] = useState(""); // Set text for React to render
      //<MyContext.Provider> is the provider component created by createContext. It makes the context's value available to all child components.
      return (
-          <MyContext.Provider value={{ page, setPage, key, setKey, navBar, setNavBar, activeButton, setActiveButton }}>
+          <MyContext.Provider value={{ page, setPage, key, setKey, navBar, setNavBar, activeButton, setActiveButton, text, setText }}>
                {children}
           </MyContext.Provider>
      );

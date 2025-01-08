@@ -1,128 +1,136 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 import { MyContext } from "../../context/pages";
-
 import { IoMicOutline } from "react-icons/io5";
-
 import "../../styles/animation/pulse.css";
 import "./styles/InputPage.css";
-
 import InputPopup from "./InputPopup";
 
 function InputPage({ sendDataToParent }) {
-    const [isListening, setIsListening] = useState(false);
-    const [isPopupVisible, setIsPopupVisible] = useState(false);
-    const { navBar, setNavBar } = useContext(MyContext);
-    const { page, setPage } = useContext(MyContext);
-    const buttonRef = useRef(null);
-    const [isAnimating, setIsAnimating] = useState(false);
+  const { text, setText } = useContext(MyContext);
+  const [isListening, setIsListening] = useState(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const { navBar, setNavBar } = useContext(MyContext);
+  const { page, setPage } = useContext(MyContext);
+  const recognitionRef = useRef(null);
+  const [transcript, setTranscript] = useState("");
+  const [liveTranscript, setLiveTranscript] = useState("");
 
-    // const handleMouseDown = () => {
-    //     setIsAnimating(true); // Start the animation
-    // };
+  useEffect(() => {
+    const SpeechRecognition =
+      window.SpeechRecognition || window.webkitSpeechRecognition;
 
-    // const handleAnimationEnd = () => {
-    //     setIsAnimating(false); // Optionally reset animation state
-    //     setNavBar(false);
-    //     setPage("input-edit");
-    // };
+    if (!SpeechRecognition) {
+      console.warn("Speech recognition is NOT supported in this browser.");
+      return;
+    }
 
-    // const handleButtonClick = () => {
-    //     const button = buttonRef.current;
+    recognitionRef.current = new SpeechRecognition();
+    recognitionRef.current.continuous = true;
+    recognitionRef.current.interimResults = true;
+    recognitionRef.current.lang = "en-US"; // Set language
 
-    //     // Restart animation
-    //     button.classList.remove("pulsing");
-    //     void button.offsetWidth; // Trigger reflow to reset animation
-    //     button.classList.add("pulsing");
+    recognitionRef.current.onresult = (event) => {
+   
+      let finalTranscript = "";
+      let interimTranscript = "";
 
-    //     setIsListening(true);
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const result = event.results[i];
+        const alternative = result[0];
 
-    //     // Simulate end of listening (replace with real logic as needed)
-    //     setTimeout(() => {
-    //         button.classList.remove("pulsing");
-    //         setIsListening(false);
-    //         setNavBar(false);
-    //         setPage("input-edit");
-    //     }, 3000); // Matches animation duration
-    // };
+        if (alternative && alternative.transcript) {
+          if (result.isFinal) {
+            finalTranscript += alternative.transcript + " ";
+          } else {
+            interimTranscript += alternative.transcript;
+          }
+        }
+      }
 
-    // useEffect(() => {
-    //     const button = document.querySelector(".speech-input-btn");
+      console.log("Interim:", interimTranscript);
+      console.log("Final:", finalTranscript);
 
-    //     // Function to add the 'pulsing' class on mouse click
-    //     const handleMouseDown = () => {
-    //         button.classList.add("pulsing");
-    //         setIsListening(true);
-    //     };
+      setLiveTranscript(interimTranscript);
+      setTranscript((prev) => prev + finalTranscript);
+    };
 
-    //     const handleMouseUp = () => {
-    //         // Keep the pulsing animation going
-    //         setTimeout(() => button.classList.remove("pulsing"), 3000); // Optional delay for persistent effect
-    //     };
+    recognitionRef.current.onerror = (event) => {
+      console.error("Speech recognition error:", event.error);
+    };
 
-    //     // Function to remove the 'pulsing' class when animation ends
-    //     const handleAnimationEnd = () => {
-    //         setIsListening(false);
-    //         // setIsPopupVisible(true);
-    //         setNavBar(false);
-    //         setPage("input-edit");
-    //     };
+    recognitionRef.current.onend = () => {
+      console.warn("Speech recognition stopped.");
+      if (isListening) {
+        recognitionRef.current.start(); // Restart if still listening
+      }
+    };
 
-    //     // Add event listeners
-    //     button.addEventListener("mousedown", handleMouseDown);
-    //     button.addEventListener("mouseup", handleMouseUp);
-    //     button.addEventListener("animationend", handleAnimationEnd);
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.stop();
+        recognitionRef.current.onresult = null;
+        recognitionRef.current.onerror = null;
+        recognitionRef.current.onend = null;
+      }
+    };
+  }, []);
 
-    //     // Cleanup function to remove event listeners when component unmounts
-    //     return () => {
-    //         button.removeEventListener("mousedown", handleMouseDown);
-    //         button.removeEventListener("mouseup", handleMouseUp);
-    //         button.removeEventListener("animationend", handleAnimationEnd);
-    //     };
-    // }, []); // Empty dependency array ensures it runs only on mount and unmount
+  const startListening = () => {
+    if (!recognitionRef.current) {
+      console.warn("Speech recognition is not initialized.");
+      return;
+    }
+    recognitionRef.current.start();
+    setIsListening(true);
+  };
 
-    // const closePopup = (boolean) => {
-    //     setIsPopupVisible(boolean);
-    // };
+  const stopListening = () => {
+    if (!recognitionRef.current) {
+      console.warn("Speech recognition is not initialized.");
+      return;
+    }
+    recognitionRef.current.stop();
+    setIsListening(false);
+    setText(transcript);
+    setNavBar(false);
+    setPage("input-edit");
+  };
 
-    const handleClick = () => {
-           setNavBar(false);
-            setPage("input-edit");
-    } 
+
+  return (
+    <div className="input-container flex flex-col justify-center align-center gap-10 fade-in-1">
+      <div className="greetings-text flex justify-center items-center">
+        <h3 className="font-bold text-lg">Please tell me what you did today</h3>
+      </div>
+
+      <div className="button-container flex justify-center items-center">
+        <button className="speech-input-btn" onClick={startListening}>
+          <IoMicOutline className="mic-icon" />
+        </button>
+      </div>
+
+      <div className="loading-response">
+        {isListening ? (
+          <>
+            <h3 className="font-bold">Listening...</h3>
+            <span>Make sure your device can hear you</span>
+          </>
+        ) : (
+          <h3 className="font-bold">Tap to Record</h3>
+        )}
+      </div>
+
+      <button
+        className="bg-red-500 m-3 rounded-full px-4 py-2 font-bold text-white"
+        onClick={stopListening}
+      >
+        Stop recording
+      </button>
 
 
-    return (
-        <div className="input-container flex flex-col justify-center align - center gap-10 fade-in-1">
-            <div className="greetings-text flex justify-center items-center">
-                <h3 className="font-bold text-lg">
-                    Please tell me what did you do today
-                </h3>
-            </div>
-
-            <div className="button-container flex justify-center items-center">
-            <button
-                    className={`speech-input-btn `}   //{isAnimating ? "pulsing" : ""}
-                    // onMouseDown={handleMouseDown}
-                    // onAnimationEnd={handleAnimationEnd}
-                    onClick={handleClick}
-                >
-                    <IoMicOutline className="mic-icon" />
-                </button>
-            </div>
-
-             <div className="loading-response">
-                {isListening ? (
-                    <>
-                        <h3 class="font-bold">Listening</h3>
-                        <span>Make sure your device can hear you</span>
-                    </>
-                ) : (
-                    <h3 class="font-bold">Tap to Record</h3>
-                )}
-            </div> 
-
-             {/* {isPopupVisible && <InputPopup sendCloseButton={closePopup} />}  */}
-        </div>
-    );
+      {/* {isPopupVisible && <InputPopup sendCloseButton={closePopup} />} */}
+    </div>
+  );
 }
 
 export default InputPage;
