@@ -14,14 +14,8 @@ import QuillEditor from "./components/quill-editor-01";
 function InputEditPage() {
     const { navBar, setNavBar } = useContext(MyContext);
     const { page, setPage } = useContext(MyContext);
-    const [text, setText] =
-        useState(`I drove my car for 30 km, used 5 kWh of electricity.
-           
-I took a flight from New York to Los Angeles.
-
-I also used public transportation for a few short trips around the city.
-
-Oh and I also had a nice stake yesterday.`);
+    const {text, setText} =
+       useContext(MyContext);
 
     const handleConfirm = () => {
         setPage("input-confirm");
