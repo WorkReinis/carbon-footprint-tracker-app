@@ -31,7 +31,7 @@ function ReduceCarouselCard01({
                     {isLiked ? <FaHeart /> : <FaRegHeart />}{" "}
                     {/* Conditional rendering of heart icon */}
                 </button>
-                <img className="reduce-carousel-card-img" src={img}></img>
+                <img className="reduce-carousel-card-img" src={img} fetchPriority="high"></img>
             </div>
 
             <div className="reduce-carousel-card-text flex flex-col justify-center align-center">

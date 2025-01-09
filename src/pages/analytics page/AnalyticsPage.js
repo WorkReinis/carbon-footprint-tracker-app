@@ -36,18 +36,18 @@ import { PiRanking } from "react-icons/pi";
 function AnalyticsPage() {
     return (
         <>
-            <div className="analytics-page">
+            <div className="analytics-page fade-in-1">
                 <Header01
                     user="Hailey"
-                    fade="fade-in-1"
+                    fade=""
                     title="Your Carbon Footprint"
                     units=""
                     context=""
                 />
 
-                <div className="cards-container">
+                <div className="cards-container fade-in-2">
                     <SmallCard01
-                        fade="fade-in-2"
+                        fade=""
                         title="History"
                         value="4.000"
                         units="kg CO₂"
@@ -62,7 +62,7 @@ function AnalyticsPage() {
                     />
 
                     <SmallCard01
-                        fade="fade-in-2"
+                        fade=""
                         title="Travel"
                         value="2.400"
                         units="kg CO₂"
@@ -77,7 +77,7 @@ function AnalyticsPage() {
                     />
 
                     <RegularCard01
-                        fade="fade-in-3"
+                        fade=""
                         title="Impact Trend"
                         units=""
                         context="kg CO₂"

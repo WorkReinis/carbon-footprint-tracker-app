@@ -17,9 +17,9 @@ function ReducePage() {
     }, []);
 
     return (
-        <div className="reduce-page">
+        <div className="reduce-page fade-in-1">
             <ReduceHeader01 />
-            <div className="reduce-content-container">
+            <div className="reduce-content-container fade-in-2">
                 <Suggestions01 />
                 <Offsets01 />
                 <Challenges01 />
