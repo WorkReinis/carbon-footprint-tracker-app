@@ -10,7 +10,14 @@ import "../../styles/suggestions-01.css";
 
 
 function Suggestions01() {
-    
+    const avatarMap = [
+        "/images/train-03.png",
+        "/images/meat-01.png",
+        "/images/meal-01.png",
+        "/images/bike-03.png",
+        "/images/shop-03.png",
+
+    ];
     return (
         <div className="suggestions-container flex flex-col gap-4">
             <div className='flex flex-row justify-between items-baseline'>
@@ -19,22 +26,23 @@ function Suggestions01() {
             </div>
             <div className="flex flex-col gap-2">
                 <SuggestionsCard01
-                    title="Travel by train instead of flying with a plane"
-                    description=""
+                    title="Travel by train"
+                    description="Support public transport"
                     value="50"
                     units="kg"
-                    context="per 100km"
+                    context="/ 100km"
                     icon={
                         <IoTrainOutline
                             size={26}
                             style={{ color: "var(--primary-color)" }}
                         />
                     }
+                    img={avatarMap[0]}
                 />
 
                 <SuggestionsCard01
-                    title="Switch out meat and cut emissions by up to 73%"
-                    description=""
+                    title="Switch out meat"
+                    description="Cut emissions up to 73%"
                     value="3"
                     units="kg"
                     context="a day"
@@ -44,11 +52,12 @@ function Suggestions01() {
                             style={{ color: "var(--primary-color)" }}
                         />
                     }
+                    img={avatarMap[1]}
                 />
 
                 <SuggestionsCard01
-                    title="Plan your meals carefully to avoid wasting food"
-                    description=""
+                    title="Plan your meals"
+                    description="Avoid food waste"
                     value="2"
                     units="kg"
                     context="per meal"
@@ -58,11 +67,12 @@ function Suggestions01() {
                             style={{ color: "var(--primary-color)" }}
                         />
                     }
+                    img={avatarMap[2]}
                 />
 
                 <SuggestionsCard01
-                    title="Use bike for trips under 5km to boost your fitness"
-                    description=""
+                    title="Switch to bicycle"
+                    description="For trips under 5 km"
                     value="1"
                     units="kg"
                     context="per trip"
@@ -72,11 +82,12 @@ function Suggestions01() {
                             style={{ color: "var(--primary-color)" }}
                         />
                     }
+                    img={avatarMap[3]}
                 />
 
                 <SuggestionsCard01
-                    title="Shop local to cut emissions from transport and storage"
-                    description=""
+                    title="Shop locally"
+                    description="Cut transport emissions"
                     value="1"
                     units="kg"
                     context="per meal"
@@ -86,6 +97,7 @@ function Suggestions01() {
                             style={{ color: "var(--primary-color)" }}
                         />
                     }
+                    img={avatarMap[4]}
                 />
 
                 {/* <SuggestionsCard01

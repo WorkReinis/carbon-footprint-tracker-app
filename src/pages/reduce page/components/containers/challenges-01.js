@@ -1,6 +1,6 @@
 import ChallengesCard01 from "../cards/challenges-card-01";
 
-import Slider01 from "../slider-01";
+import Slider01 from "./slider-01";
 
 import "../../styles/challenges-01.css";
 

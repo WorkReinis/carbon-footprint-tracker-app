@@ -7,25 +7,27 @@ function SuggestionsCard01({
     units,
     context,
     icon,
+    img
 }) {
     return (
-        <div className="swipe-card suggestions-card-container flex flex-row gap-3 items-start">
+        <div className="suggestions-card-container flex flex-row gap-3 items-start">
             <div className="suggestions-image-placeholder flex justify-center items-center">
-                {icon}
+                {/* {icon} */}
+                <img src={img} className="suggestions-image"></img>
             </div>
-
-            <div className="flex flex-row justify-between">
+            
+            <div className="suggestions-card-text flex flex-row justify-between items-center w-full">
                 <div className="flex flex-col ">
-                    <span className="text-sm ">{title}</span>
-                    <span className="text-sm">{description}</span>
+                    <span className="text-md font-bold">{title}</span>
+                    <span className="text-sm" style={{ color: "var(--darkish-gray)" }}>{description}</span>
                 </div>
 
-                <div className="flex flex-col items-end suggestions-value">
+                <div className="flex flex-col items-end suggestions-value align-center pr-1 pb-0.5 pt-0.5">
                     <div className="flex flex-row items-end gap-1">
-                        <span className="font-bold text-sm">{value}</span>
-                        <span className="font-bold text-sm ">{units}</span>
+                        <span className="font-bold text-md">{value}</span>
+                        <span className="font-bold text-md ">{units}</span>
                     </div>
-                    <span className=" text-xs whitespace-nowrap">
+                    <span className=" text-sm whitespace-nowrap" style={{ color: "var(--darkish-gray)" }}>
                         {context}
                     </span>
                 </div>

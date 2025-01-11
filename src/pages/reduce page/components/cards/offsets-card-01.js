@@ -20,9 +20,9 @@ function OffsetsCard01({
     return (
         <button className="offsets-card flex flex-col justify-between">
             <div className="offsets-card-img" style={imgStyle}></div>
-            <div className="offsets-card-text flex flex-col justify-center items-start gap-2">
+            <div className="offsets-card-text flex flex-col justify-center items-start gap-1">
                 <span className="text-left font-bold text-md leading-tight ">{value}</span>
-                <span className="text-xs">{context}</span>
+                <span className="text-xs" style={{ color: 'var(--darkish-gray)' }}>{context}</span>
             </div>
         </button>
     );

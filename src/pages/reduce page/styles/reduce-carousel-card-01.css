@@ -1,38 +1,51 @@
-.reduce-carousel-card-container {
+.reduce-carousel-card-container-01 {
     padding: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background: linear-gradient(
+        180deg,
+        var(--secondary-color) 30%,
+        var(--dark-secondary-color) 70%
+    );
+    border-radius: 1em !important;
+    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.1);
+    user-select: none;
+    cursor: grabbing;
+    color: black;
+    padding: 0;
 }
-.reduce-visuals-container {
-    height: 10em;
+.reduce-visuals-container-01 {
+    height: auto;
+    padding-bottom: 0.5em;
 }
 
-.reduce-carousel-card-img {
-    width: 100%; /* Ensure it takes up the full width of the container */
-    height: auto; /* Maintains the original aspect ratio */
+.reduce-carousel-card-img-01 {
+    width: 100%;
+    height: auto; /* Preserves the aspect ratio */
     position: relative;
     left: 2em; /* Moves the image slightly to the right */
+    top: 1em; /* Moves the image slightly to down */
     object-fit: contain;
-    top: 1em;
+
 }
 
-.reduce-carousel-card-text {
+.reduce-carousel-card-text-01 {
     padding-bottom: 0.75em;
     padding-left: 0.75em;
     padding-right: 0.75em;
 }
 
-.reduce-carousel-card-heart {
+.reduce-carousel-card-heart-01 {
     background-color: white;
     border-radius: 50%;
     width: 2em;
     height: 2em;
     padding: 0.5em;
     color: #b97d7d;
-    transition: transform 0.2ss;
+    transition: transform 0.2s;
 }
 
-.reduce-carousel-card-heart:active {
+.reduce-carousel-card-heart-01:active {
     transform: scale(1.2);
 }
