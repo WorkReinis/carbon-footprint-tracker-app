@@ -6,7 +6,7 @@ function Offsets01() {
     return (
         <div className="offsets-container flex flex-col gap-4">
             <div className='flex flex-row justify-between items-baseline'>
-                <span className="font-bold text-lg">Offset Incentives</span>
+                <span className="font-bold text-xl">Offset Incentives</span>
                 <button className="offsets-button font-bold text-sm">See More</button>
             </div>
 

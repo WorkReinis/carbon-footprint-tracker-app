@@ -23,3 +23,25 @@
 .reduce-footer-button:active {
     transform: scale(0.95);
 }
+
+
+
+.reduce-footer-button-02 {
+
+    transition: transform 0.2s;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+   
+    cursor: pointer;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.reduce-footer-button-02:active {
+    transform: scale(0.95);
+}
+

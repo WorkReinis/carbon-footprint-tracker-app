@@ -13,7 +13,7 @@ function SuggestionsCard01({
         <div className="suggestions-card-container flex flex-row gap-3 items-start">
             <div className="suggestions-image-placeholder flex justify-center items-center">
                 {/* {icon} */}
-                <img src={img} className="suggestions-image"></img>
+                <img src={img} className="suggestions-image-placeholder"></img>
             </div>
             
             <div className="suggestions-card-text flex flex-row justify-between items-center w-full">

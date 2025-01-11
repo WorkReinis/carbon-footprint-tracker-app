@@ -20,7 +20,7 @@ import Footer01 from "./components/cards/regular/footer-01";
 import Header01 from "./components/cards/regular/header-01";
 
 import "./styles/AnalyticsPage.css";
-import "../../styles/animation/fade-in.css"
+import "../../styles/animation/fade-in.css";
 
 import { MdCardTravel } from "react-icons/md";
 import { MdHistory } from "react-icons/md";
@@ -46,35 +46,37 @@ function AnalyticsPage() {
                 />
 
                 <div className="cards-container fade-in-2">
-                    <SmallCard01
-                        fade=""
-                        title="History"
-                        value="4.000"
-                        units="kg CO₂"
-                        context="last entry"
-                        graph={<SmallBarChart01 />}
-                        icon={
-                            <MdHistory
-                                size={28}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    />
+                    <div className="small-cards-container">
+                        <SmallCard01
+                            fade=""
+                            title="History"
+                            value="4.000"
+                            units="kg CO₂"
+                            context="last entry"
+                            graph={<SmallBarChart01 />}
+                            icon={
+                                <MdHistory
+                                    size={28}
+                                    style={{ color: "var(--normal-gray)" }}
+                                />
+                            }
+                        />
 
-                    <SmallCard01
-                        fade=""
-                        title="Travel"
-                        value="2.400"
-                        units="kg CO₂"
-                        context="this week"
-                        graph={<SmallComposedChart01 />}
-                        icon={
-                            <MdCardTravel
-                                size={24}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    />
+                        <SmallCard01
+                            fade=""
+                            title="Travel"
+                            value="2.400"
+                            units="kg CO₂"
+                            context="this week"
+                            graph={<SmallComposedChart01 />}
+                            icon={
+                                <MdCardTravel
+                                    size={24}
+                                    style={{ color: "var(--normal-gray)" }}
+                                />
+                            }
+                        />
+                    </div>
 
                     <RegularCard01
                         fade=""
@@ -102,34 +104,35 @@ function AnalyticsPage() {
                             />
                         }
                     />
+                    <div className="small-cards-container">
+                        <SmallCard01
+                            title="Compare"
+                            value="2.400"
+                            units="kg CO₂"
+                            context="this week"
+                            graph={<SmallPieChart01 />}
+                            icon={
+                                <MdCardTravel
+                                    size={24}
+                                    style={{ color: "var(--normal-gray)" }}
+                                />
+                            }
+                        />
 
-                    <SmallCard01
-                        title="Compare"
-                        value="2.400"
-                        units="kg CO₂"
-                        context="this week"
-                        graph={<SmallPieChart01 />}
-                        icon={
-                            <MdCardTravel
-                                size={24}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    />
-
-                    <SmallCard01
-                        title="Travel"
-                        value="2.400"
-                        units="kg CO₂"
-                        context="this week"
-                        graph={<SmallAreaChart01 />}
-                        icon={
-                            <MdCardTravel
-                                size={24}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    />
+                        <SmallCard01
+                            title="Travel"
+                            value="2.400"
+                            units="kg CO₂"
+                            context="this week"
+                            graph={<SmallAreaChart01 />}
+                            icon={
+                                <MdCardTravel
+                                    size={24}
+                                    style={{ color: "var(--normal-gray)" }}
+                                />
+                            }
+                        />
+                    </div>
 
                     {/* <RegularCard01
                         fade="fade-in-1"
@@ -207,9 +210,8 @@ function AnalyticsPage() {
                             />
                         }
                     />
+                    <Footer01 />
                 </div>
-
-                <Footer01 />
             </div>
         </>
     );

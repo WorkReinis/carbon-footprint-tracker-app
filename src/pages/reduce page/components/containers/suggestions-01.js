@@ -8,7 +8,6 @@ import { IoBicycleOutline } from "react-icons/io5";
 
 import "../../styles/suggestions-01.css";
 
-
 function Suggestions01() {
     const avatarMap = [
         "/images/train-03.png",
@@ -16,29 +15,31 @@ function Suggestions01() {
         "/images/meal-01.png",
         "/images/bike-03.png",
         "/images/shop-03.png",
-
     ];
     return (
         <div className="suggestions-container flex flex-col gap-4">
-            <div className='flex flex-row justify-between items-baseline'>
-                <span className="font-bold text-lg">Personal Suggestions</span>
-                <button className="suggestions-button font-bold text-sm">See More</button>
+            <div className="flex flex-row justify-between items-baseline">
+                <span className="font-bold text-xl">Personal Suggestions</span>
+                <button className="suggestions-button font-bold text-sm">
+                    See More
+                </button>
             </div>
             <div className="flex flex-col gap-2">
                 <SuggestionsCard01
-                    title="Travel by train"
-                    description="Support public transport"
-                    value="50"
+                    title="Switch to bicycle"
+                    description="For trips under 5 km"
+                    value="1"
                     units="kg"
-                    context="/ 100km"
+                    context="per trip"
                     icon={
-                        <IoTrainOutline
-                            size={26}
+                        <IoBicycleOutline
+                            size={28}
                             style={{ color: "var(--primary-color)" }}
                         />
                     }
-                    img={avatarMap[0]}
+                    img={avatarMap[3]}
                 />
+                
 
                 <SuggestionsCard01
                     title="Switch out meat"
@@ -55,6 +56,20 @@ function Suggestions01() {
                     img={avatarMap[1]}
                 />
 
+<SuggestionsCard01
+                    title="Travel by train"
+                    description="Support public transport"
+                    value="50"
+                    units="kg"
+                    context="/ 100km"
+                    icon={
+                        <IoTrainOutline
+                            size={26}
+                            style={{ color: "var(--primary-color)" }}
+                        />
+                    }
+                    img={avatarMap[0]}
+                />
                 <SuggestionsCard01
                     title="Plan your meals"
                     description="Avoid food waste"
@@ -68,21 +83,6 @@ function Suggestions01() {
                         />
                     }
                     img={avatarMap[2]}
-                />
-
-                <SuggestionsCard01
-                    title="Switch to bicycle"
-                    description="For trips under 5 km"
-                    value="1"
-                    units="kg"
-                    context="per trip"
-                    icon={
-                        <IoBicycleOutline
-                            size={28}
-                            style={{ color: "var(--primary-color)" }}
-                        />
-                    }
-                    img={avatarMap[3]}
                 />
 
                 <SuggestionsCard01

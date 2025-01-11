@@ -60,6 +60,7 @@ function BarChart02() {
                             offset={5}
                             style={{ fontSize: "0.8em" }}
                         />
+                        
                     </Bar>
                 </BarChart>
             </ResponsiveContainer>

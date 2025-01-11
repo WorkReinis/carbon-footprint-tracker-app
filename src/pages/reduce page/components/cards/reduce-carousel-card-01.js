@@ -26,17 +26,22 @@ function ReduceCarouselCard01({
             <div className="reduce-visuals-container-01">
                 <button
                     className="reduce-carousel-card-heart-01 flex justify-center items-center absolute top-3 left-3"
-                    onClick={handleClick} 
+                    onClick={handleClick}
                 >
                     {isLiked ? <FaHeart /> : <FaRegHeart />}{" "}
                     {/* Conditional rendering of heart icon */}
                 </button>
-                <img className="reduce-carousel-card-img-01" src={img} fetchPriority="high"></img>
+                <img
+                    className="reduce-carousel-card-img-01"
+                    src={img}
+                    fetchPriority="high"
+                ></img>
             </div>
 
             <div className="reduce-carousel-card-text-01 flex flex-col justify-center align-center">
-                <div className="flex flex-col justify-center pb-2">
-                    <span className=" text-sm">{category}</span>
+                <div className="flex flex-col justify-center pb-2 pt-2">
+                    <span className="text-sm">{category}</span>
+
                     <span className="text-xl leading-tight font-bold">
                         {title}
                     </span>

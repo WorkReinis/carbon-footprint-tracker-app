@@ -3,14 +3,15 @@ import { IoMdAdd } from "react-icons/io";
 
 function Footer01() {
     return (
-        <div className="footer-container flex flex-row justify-between items-center gap-8 mt-4">
-            <div className="flex flex-row justify-between items-center">
-                <h1 className="text-md leading-tight">
-                    Share your board with your friends!
+        <div className="footer-container flex flex-row justify-between items-center gap-3 mt-4">
+            <div className="flex flex-col justify-between items-start gap-1 pt-4">
+                <h1 className="text-lg font-bold leading-tight">
+                    Your dashboard looks great!
                 </h1>
+                <h1 className="text-md leading-tight">Share it with friends</h1>
             </div>
 
-            <div className="flex flex-row gap-3 items-start">
+            <div className="flex flex-row gap-1 items-start pt-4">
                 <div className="flex flex-col justify-center items-center gap-1">
                     <div className="circle-avatar rounded-full overflow-hidden">
                         <img

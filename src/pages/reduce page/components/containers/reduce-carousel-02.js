@@ -11,6 +11,9 @@ import ReduceCarouselCard02 from "../cards/reduce-carousel-card-02";
 
 import { FaRegHeart } from "react-icons/fa";
 import { FiSmile } from "react-icons/fi";
+import { FaStar } from "react-icons/fa6";
+import { FaStarHalfAlt } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
 
 const ReduceCarousel02 = () => {
     const imageMap = [
@@ -25,7 +28,7 @@ const ReduceCarousel02 = () => {
         <Swiper
             className="swiper-container"
             spaceBetween={10}
-            slidesPerView={1.3}
+            slidesPerView={1.4}
             navigation={false} // Enable navigation
             loop={false} // Enable infinite loop
             modules={[Navigation, Pagination]} // Use modules as a prop
@@ -36,9 +39,20 @@ const ReduceCarousel02 = () => {
                     img={imageMap[0]}
                     category=""
                     title="Carbon Trading in the Global Economy"
-                    time="1h 30min"
-                    difficulty="Economy"
+                    time="3h 30min"
+                    difficulty="27k students"
                     emoticon={<FiSmile size={12} />}
+                    rating='4,7'
+                    raters='(238)'
+                    stars={
+                        <>
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStarHalfAlt size={13} style={{ fill: "#AE6B1C" }} />
+                        </>
+                      }
                 />
             </SwiperSlide>
             <SwiperSlide>
@@ -48,8 +62,19 @@ const ReduceCarousel02 = () => {
                     category=""
                     title="Tree-Based Solutions for Carbon Storage"
                     time="2h 15min"
-                    difficulty="Environment"
+                    difficulty="17k students"
                     emoticon={<FiSmile size={12} />}
+                    rating='4,5'
+                    raters='(195)'
+                    stars={
+                        <>
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStarHalfAlt size={13} style={{ fill: "#AE6B1C" }} />
+                        </>
+                      }
                 />
             </SwiperSlide>
             <SwiperSlide>
@@ -59,8 +84,19 @@ const ReduceCarousel02 = () => {
                     category=""
                     title="The Future of EVs in a Sustainable World"
                     time="1h 15min"
-                    difficulty="Transportation"
+                    difficulty="21k students"
                     emoticon={<FiSmile size={12} />}
+                    rating='4,0'
+                    raters='(151)'
+                    stars={
+                        <>
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaRegStar size={13} style={{ fill: "#AE6B1C" }} />
+                        </>
+                      }
                 />
             </SwiperSlide>
 
@@ -69,10 +105,21 @@ const ReduceCarousel02 = () => {
                     icon={<FaRegHeart size={20} />}
                     img={imageMap[3]}
                     category=""
-                    title="Understanding How Carbon Offsetting Works"
+                    title="How Carbon Offsetting Works"
                     time="1h 45min"
-                    difficulty="Management"
+                    difficulty="5,1k students"
                     emoticon={<FiSmile size={12} />}
+                    rating='4,1'
+                    raters='(123)'
+                    stars={
+                        <>
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaRegStar size={13} style={{ fill: "#AE6B1C" }} />
+                        </>
+                      }
                 />
             </SwiperSlide>
             <SwiperSlide>
@@ -82,8 +129,19 @@ const ReduceCarousel02 = () => {
                     category=""
                     title="The Impact of Meat-Based Diets"
                     time="2h 15min"
-                    difficulty="Food Systems"
+                    difficulty="2,7k students"
                     emoticon={<FiSmile size={12} />}
+                    rating='3,9'
+                    raters='(57)'
+                    stars={
+                        <>
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStar size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaStarHalfAlt size={13} style={{ fill: "#AE6B1C" }} />
+                          <FaRegStar size={13} style={{ fill: "#AE6B1C" }} />
+                        </>
+                      }
                 />
             </SwiperSlide>
         </Swiper>

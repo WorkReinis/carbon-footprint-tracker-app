@@ -2,11 +2,11 @@
     border-radius: 2em 2em 0 0;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 7em;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(180deg,var(--primary-color) 20%, var(--dark-primary-color) 100%);
+    background: linear-gradient(180deg, var(--light-primary-color) 0%, var(--primary-color) 60%);
     margin: 0;
     color: white;
     border-radius: 2em 2em 0 0;

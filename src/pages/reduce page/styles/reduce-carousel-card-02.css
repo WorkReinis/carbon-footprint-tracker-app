@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%; /* Ensures the image fills the container's height */
     object-fit: cover;
-    border-radius: 1em !important;
+    border-radius: 0.75em !important;
 }
 
 .reduce-carousel-card-text-02 {
@@ -38,11 +38,13 @@
 
 .reduce-carousel-card-container-02:active {
     transform: scale(0.95);
+    
 }
 
 .reduce-carousel-card-text-category-02 {
-  
-    border: 1px solid var(--darkish-gray);
+    /* background-color: var(--normal-gray);
+    color: white;
+    border: 1px solid var(--normal-gray);
     border-radius: 50em;
-    padding: 0.25em 0.75em; 
+    padding: 0.25em 0.75em;  */
 }

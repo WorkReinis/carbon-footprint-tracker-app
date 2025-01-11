@@ -4,6 +4,10 @@ import { IoMdTime } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaPlayCircle } from "react-icons/fa";
+import { GrView } from "react-icons/gr";
+import { PiStudent } from "react-icons/pi";
+import { PiStudentBold } from "react-icons/pi";
+
 
 function ReduceCarouselCard02({
     icon,
@@ -13,6 +17,9 @@ function ReduceCarouselCard02({
     time,
     difficulty,
     emoticon,
+    rating,
+    raters,
+    stars
 }) {
     const [isLiked, setIsLiked] = useState(false);
 
@@ -36,17 +43,25 @@ function ReduceCarouselCard02({
                         {title}
                     </span>
                 </div>
+                <div className='flex flex-row items-center gap-1'>
+                    <span className='text-sm font-bold' >{rating}</span>
+                    <div className='flex flex-row'>
+                        {stars}
+                    </div>
+                    <span className='text-sm' style={{ color: "var(--darkish-gray)" }}>{raters}</span>
+                </div>
                 <div
                     className="flex flex-row justify-between"
                     style={{ color: "var(--darkish-gray)" }}
                 >
-                    <div className="flex flex-row justify-between items-center gap-1">
-                        <div className="reduce-carousel-card-text-category-02 text-xs">
+                    <div className="flex flex-row justify-between items-center gap-1"  style={{ color: "var(--darkish-gray)" }}>
+                        <PiStudentBold size={13} />
+                        <div className="reduce-carousel-card-text-category-02 text-sm">
                             {difficulty}
                         </div>
                     </div>
                     <div className="flex flex-row justify-between items-center gap-1">
-                        <IoMdTime size={12} />
+                        <IoMdTime size={13} />
                         <div className=" text-sm">{time}</div>
                     </div>
                 </div>

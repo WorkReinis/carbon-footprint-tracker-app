@@ -6,10 +6,11 @@ function Classes01() {
         <div className="reduce-classes-container flex justify-between items-center">
             <div>
                 <div className="flex flex-row justify-between items-baseline pl-6 pb-4">
-                    <span className="font-bold text-lg">Climate Classes</span>
+                    <span className="font-bold text-xl">Climate Classes</span>
                     {/* <button className="offsets-button font-bold text-sm">
                     See More
                 </button> */}
+                
                 </div>
 
                 <ReduceCarousel02 />

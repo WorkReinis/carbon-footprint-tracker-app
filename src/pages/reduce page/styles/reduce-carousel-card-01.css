@@ -27,7 +27,6 @@
     left: 2em; /* Moves the image slightly to the right */
     top: 1em; /* Moves the image slightly to down */
     object-fit: contain;
-
 }
 
 .reduce-carousel-card-text-01 {
@@ -49,3 +48,5 @@
 .reduce-carousel-card-heart-01:active {
     transform: scale(1.2);
 }
+
+
