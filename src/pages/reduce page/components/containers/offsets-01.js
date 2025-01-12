@@ -14,7 +14,7 @@ function Offsets01() {
             <div className="flex flex-row justify-between items-baseline">
                 <span className="font-bold text-xl">Offset Incentives</span>
                 <button className="offsets-button font-bold text-sm">
-                    See More
+                    See More (7)
                 </button>
             </div>
 

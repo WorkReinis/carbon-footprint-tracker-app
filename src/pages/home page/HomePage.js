@@ -7,6 +7,8 @@ import React, { useState } from "react";
 import { LuTreeDeciduous } from "react-icons/lu";
 import { CiCloudOn } from "react-icons/ci";
 
+import HomeCarousel01 from './components/containers/home-carousel-01'
+
 function HomePage({ avatarNumber }) {
     const avatarMap = [
         "/images/avatar-a.png",
@@ -99,6 +101,10 @@ function HomePage({ avatarNumber }) {
                             <span className="text-xs">To offset footprint</span>
                         </div>
                     </div>
+
+
+                                <HomeCarousel01 />
+
                 </div>
 
                 <div className="activities-container fade-in-2">

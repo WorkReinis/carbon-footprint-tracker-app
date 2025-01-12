@@ -5,7 +5,7 @@ function ReduceFooter01() {
         <div className="reduce-footer-container ">
             <div className="flex flex-col justify-center text-start items-center">
                 <h1 className="font-bold text-xl pb-2">
-                    You're carbon neutral!
+                    You are carbon neutral!
                 </h1>
                 <div className="flex flex-row gap-3 justify-center items-center">
                     <h1 className=" text-md leading-tight">

@@ -41,7 +41,7 @@ function PieChart01() {
                         cy="50%"
                         innerRadius={40}
                         outerRadius={60}
-                        fill="black"
+                       
                         paddingAngle={5}
                         labelLine={false}
                         label={true}
@@ -50,7 +50,7 @@ function PieChart01() {
                             <Cell
                                 key={`cell-${index}`}
                                 fill={COLORS[index]}
-                                fontSize="0.75em"
+                                fontSize="0.85em"
                             />
                         ))}
                     </Pie>

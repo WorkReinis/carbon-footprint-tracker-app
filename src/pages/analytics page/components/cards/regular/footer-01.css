@@ -3,7 +3,7 @@
     padding-left: 1.5em;
     padding-right: 1.5em;
     padding-top: 2em;
-    padding-bottom: 7em;
+    padding-bottom: 6em;
     width: 100%;
     background: linear-gradient(180deg, var(--light-primary-color) 0%, var(--primary-color) 60%);
 
@@ -13,14 +13,14 @@
 }
 
 .circle-avatar {
-    width: 3em;
-    height: 3em;
-    border: 0.25em solid white;
+    width: 4em;
+    height: 4em;
+    border: 0.20em solid white;
 }
 
 .circle-add {
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     background-color: white;
 }
 

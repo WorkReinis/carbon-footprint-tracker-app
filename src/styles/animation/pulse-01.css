@@ -1,0 +1,38 @@
+
+@keyframes pulse-01 {
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+ .background-pulse:before {
+    animation: pulse-01 1.2s ease-out 0.3s infinite;
+}
+
+.background-pulse:after {
+    animation: pulse-01 1.2s ease-out 0.6s infinite; 
+} 
+
+.background-pulse {
+    position: relative; 
+    transition: transform 0.3s ease;
+    
+}
+
+
+
+.background-pulse:before,
+.background-pulse:after {
+    content: "";
+    position: absolute;
+    transform: scale(1);
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.7;
+    pointer-events: none; 
+}
+

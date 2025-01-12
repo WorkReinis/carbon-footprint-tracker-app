@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import "../../styles/reduce-carousel-01.css";
+import "../../styles/reduce-carousel-01.css"; 
 
 import ReduceCarouselCard02 from "../cards/reduce-carousel-card-02";
 

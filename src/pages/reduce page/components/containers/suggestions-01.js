@@ -19,9 +19,9 @@ function Suggestions01() {
     return (
         <div className="suggestions-container flex flex-col gap-4">
             <div className="flex flex-row justify-between items-baseline">
-                <span className="font-bold text-xl">Personal Suggestions</span>
+                <span className="font-bold text-xl">Suggestions</span>
                 <button className="suggestions-button font-bold text-sm">
-                    See More
+                    See More (11)
                 </button>
             </div>
             <div className="flex flex-col gap-2">
