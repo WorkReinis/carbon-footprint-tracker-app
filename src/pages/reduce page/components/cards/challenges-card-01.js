@@ -1,4 +1,6 @@
 import "../../styles/challenges-card-01.css";
+import "../../../../styles/animation/scale-on-interaction.css";
+
 import ReduceBarChart01 from "../graphs/reduce-bar-chart-01";
 
 function ChallengesCard01({
@@ -20,7 +22,7 @@ function ChallengesCard01({
     };
     return (
         <div
-            className="challenges-card-container flex flex-col gap-4 items-start justify-start "
+            className="challenges-card-container flex flex-col gap-4 items-start justify-start hover-scale active-scale"
             style={containerStyle}
         >
             <div className="w-[65%] flex flex-col gap-1 pt-1">

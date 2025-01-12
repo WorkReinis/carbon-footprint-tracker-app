@@ -1,9 +1,13 @@
 .reduce-page {
-  background: linear-gradient(180deg, var(--light-primary-color) 0%, var(--primary-color) 30%);
+    background: linear-gradient(
+        180deg,
+        var(--light-primary-color) 0%,
+        var(--primary-color) 30%
+    );
 }
 
 .reduce-content-container {
-  border-radius: 1.5em;
-  background-color: var(--lightest-gray);
-  gap: 1.5em;
+    border-radius: 1.5em;
+    background-color: var(--lightest-gray);
+    gap: 1.5em;
 }

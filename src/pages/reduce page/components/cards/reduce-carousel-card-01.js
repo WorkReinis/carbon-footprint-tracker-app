@@ -22,7 +22,7 @@ function ReduceCarouselCard01({
     };
 
     return (
-        <div className="reduce-carousel-card-container-01 flex flex-col justify-between">
+        <div className="reduce-carousel-card-container-01 flex flex-col justify-between hover-scale ">
             <div className="reduce-visuals-container-01">
                 <button
                     className="reduce-carousel-card-heart-01 flex justify-center items-center absolute top-3 left-3"

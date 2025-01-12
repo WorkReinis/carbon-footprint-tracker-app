@@ -1,4 +1,5 @@
 import "../../styles/suggestions-card-01.css";
+import "../../../../styles/animation/scale-on-interaction.css";
 
 function SuggestionsCard01({
     title,
@@ -10,7 +11,7 @@ function SuggestionsCard01({
     img
 }) {
     return (
-        <div className="suggestions-card-container flex flex-row gap-3 items-start">
+        <div className="suggestions-card-container flex flex-row gap-3 items-start hover-scale active-scale">
             <div className="suggestions-image-placeholder flex justify-center items-center">
                 {/* {icon} */}
                 <img src={img} className="suggestions-image-placeholder"></img>

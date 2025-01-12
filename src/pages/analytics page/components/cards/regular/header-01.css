@@ -3,5 +3,6 @@
     padding: 4em 2em 2em 2em;
     width: 100%;
     color: white;
+    user-select: none;
 }
 

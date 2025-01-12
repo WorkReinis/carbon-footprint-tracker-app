@@ -10,4 +10,10 @@
     --dark-gray: #4a4a4a;
     --normal-gray: #a4adbc;
     --darkish-gray: #5a5a5a;
+
+    --light-primary-gradient: linear-gradient(
+        180deg,
+        var(--light-primary-color) 0%,
+        var(--primary-color) 60%
+    );
 }

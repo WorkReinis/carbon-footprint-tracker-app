@@ -1,4 +1,6 @@
 import "../../styles/reduce-carousel-card-02.css";
+import "../../../../styles/animation/scale-on-interaction.css";
+
 import { useState } from "react";
 import { IoMdTime } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
@@ -24,7 +26,7 @@ function ReduceCarouselCard02({
     const [isLiked, setIsLiked] = useState(false);
 
     return (
-        <div className="reduce-carousel-card-container-02 flex flex-col justify-between">
+        <div className="reduce-carousel-card-container-02 flex flex-col justify-between hover-scale active-scale">
             <div className="reduce-visuals-container-02">
                 <button className="reduce-carousel-card-heart-02 flex justify-center items-center">
                     <FaPlayCircle size={70} />
@@ -39,7 +41,7 @@ function ReduceCarouselCard02({
             <div className="reduce-carousel-card-text-02 flex flex-col justify-center align-center gap-1">
                 <div className="flex flex-col justify-center pb-0.5">
                     <span className=" text-sm">{category}</span>
-                    <span className="text-lg leading-tight font-bold">
+                    <span className="text-md leading-tight font-bold">
                         {title}
                     </span>
                 </div>

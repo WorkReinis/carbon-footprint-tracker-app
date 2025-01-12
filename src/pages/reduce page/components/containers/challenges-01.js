@@ -1,5 +1,4 @@
 import ChallengesCard01 from "../cards/challenges-card-01";
-
 import Slider01 from "./slider-01";
 
 import "../../styles/challenges-01.css";
@@ -9,7 +8,6 @@ function Challenges01() {
         "/images/bike-08.png",
         "/images/breakfast-03.png",
         "/images/eco-challenge-01.png",
-
     ];
     return (
         <div className="challenges-container flex flex-col gap-4">
@@ -26,7 +24,7 @@ function Challenges01() {
                 {" "}
                 <ChallengesCard01
                     barValue={30}
-                    heading="Go Car-Free Using Sustainable Transport"
+                    heading="Go Car-Free and Use Sustainable Transport"
                     duration="One week"
                     progress=" 2 / 7"
                     description=""

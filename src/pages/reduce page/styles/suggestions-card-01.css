@@ -1,26 +1,19 @@
 .suggestions-card-container {
-    padding: 2em;
-    Background-color: white;
+    background-color: white;
     border-radius: 1em;
     padding: 0.5em;
-    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.1);
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
 }
 
 .suggestions-image-placeholder {
     height: 3em;
-    /* height: 3.7em; */
     aspect-ratio: 1 / 1;
-    /* background-color: var(--secondary-color);  */
-    border-radius: 0.5em; 
-    
-    
+    border-radius: 0.5em;
 }
 
 .suggestions-image {
     overflow: hidden;
-    object-fit: cover; 
-
+    object-fit: cover;
 }
-
-
 

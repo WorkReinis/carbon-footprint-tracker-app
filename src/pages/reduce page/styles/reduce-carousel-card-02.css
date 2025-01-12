@@ -1,14 +1,13 @@
 .reduce-carousel-card-container-02 {
     width: 100%;
     height: 100%;
-    
     background: white;
     border-radius: 1em !important;
-    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.1);
+    box-shadow: var(--card-shadow);
     user-select: none;
     cursor: grabbing;
-    color: black;
-    transition: transform 0.3s ease;
+    
+
 }
 
 .reduce-visuals-container-02 {
@@ -36,10 +35,6 @@
     transform: translate(-50%, -50%);
 }
 
-.reduce-carousel-card-container-02:active {
-    transform: scale(0.95);
-    
-}
 
 .reduce-carousel-card-text-category-02 {
     /* background-color: var(--normal-gray);

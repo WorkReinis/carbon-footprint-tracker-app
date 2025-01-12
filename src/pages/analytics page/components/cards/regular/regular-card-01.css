@@ -2,10 +2,11 @@
     background-color: white;
     padding: 1em;
     border-radius: 1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--card-shadow);
     width: 100%;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    user-select: none;
 }
 
 .regular-card-01-text {

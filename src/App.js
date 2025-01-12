@@ -4,6 +4,7 @@ import { MyProvider, MyContext } from "./context/pages";
 import "./App.css";
 import './styles/phone-frame.css';
 import './styles/variables/color-variables.css'
+import './styles/variables/box-shadow.css'
 
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/home page/HomePage";

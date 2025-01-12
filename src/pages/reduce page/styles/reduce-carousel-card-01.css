@@ -9,7 +9,7 @@
         var(--dark-secondary-color) 70%
     );
     border-radius: 1em !important;
-    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.1);
+    box-shadow: var(--card-shadow);
     user-select: none;
     cursor: grabbing;
     color: black;
@@ -48,5 +48,4 @@
 .reduce-carousel-card-heart-01:active {
     transform: scale(1.2);
 }
-
 

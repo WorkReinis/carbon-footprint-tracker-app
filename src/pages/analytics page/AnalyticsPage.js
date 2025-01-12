@@ -32,6 +32,14 @@ import { FaArrowTrendDown } from "react-icons/fa6";
 import { BsExclamationTriangle } from "react-icons/bs";
 import { GiFootprint } from "react-icons/gi";
 import { PiRanking } from "react-icons/pi";
+import { IoRestaurantOutline } from "react-icons/io5";
+import { IoFastFoodOutline } from "react-icons/io5";
+import { IoCarSportOutline } from "react-icons/io5";
+import { IoCarOutline } from "react-icons/io5";
+import { PiCar } from "react-icons/pi";
+import { FaScaleUnbalanced } from "react-icons/fa6";
+import { SiFuturelearn } from "react-icons/si";
+import { LuHeartHandshake } from "react-icons/lu";
 
 function AnalyticsPage() {
     return (
@@ -48,30 +56,28 @@ function AnalyticsPage() {
                 <div className="cards-container fade-in-2">
                     <div className="small-cards-container">
                         <SmallCard01
-                            fade=""
-                            title="History"
-                            value="4.000"
+                            title="Diet"
+                            value="135"
                             units="kg CO₂"
-                            context="last entry"
-                            graph={<SmallBarChart01 />}
+                            context="this week"
+                            graph={<SmallAreaChart01 />}
                             icon={
-                                <MdHistory
-                                    size={28}
+                                <IoRestaurantOutline
+                                    size={24}
                                     style={{ color: "var(--normal-gray)" }}
                                 />
                             }
                         />
-
                         <SmallCard01
                             fade=""
                             title="Travel"
-                            value="2.400"
+                            value="180"
                             units="kg CO₂"
                             context="this week"
-                            graph={<SmallComposedChart01 />}
+                            graph={<SmallBarChart01 />}
                             icon={
-                                <MdCardTravel
-                                    size={24}
+                                <PiCar
+                                    size={36}
                                     style={{ color: "var(--normal-gray)" }}
                                 />
                             }
@@ -80,7 +86,7 @@ function AnalyticsPage() {
 
                     <RegularCard01
                         fade=""
-                        title="Impact Trend"
+                        title="Footprint Impact Trend"
                         units=""
                         context="kg CO₂"
                         graph={<ComposedChart01 />}
@@ -91,43 +97,56 @@ function AnalyticsPage() {
                             />
                         }
                     />
-
                     <RegularCard01
-                        title="Footprint Breakdown"
+                        title="Diet Footprint Breakdown"
                         units=""
                         context="kg CO₂"
                         graph={<BarChart02 />}
                         icon={
-                            <MdOutlineCategory
+                            <IoFastFoodOutline
                                 size={28}
                                 style={{ color: "var(--normal-gray)" }}
                             />
                         }
                     />
+
+                    <RegularCard01
+                        title="Travel Footprint Breakdown"
+                        context="kg CO₂"
+                        graph={<RadialBarChart01 />}
+                        icon={
+                            <TbCalendarWeek
+                                size={28}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+
                     <div className="small-cards-container">
                         <SmallCard01
                             title="Compare"
-                            value="2.400"
-                            units="kg CO₂"
-                            context="this week"
+                            value="18%"
+                            units=""
+                            context="above average"
                             graph={<SmallPieChart01 />}
                             icon={
-                                <MdCardTravel
-                                    size={24}
+                                <FaScaleUnbalanced
+                                    size={22}
                                     style={{ color: "var(--normal-gray)" }}
                                 />
                             }
                         />
 
                         <SmallCard01
-                            title="Travel"
-                            value="2.400"
-                            units="kg CO₂"
-                            context="this week"
-                            graph={<SmallAreaChart01 />}
+                            fade=""
+                            title="Projection"
+                            value="34%"
+                            units=""
+                            context="future reduction"
+                            graph={<SmallComposedChart01 />}
                             icon={
-                                <MdCardTravel
-                                    size={24}
+                                <SiFuturelearn
+                                    size={20}
                                     style={{ color: "var(--normal-gray)" }}
                                 />
                             }
@@ -147,19 +166,6 @@ function AnalyticsPage() {
                             />
                         }
                     /> */}
-                    {/* 
-                    <RegularCard01
-                        title="Top Emission Sources"
-                        units=""
-                        context=""
-                        graph={<PieChart01 />}
-                        icon={
-                            <PiRanking
-                                size={30}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    /> */}
 
                     <RegularCard01
                         title="Carbon Offset Effort"
@@ -173,6 +179,20 @@ function AnalyticsPage() {
                             />
                         }
                     />
+
+                    <RegularCard01
+                        title="Most Impactful Offsets"
+                        units=""
+                        context="kg CO₂"
+                        graph={<PieChart01 />}
+                        icon={
+                            <LuHeartHandshake
+                                size={30}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+
                     {/* 
                     <RegularCard01
                         title="Comparing Your Carbon Footprint"
@@ -199,17 +219,6 @@ function AnalyticsPage() {
                         }
                     /> */}
 
-                    <RegularCard01
-                        title="Week Breakdown"
-                        context="kg CO₂"
-                        graph={<RadialBarChart01 />}
-                        icon={
-                            <TbCalendarWeek
-                                size={28}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    />
                     <Footer01 />
                 </div>
             </div>

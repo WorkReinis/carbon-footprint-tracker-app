@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import "./styles/ReducePage.css";
 
 import ReduceHeader01 from "./components/containers/reduce-header-01";
@@ -10,12 +9,6 @@ import Offsets01 from "./components/containers/offsets-01";
 import Suggestions01 from "./components/containers/suggestions-01";
 
 function ReducePage() {
-    const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
-
-    useEffect(() => {
-        window.scrollTo(0, 0); // Scrolls to the top of the page
-    }, []);
-
     return (
         <div className="reduce-page fade-in-1">
             <ReduceHeader01 />

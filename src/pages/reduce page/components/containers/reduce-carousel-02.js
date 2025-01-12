@@ -16,7 +16,7 @@ import { FaStarHalfAlt } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
 
 const ReduceCarousel02 = () => {
-    const imageMap = [
+    const imagesMap = [
         "/images/carbon-trading-02.png",
         "/images/trees-02.png",
         "/images/electric-car-01.png",
@@ -36,7 +36,7 @@ const ReduceCarousel02 = () => {
             <SwiperSlide>
                 <ReduceCarouselCard02
                     icon={<FaRegHeart size={20} />}
-                    img={imageMap[0]}
+                    img={imagesMap[0]}
                     category=""
                     title="Carbon Trading in the Global Economy"
                     time="3h 30min"
@@ -58,7 +58,7 @@ const ReduceCarousel02 = () => {
             <SwiperSlide>
                 <ReduceCarouselCard02
                     icon={<FaRegHeart size={20} />}
-                    img={imageMap[1]}
+                    img={imagesMap[1]}
                     category=""
                     title="Tree-Based Solutions for Carbon Storage"
                     time="2h 15min"
@@ -80,7 +80,7 @@ const ReduceCarousel02 = () => {
             <SwiperSlide>
                 <ReduceCarouselCard02
                     icon={<FaRegHeart size={20} />}
-                    img={imageMap[2]}
+                    img={imagesMap[2]}
                     category=""
                     title="The Future of EVs in a Sustainable World"
                     time="1h 15min"
@@ -103,7 +103,7 @@ const ReduceCarousel02 = () => {
             <SwiperSlide>
                 <ReduceCarouselCard02
                     icon={<FaRegHeart size={20} />}
-                    img={imageMap[3]}
+                    img={imagesMap[3]}
                     category=""
                     title="How Carbon Offsetting Works"
                     time="1h 45min"
@@ -125,7 +125,7 @@ const ReduceCarousel02 = () => {
             <SwiperSlide>
                 <ReduceCarouselCard02
                     icon={<FaRegHeart size={20} />}
-                    img={imageMap[4]}
+                    img={imagesMap[4]}
                     category=""
                     title="The Impact of Meat-Based Diets"
                     time="2h 15min"

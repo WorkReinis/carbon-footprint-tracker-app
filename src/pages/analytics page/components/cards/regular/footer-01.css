@@ -2,20 +2,19 @@
     border-radius: 2em 2em 0 0;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 7em;
-    bottom: 0;
     width: 100%;
     background: linear-gradient(180deg, var(--light-primary-color) 0%, var(--primary-color) 60%);
-    margin: 0;
+
     color: white;
     border-radius: 2em 2em 0 0;
+    margin-top: 0.5em;
 }
 
 .circle-avatar {
     width: 3em;
     height: 3em;
-    transition: transform 0.2s;
     border: 0.25em solid white;
 }
 
@@ -23,10 +22,6 @@
     width: 3em;
     height: 3em;
     background-color: white;
-    transition: transform 0.2s;
 }
 
-.circle-avatar:hover,
-.circle-add:hover {
-    transform: scale(1.1); 
-}
+

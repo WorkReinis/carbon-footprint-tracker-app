@@ -2,7 +2,7 @@ import "./regular-card-01.css";
 
 function RegularCard01({ title, value, units, context, icon, graph, fade }) {
     return (
-        <div className={`card-regular ${fade}`}>
+        <div className='card-regular hover-scale active-scale'>
             <div className="regular-card-01-text flex justify-between items-center ">
                 <div>
                     <div className="flex justify-start items-end gap-1">

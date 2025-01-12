@@ -3,7 +3,7 @@ import "../../../styles/element-styles.css";
 
 function SmallCard02({ title, value, units, context, icon, graph, fade }) {
     return (
-        <div className="card-small-02 flex-1 flex flex-col items-center">
+        <div className="card-small-02 flex-1 flex flex-col items-center hover-scale active-scale">
             <div className="flex justify-between items-center ">
                 <h1 className="font-bold text-xs">{title}</h1>
             </div>
@@ -14,7 +14,7 @@ function SmallCard02({ title, value, units, context, icon, graph, fade }) {
                 </span>
                 <span
                     className="flex align-baseline text-xs"
-                    style={{ fontSize: "0.80em" }}
+                    
                 >
                     {units}
                 </span>

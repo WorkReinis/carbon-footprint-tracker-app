@@ -13,7 +13,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { FiSmile } from "react-icons/fi";
 
 const ReduceCarousel01 = () => {
-    const avatarMap = [
+    const imagesMap = [
         "/images/salad-01.png",
         "/images/salad-02.png",
         "/images/train-01.png",
@@ -34,7 +34,7 @@ const ReduceCarousel01 = () => {
             <SwiperSlide>
                 <ReduceCarouselCard01
                     icon={<FaRegHeart size={20} />}
-                    img={avatarMap[1]}
+                    img={imagesMap[1]}
                     category="Food"
                     title="Try Plant Based Diet"
                     time="30min"
@@ -45,7 +45,7 @@ const ReduceCarousel01 = () => {
             <SwiperSlide>
                 <ReduceCarouselCard01
                     icon={<FaRegHeart size={20} />}
-                    img={avatarMap[2]}
+                    img={imagesMap[2]}
                     category="Transport"
                     title="Take Public Transport"
                     time="1-2h"
@@ -56,7 +56,7 @@ const ReduceCarousel01 = () => {
             <SwiperSlide>
                 <ReduceCarouselCard01
                     icon={<FaRegHeart size={20} />}
-                    img={avatarMap[3]}
+                    img={imagesMap[3]}
                     category="Carbon Offset"
                     title="Check Offset Incentives"
                     time="10min"
@@ -68,7 +68,7 @@ const ReduceCarousel01 = () => {
             <SwiperSlide>
                 <ReduceCarouselCard01
                     icon={<FaRegHeart size={20} />}
-                    img={avatarMap[4]}
+                    img={imagesMap[4]}
                     category="Education"
                     title="Take a Climate Class"
                     time="1-2h"

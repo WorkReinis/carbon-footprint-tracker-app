@@ -9,7 +9,7 @@ import { IoBicycleOutline } from "react-icons/io5";
 import "../../styles/suggestions-01.css";
 
 function Suggestions01() {
-    const avatarMap = [
+    const imagesMap = [
         "/images/train-03.png",
         "/images/meat-01.png",
         "/images/meal-01.png",
@@ -37,9 +37,8 @@ function Suggestions01() {
                             style={{ color: "var(--primary-color)" }}
                         />
                     }
-                    img={avatarMap[3]}
+                    img={imagesMap[3]}
                 />
-                
 
                 <SuggestionsCard01
                     title="Switch out meat"
@@ -53,10 +52,10 @@ function Suggestions01() {
                             style={{ color: "var(--primary-color)" }}
                         />
                     }
-                    img={avatarMap[1]}
+                    img={imagesMap[1]}
                 />
 
-<SuggestionsCard01
+                <SuggestionsCard01
                     title="Travel by train"
                     description="Support public transport"
                     value="50"
@@ -68,7 +67,7 @@ function Suggestions01() {
                             style={{ color: "var(--primary-color)" }}
                         />
                     }
-                    img={avatarMap[0]}
+                    img={imagesMap[0]}
                 />
                 <SuggestionsCard01
                     title="Plan your meals"
@@ -82,7 +81,7 @@ function Suggestions01() {
                             style={{ color: "var(--primary-color)" }}
                         />
                     }
-                    img={avatarMap[2]}
+                    img={imagesMap[2]}
                 />
 
                 <SuggestionsCard01
@@ -97,7 +96,7 @@ function Suggestions01() {
                             style={{ color: "var(--primary-color)" }}
                         />
                     }
-                    img={avatarMap[4]}
+                    img={imagesMap[4]}
                 />
 
                 {/* <SuggestionsCard01
