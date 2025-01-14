@@ -1,0 +1,12 @@
+.badges-card-container {
+    flex: 1; /* Makes all cards grow equally */
+    /* max-width: calc(33.33% - 1em);  */
+    margin: 0;
+    
+}
+
+.badges-card-img {
+    height: 6em;
+    width: 100%;
+    
+}

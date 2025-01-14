@@ -12,37 +12,28 @@ function HomeCarouselCard01({
     time,
     difficulty,
     emoticon,
+    context,
 }) {
-    const [isLiked, setIsLiked] = useState(false);
-
     return (
         <div className="home-carousel-card-container-01 flex flex-col justify-between hover-scale ">
-            <div className="home-visuals-container-01">
-                <button className="home-carousel-card-heart-01 flex justify-center items-center absolute top-3 left-3"></button>
+            {/* <div className="home-visuals-container-01">
                 <img
                     className="home-carousel-card-img-01"
                     src={img}
                     fetchPriority="high"
                 ></img>
-            </div>
+            </div> */}
 
             <div className="home-carousel-card-text-01 flex flex-col justify-center align-center">
-                <div className="flex flex-col justify-center pb-2 pt-2">
-                    <span className="text-sm">{category}</span>
-
-                    <span className="text-xl leading-tight font-bold">
+                <div className="flex flex-col justify-center ">
+                    <div className="flex flex-row gap-1 justify-start items-center">
+                        <div>{icon}</div>
+                        <span className="text-xs font-bold">{category}</span>
+                    </div>
+                    <span className="text-3xl leading-tight font-bold ">
                         {title}
                     </span>
-                </div>
-                <div className="flex flex-row justify-between">
-                    <div className="flex flex-row justify-between items-center gap-1">
-                        <IoMdTime size={12} />
-                        <div className=" text-xs">{time}</div>
-                    </div>
-                    <div className="flex flex-row justify-between items-center gap-1">
-                        <div>{emoticon}</div>
-                        <div className=" text-xs">{difficulty}</div>
-                    </div>
+                    <span className=" text-xs">{context}</span>
                 </div>
             </div>
         </div>

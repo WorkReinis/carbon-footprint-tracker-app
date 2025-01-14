@@ -4,11 +4,13 @@
         var(--secondary-color) 0%,
         var(--dark-secondary-color) 80%
     );
-    padding: 2em;
+   
     display: flex;
     flex-direction: column;
     gap: 0;
     border-radius: 0 0 2em 2em;
+    padding-bottom: 1.5em;
+    padding-top: 4em;
 }
 
 .greeting-text-box {

@@ -35,7 +35,7 @@
 .speech-record-btn {
     width: 70%;
     aspect-ratio: 1 / 1;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 50%;
@@ -51,7 +51,7 @@
     width: 70%;
     aspect-ratio: 1 / 1;
     /* background-color: #b97d7d; */
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 50%;

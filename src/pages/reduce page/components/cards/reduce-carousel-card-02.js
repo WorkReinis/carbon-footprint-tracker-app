@@ -10,7 +10,6 @@ import { GrView } from "react-icons/gr";
 import { PiStudent } from "react-icons/pi";
 import { PiStudentBold } from "react-icons/pi";
 
-
 function ReduceCarouselCard02({
     icon,
     img,
@@ -21,7 +20,7 @@ function ReduceCarouselCard02({
     emoticon,
     rating,
     raters,
-    stars
+    stars,
 }) {
     const [isLiked, setIsLiked] = useState(false);
 
@@ -45,26 +44,32 @@ function ReduceCarouselCard02({
                         {title}
                     </span>
                 </div>
-                <div className='flex flex-row items-center gap-1'>
-                    <span className='text-sm font-bold' >{rating}</span>
-                    <div className='flex flex-row'>
-                        {stars}
-                    </div>
-                    <span className='text-sm' style={{ color: "var(--darkish-gray)" }}>{raters}</span>
+                <div className="flex flex-row items-center gap-1">
+                    <span className="text-sm font-bold">{rating}</span>
+                    <div className="flex flex-row">{stars}</div>
+                    <span
+                        className="text-sm"
+                        style={{ color: "var(--darkish-gray)" }}
+                    >
+                        {raters}
+                    </span>
                 </div>
                 <div
                     className="flex flex-row justify-between"
                     style={{ color: "var(--darkish-gray)" }}
                 >
-                    <div className="flex flex-row justify-between items-center gap-1"  style={{ color: "var(--darkish-gray)" }}>
-                        <PiStudentBold size={13} />
-                        <div className="reduce-carousel-card-text-category-02 text-sm">
+                    <div
+                        className="flex flex-row justify-between items-center gap-1"
+                        style={{ color: "var(--darkish-gray)" }}
+                    >
+                        <PiStudentBold size={12} />
+                        <div className="reduce-carousel-card-text-category-02 text-xs">
                             {difficulty}
                         </div>
                     </div>
                     <div className="flex flex-row justify-between items-center gap-1">
-                        <IoMdTime size={13} />
-                        <div className=" text-sm">{time}</div>
+                        <IoMdTime size={12} />
+                        <div className=" text-xs">{time}</div>
                     </div>
                 </div>
             </div>

@@ -1,13 +1,14 @@
 import "./styles/HomePage.css";
-import './styles/home-activities.css';
-import './styles/home-avatar.css'
+import "./styles/home-activities.css";
+import "./styles/home-avatar.css";
 
 import React, { useState } from "react";
 
 import { LuTreeDeciduous } from "react-icons/lu";
 import { CiCloudOn } from "react-icons/ci";
 
-import HomeCarousel01 from './components/containers/home-carousel-01'
+import HomeCarousel01 from "./components/containers/home-carousel-01";
+import Badges01 from "./components/containers/badges-01";
 
 function HomePage({ avatarNumber }) {
     const avatarMap = [
@@ -59,7 +60,7 @@ function HomePage({ avatarNumber }) {
                             <span className="text-lg">So far this month</span>
                         </div>
                     </div>
-
+{/* 
                     <div className="flex flex-row justify-between w-full badge-container">
                         <div className="flex flex-col badge">
                             <div className="flex items-center gap-2">
@@ -100,13 +101,12 @@ function HomePage({ avatarNumber }) {
                             </div>
                             <span className="text-xs">To offset footprint</span>
                         </div>
-                    </div>
+                    </div> */}
 
-
-                                <HomeCarousel01 />
-
+                    <HomeCarousel01 />
                 </div>
 
+                <Badges01 />
                 <div className="activities-container fade-in-2">
                     <h2 className="font-bold mb-4">Latest Activities</h2>
 
