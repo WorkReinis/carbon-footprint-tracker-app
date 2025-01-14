@@ -5,7 +5,7 @@
     margin: 0;
     padding-left: 1.5em !important;
     padding-right: 1.5em !important;
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* Swiper slide styles */
