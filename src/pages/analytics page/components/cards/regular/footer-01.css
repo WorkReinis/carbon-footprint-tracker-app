@@ -5,8 +5,8 @@
     padding-top: 2em;
     padding-bottom: 6em;
     width: 100%;
-    background: linear-gradient(180deg, var(--light-primary-color) 0%, var(--primary-color) 60%);
-
+    background: var(--header-footer-gradient);
+    box-shadow: var(--container-shadow);
     color: white;
     border-radius: 2em 2em 0 0;
     margin-top: 0.5em;

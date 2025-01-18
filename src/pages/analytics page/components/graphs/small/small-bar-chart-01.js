@@ -12,11 +12,11 @@ import {
 
 function SmallBarChart01() {
     const data = [
-        { name: "M", value: 45, maxValue: 100 },
-        { name: "T", value: 65, maxValue: 100 },
-        { name: "W", value: 30, maxValue: 100 },
-        { name: "T", value: 35, maxValue: 100 },
-        { name: "F", value: 20, maxValue: 100 },
+        { name: "M", value: 45, maxValue: 100, highlightValue: 0, },
+        { name: "T", value: 65, maxValue: 100, highlightValue: 65,  },
+        { name: "W", value: 30, maxValue: 100, highlightValue: 0,  },
+        { name: "T", value: 35, maxValue: 100, highlightValue: 0,  },
+        { name: "F", value: 20, maxValue: 100, highlightValue: 0,  },
     ];
 
     return (
@@ -50,6 +50,13 @@ function SmallBarChart01() {
                         dataKey="value"
                         fill="var(--primary-color)"
                         barSize={9}
+                        radius={[15, 15, 15, 15]}
+                    ></Bar>
+
+<Bar
+                        dataKey="highlightValue"
+                        fill="var(--analytics-accent)"
+                        barSize={10}
                         radius={[15, 15, 15, 15]}
                     ></Bar>
                 </BarChart>

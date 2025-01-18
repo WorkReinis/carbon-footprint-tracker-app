@@ -12,13 +12,13 @@ import {
 
 function BarChart04() {
     const data = [
-        { name: "M", value: 12, maxValue: 100 },
-        { name: "T", value: 65, maxValue: 100 },
-        { name: "W", value: 30, maxValue: 100 },
-        { name: "T", value: 35, maxValue: 100 },
-        { name: "F", value: 90, maxValue: 100 },
-        { name: "Sa", value: 25, maxValue: 100 },
-        { name: "Su", value: 75, maxValue: 100 },
+        { name: "M", value: 12, maxValue: 100, highlightValue: 0 },
+        { name: "T", value: 65, maxValue: 100, highlightValue: 0 },
+        { name: "W", value: 30, maxValue: 100, highlightValue: 0 },
+        { name: "T", value: 35, maxValue: 100, highlightValue: 0 },
+        { name: "F", value: 90, maxValue: 100, highlightValue: 90 },
+        { name: "Sa", value: 25, maxValue: 100, highlightValue: 0 },
+        { name: "Su", value: 75, maxValue: 100, highlightValue: 0 },
     ];
 
     return (
@@ -62,6 +62,8 @@ function BarChart04() {
                             style={{ fontSize: "0.9em", fill: "white" }}
                         />
                     </Bar>
+
+                    
                 </BarChart>
             </ResponsiveContainer>
         </div>

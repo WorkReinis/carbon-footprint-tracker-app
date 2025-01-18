@@ -1,10 +1,10 @@
-import "../../styles/home-carousel-card-01.css";
+import "../../styles/input-carousel-card-01.css";
 import { useState } from "react";
 import { IoMdTime } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 
-function HomeCarouselCard01({
+function InputCarouselCard01({
     icon,
     img,
     category,
@@ -15,7 +15,7 @@ function HomeCarouselCard01({
     context,
 }) {
     return (
-        <div className="home-carousel-card-container-01 flex flex-col justify-between hover-scale ">
+        <div className="input-carousel-card-container-01 flex flex-col justify-between hover-scale ">
             {/* <div className="home-visuals-container-01">
                 <img
                     className="home-carousel-card-img-01"
@@ -24,7 +24,7 @@ function HomeCarouselCard01({
                 ></img>
             </div> */}
 
-            <div className="home-carousel-card-text-01 flex flex-col justify-center align-center">
+            <div className="input-carousel-card-text-01 flex flex-col justify-center align-center">
                 <div className="flex flex-col justify-center ">
                     <div className="flex flex-row gap-1 justify-start items-center">
                         <div>{icon}</div>
@@ -40,4 +40,4 @@ function HomeCarouselCard01({
     );
 }
 
-export default HomeCarouselCard01;
+export default InputCarouselCard01;

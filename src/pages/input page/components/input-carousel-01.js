@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import "../../styles/home-carousel-01.css";
-import HomeCarouselCard01 from "../cards/home-carousel-card-01.js";
+import "../styles/input-carousel-01.css";
+import HomeCarouselCard01 from "./cards/input-carousel-card-01.js";
 
 import { FaRegHeart } from "react-icons/fa";
 import { FiSmile } from "react-icons/fi";
@@ -19,7 +19,7 @@ import { FaTree } from "react-icons/fa";
 import { FaCarAlt } from "react-icons/fa";
 import { PiForkKnifeFill } from "react-icons/pi";
 
-const HomeCarousel01 = () => {
+const InputCarousel01 = () => {
     const imagesMap = [
         "/images/salad-01.png",
         "/images/salad-02.png",
@@ -42,7 +42,7 @@ const HomeCarousel01 = () => {
                     category="Trees needed"
                     title="1-2"
                     units=""
-                    context="To offset footprint"
+                    context="To grow for a year"
                     img="https://cdn.dribbble.com/users/1338391/screenshots/15339530/forest_landscape_wallpaper_background_flat_design_art_4x.jpg"
                     // img="https://images.unsplash.com/photo-1514116799412-5876d319c242"
                     icon={<FaTree size={15} />}
@@ -64,7 +64,7 @@ const HomeCarousel01 = () => {
             <SwiperSlide>
                 <HomeCarouselCard01
                     category="Train Travel"
-                    title="280 km"
+                    title="23 km"
                     units=""
                     context="Traveled with NS"
                     img="https://cbx-prod.b-cdn.net/COLOURBOX36658680.jpg?width=800&height=800&quality=70"
@@ -76,7 +76,7 @@ const HomeCarousel01 = () => {
             <SwiperSlide>
                 <HomeCarouselCard01
                     category="Km driven"
-                    title="700 km"
+                    title="700"
                     units=""
                     context="With a small car"
                     img="https://thumbs.dreamstime.com/b/woman-going-out-train-walking-platform-background-modern-arriving-station-vector-flat-design-67447700.jpg"
@@ -102,4 +102,4 @@ const HomeCarousel01 = () => {
     );
 };
 
-export default HomeCarousel01;
+export default InputCarousel01;

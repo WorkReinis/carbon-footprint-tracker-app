@@ -5,6 +5,7 @@
     border-radius: 1.5em 1.5em 1.5em 1.5em;
     position: absolute;
     background-color: #f4f4f4;
+ 
     /* position: fixed; */
     bottom: 0;
     padding-top: 0.5em;
@@ -19,7 +20,22 @@
   
 .nav-button {
     cursor: pointer;
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+    
+.nav-button-input {
+  cursor: pointer;
+  flex: 1.4; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
   
 button.active {
   color: var(--primary-color); 

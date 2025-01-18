@@ -111,10 +111,8 @@ function InputPage({ sendDataToParent }) {
     return (
         <div className="input-container flex flex-col justify-between align-center fade-in-1">
             <div className="greetings-text flex flex-col justify-center items-center">
-                <h3 className="font-bold text-2xl">Hello User</h3>
-                <h3 className="text-lg">
-                What have you been up to today?
-                </h3>
+                <h3 className="font-bold text-2xl">Hi there!</h3>
+                <h3 className="text-lg" >What have you been up to today?</h3>
             </div>
 
             <div className="button-container flex justify-center items-center">
@@ -139,16 +137,33 @@ function InputPage({ sendDataToParent }) {
                 )}
             </div>
 
-            <div className="loading-response">
+<div className='flex flex-col gap-4'> <div className="loading-response">
                 {isListening ? (
                     <>
-                        <h3 className="font-bold text-lg">Listening...</h3>
-                        <span>Make sure your device can hear you</span>
+                        <h3 className="font-bold text-lg" >Listening...</h3>
+                        {/* <span>Make sure your device can hear you</span> */}
                     </>
                 ) : (
-                    <h3 className="font-bold text-lg">Tap to Record</h3>
+                    <h3 className="font-bold text-lg" >Tap to Record About:</h3>
                 )}
             </div>
+
+            <div className="input-page-tags-container flex flex-wrap gap-0.5 justify-center">
+                <span className="input-page-tag text-sm whitespace-nowrap">Food Preferences</span>
+                <span className="input-page-tag text-sm whitespace-nowrap">Grocery Shopping</span>
+                <span className="input-page-tag text-sm whitespace-nowrap">Cooking Habits</span>
+                <span className="input-page-tag text-sm whitespace-nowrap">Eating Out</span>
+                <span className="input-page-tag text-sm whitespace-nowrap">Snack Choices</span>
+                <span className="input-page-tag text-sm whitespace-nowrap">Splurging</span>
+      
+                <span className="input-page-tag text-sm whitespace-nowrap">Public Transit</span>
+                <span className="input-page-tag text-sm whitespace-nowrap">Bike Commute</span>
+                <span className="input-page-tag text-sm whitespace-nowrap">Road Trips</span>
+                <span className="input-page-tag text-sm whitespace-nowrap">Flights</span>
+
+                <span className="input-page-tag text-sm whitespace-nowrap">Daily Commute</span>
+            </div></div>
+           
 
             {/* {isPopupVisible && <InputPopup sendCloseButton={closePopup} />} */}
         </div>

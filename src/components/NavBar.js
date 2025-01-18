@@ -45,7 +45,7 @@ function NavBar() {
                     setPage("input");
                     setActiveButton("input");
                 }}
-                className={`${activeButton === "input" ? "active" : ""} nav-button`}
+                className={`${activeButton === "input" ? "active" : ""} nav-button-input`}
             >
                 <IoAddCircle size={50} />
             </button>

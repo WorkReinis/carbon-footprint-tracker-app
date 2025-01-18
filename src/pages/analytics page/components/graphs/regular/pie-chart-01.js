@@ -9,10 +9,10 @@ import {
 import CustomTooltip01 from "../custom-tooltip-01";
 
 const COLORS = [
-    "#5A5AC1" /* --primary-color */,
-    "#6969C4" /* light-indigo */,
-    "#7878C8" /* soft-blue */,
-    "#8787CB" /* pale-lavender */,
+    "var(--light-green)" /* --primary-color */,
+    "var(--analytics-accent)" /* light-indigo */,
+    "var(--darkish-green)" /* soft-blue */,
+    "var(--normal-green)" /* pale-lavender */,
     "#9696CF" /* pastel-blue */,
     "#A4A4D2" /* tertiary-color */,
     "#B3B3D6" /* accent-color */,

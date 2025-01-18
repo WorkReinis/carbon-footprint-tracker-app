@@ -3,9 +3,10 @@
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 9em;
-    padding-bottom: 12em;
+    padding-bottom: 8em;
     height: 100%;
     position: relative;
+    background: var(--light-gradient);
 }
 
 .greetings-text {
@@ -16,10 +17,10 @@
 .button-container {
     width: 80%;
     position: absolute;  
-    top: 50%;        
+    top: 45%;        
     left: 50%;          
     transform: translate(-50%, -50%); 
-  
+    
     
 }
 
@@ -35,7 +36,7 @@
 .speech-record-btn {
     width: 70%;
     aspect-ratio: 1 / 1;
-    background-color: var(--primary-color);
+    background: var(--dark-gradient);
     color: white;
     border: none;
     border-radius: 50%;
@@ -45,13 +46,17 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    box-shadow: var(--card-shadow);
+    border: 0.04em solid var(--light-green)
+
+    
 }
 
 .speech-stop-record-btn {
     width: 70%;
     aspect-ratio: 1 / 1;
     /* background-color: #b97d7d; */
-    background-color: var(--primary-color);
+    background: var(--dark-gradient);
     color: white;
     border: none;
     border-radius: 50%;
@@ -61,6 +66,18 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 20;
+    z-index: 1000;
+    border: 0.04em solid var(--light-green)
 }
 
+
+.input-page-tag {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 10em;
+    color: var(--dark-gray)
+    
+}

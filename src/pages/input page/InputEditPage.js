@@ -14,8 +14,7 @@ import QuillEditor from "./components/quill-editor-01";
 function InputEditPage() {
     const { navBar, setNavBar } = useContext(MyContext);
     const { page, setPage } = useContext(MyContext);
-    const {text, setText} =
-       useContext(MyContext);
+    const { text, setText } = useContext(MyContext);
 
     const handleConfirm = () => {
         setPage("input-confirm");
@@ -36,6 +35,14 @@ function InputEditPage() {
         second: "2-digit",
     });
 
+    const placeholderText = `I drove my car for 30 km, used 5 kWh of electricity.
+           
+I took a flight from New York to Los Angeles.
+
+I also used public transportation for a few short trips around the city.
+
+Oh and I also had a nice stake yesterday.`;
+
     return (
         <>
             <div className="edit-container flex flex-col justify-between gap-6 fade-in-1">
@@ -44,14 +51,15 @@ function InputEditPage() {
                         <IoMdRecording size={30} fill={"var(--dark-gray)"} />
                     </div>
                     <div className="flex flex-col justify-start items-start gap-0">
-                        <h1 className="edit-title text-sm">{`Recorded`}</h1>
+                        <h1 className="edit-title font-bold text-sm">Recorded</h1>
                         <h1 className="edit-title text-sm">{`${formattedDate} ${formattedTime}`}</h1>
                     </div>
                 </div>
                 <div className="textarea-container flex">
                     <textarea
                         className="input-box"
-                        value={text}
+                        value={text || placeholderText}
+                        style={{ color: "var(--dark-gray)" }}
                         onChange={(e) => setText(e.target.value)}
                     ></textarea>
                 </div>

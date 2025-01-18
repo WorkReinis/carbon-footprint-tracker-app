@@ -1,4 +1,5 @@
 import SuggestionsCard01 from "../cards/suggestions-card-01";
+import SuggestionsCard02 from "../cards/suggestions-card-02";
 import { FaPersonWalking } from "react-icons/fa6";
 import { LuVegan } from "react-icons/lu";
 import { IoTrainOutline } from "react-icons/io5";
@@ -7,6 +8,7 @@ import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { IoBicycleOutline } from "react-icons/io5";
 
 import "../../styles/suggestions-01.css";
+
 
 function Suggestions01() {
     const imagesMap = [

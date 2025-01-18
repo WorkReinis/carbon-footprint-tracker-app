@@ -13,13 +13,13 @@ import {
 
 function SmallAreaChart01() {
     const data = [
-        { name: "Jan", value: 18 },
-        { name: "Feb", value: 22 },
-        { name: "Mar", value: 30 },
-        { name: "Apr", value: 25 },
-        { name: "May", value: 22 },
-        { name: "Jun", value: 18 },
-        { name: "Jul", value: 35 },
+        { name: "Jan", value: 18, highlightValue: 0 },
+        { name: "Feb", value: 22, highlightValue: 0 },
+        { name: "Mar", value: 30, highlightValue: 0 },
+        { name: "Apr", value: 25, highlightValue: 0 },
+        { name: "May", value: 22, highlightValue: 0 },
+        { name: "Jun", value: 18, highlightValue: 18 },
+        { name: "Jul", value: 35, highlightValue: 35 },
     ];
 
     return (
@@ -52,12 +52,14 @@ function SmallAreaChart01() {
                             <stop
                                 offset="100%"
                                 style={{
-                                    stopColor: "var(--secondary-color)",
-                                    stopOpacity: 0,
+                                    stopColor: "white",
+                                    stopOpacity: 1,
                                 }}
                             />
                         </linearGradient>
+
                     </defs>
+
                     <XAxis
                         dataKey="name"
                         axisLine={false}
@@ -97,6 +99,8 @@ function SmallAreaChart01() {
                         fill="url(#colorArea)"
                         strokeWidth={3}
                     />
+
+
                 </AreaChart>
             </ResponsiveContainer>
         </div>

@@ -11,11 +11,11 @@ import {
 } from "recharts";
 
 const data = [
-    { name: "Meat", value: 90, maxValue: 100 },
-    { name: "Processed Foods", value: 70, maxValue: 100 },
-    { name: "Diary", value: 50, maxValue: 100 },
-    { name: "Beverages", value: 40, maxValue: 100 },
-    { name: "Vegetables", value: 10, maxValue: 100 },
+    { name: "Meat", value: 90, maxValue: 100, highlightValue: 90 },
+    { name: "Processed Foods", value: 70, maxValue: 100, highlightValue: 0 },
+    { name: "Diary", value: 50, maxValue: 100, highlightValue: 0 },
+    { name: "Beverages", value: 40, maxValue: 100, highlightValue: 0 },
+    { name: "Vegetables", value: 10, maxValue: 100, highlightValue: 0 },
 ];
 
 function BarChart02() {
@@ -60,6 +60,14 @@ function BarChart02() {
                             offset={5}
                             style={{ fontSize: "0.8em" }}
                         />
+                    </Bar>
+
+                    <Bar
+                        dataKey="highlightValue"
+                        fill="var(--analytics-accent)"
+                        barSize={10}
+                        radius={[5, 5, 5, 5]}
+                    >
                         
                     </Bar>
                 </BarChart>

@@ -7,7 +7,7 @@ function Footer01() {
     return (
         <div className="footer-container flex flex-col justify-start items-center mt-4">
             <h1 className="text-xl font-bold ">
-                Your dashboard looks great
+                Your dashboard looks great!
             </h1>
             <h1 className="text-md leading-tight pb-4">
                         Encourage friends to take action

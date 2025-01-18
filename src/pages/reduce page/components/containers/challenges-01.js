@@ -23,15 +23,6 @@ function Challenges01() {
             <div className="challenges-cards-container flex flex-col gap-4">
                 {" "}
                 <ChallengesCard01
-                    barValue={30}
-                    heading="Go Car-Free and Use Sustainable Transport"
-                    duration="One week"
-                    progress=" 2 / 7"
-                    description=""
-                    img={imgMap[0]}
-                    icon=""
-                />
-                <ChallengesCard01
                     barValue={70}
                     heading="Enjoy Plant-Based Meals for Breakfast"
                     duration="2 weeks"
@@ -47,6 +38,15 @@ function Challenges01() {
                     progress=" 23 / 90"
                     description=""
                     img={imgMap[2]}
+                    icon=""
+                />
+                <ChallengesCard01
+                    barValue={30}
+                    heading="Go Car-Free and Use Sustainable Transport"
+                    duration="One week"
+                    progress=" 2 / 7"
+                    description=""
+                    img={imgMap[0]}
                     icon=""
                 />
             </div>

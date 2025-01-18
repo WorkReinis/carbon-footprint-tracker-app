@@ -3,11 +3,7 @@
     height: 100%;
     padding: 1.5em;
     padding-top: 4em;
-    background: linear-gradient(
-        180deg,
-        var(--secondary-color) 0%,
-        var(--dark-secondary-color) 80%
-    );
+    background: var(--light-gradient);
 }
 
 /* Textarea styling */
@@ -49,16 +45,16 @@
 }
 
 .button-restart {
-    background-color: white;
-    color: var(--primary-color);
+    background-color: var(--normal-orange);
+    color: var(--white);
 }
 
 .button-edit {
-    background-color: var(--light-gray);
-    color: black;
+    background-color: var(--normal-gray2);
+    color: var(--dark-gray);
 }
 
 .button-save {
-    background-color: var(--primary-color);
+    background-color: var(--darkish-green);
     color: white;
 }

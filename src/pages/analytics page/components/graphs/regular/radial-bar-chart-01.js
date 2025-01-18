@@ -10,11 +10,11 @@ import CustomTooltip01 from "../custom-tooltip-01";
 
 function RadialBarChart01() {
     const data = [
-        { name: "Public Transport", value: 20, fill: "var(--primary-color)" },
-        { name: "Ridesharing", value: 30, fill: "#6969C4" },
-        { name: "Commuter Flights", value: 40, fill: "#7878C8" },
-        { name: "Car Travel", value: 50, fill: "#8787CB" },
-        { name: "Long-haul flights", value: 80, fill: "#9696CF" },
+        { name: "Public Transport", value: 20, fill: "var(--lightest-green)" },
+        { name: "Ridesharing", value: 30, fill: "var(--light-green)" },
+        { name: "Commuter Flights", value: 40, fill: "var(--normal-green)" },
+        { name: "Car Travel", value: 50, fill: "var(--darkish-green)" },
+        { name: "Long-haul flights", value: 80, fill: "var(--analytics-accent)" },
         
     ];
 

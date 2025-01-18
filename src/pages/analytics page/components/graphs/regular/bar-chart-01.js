@@ -12,13 +12,13 @@ import {
 
 function BarChart01() {
     const data = [
-        { name: "Jan", value: 12 },
-        { name: "Feb", value: 15 },
-        { name: "Mar", value: 30 },
-        { name: "Apr", value: 35 },
-        { name: "May", value: 40 },
-        { name: "Jun", value: 25 },
-        { name: "Jul", value: 15 },
+        { name: "Jan", value: 12, highlightValue: 0 },
+        { name: "Feb", value: 15, highlightValue: 0 },
+        { name: "Mar", value: 30, highlightValue: 0 },
+        { name: "Apr", value: 35, highlightValue: 0 },
+        { name: "May", value: 40, highlightValue: 40 },
+        { name: "Jun", value: 25, highlightValue: 0 },
+        { name: "Jul", value: 15, highlightValue: 0 },
     ];
 
     return (
@@ -32,6 +32,7 @@ function BarChart01() {
                         left: 0,
                         bottom: 0,
                     }}
+                    barGap={-16}
                 >
                     <defs>
                         <linearGradient
@@ -52,6 +53,28 @@ function BarChart01() {
                                 offset="100%"
                                 style={{
                                     stopColor: "var(--secondary-color)",
+                                    stopOpacity: 1,
+                                }}
+                            />
+                        </linearGradient>
+                        <linearGradient
+                            id="gradientBar2"
+                            x1="0"
+                            y1="0"
+                            x2="0"
+                            y2="1"
+                        >
+                            <stop
+                                offset="0%"
+                                style={{
+                                    stopColor: "var(--analytics-accent)",
+                                    stopOpacity: 1,
+                                }}
+                            />
+                            <stop
+                                offset="100%"
+                                style={{
+                                    stopColor: "var(--light-analytics-accent)",
                                     stopOpacity: 1,
                                 }}
                             />
@@ -92,6 +115,13 @@ function BarChart01() {
                             style={{ fontSize: "0.80em" }}
                         />
                     </Bar>
+
+                    <Bar
+                        dataKey="highlightValue"
+                        fill="url(#gradientBar2)"
+                        barSize={17}
+                        radius={[15, 15, 15, 15]}
+                    ></Bar>
                 </BarChart>
             </ResponsiveContainer>
         </div>

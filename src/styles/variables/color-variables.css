@@ -1,19 +1,89 @@
 :root {
-    --light-primary-color: #7f81d5;
-    --primary-color: #5a5ac1;
-    --darkish-primary-color: #4a4ab0;
-    --dark-primary-color: #2c2c74;
-    --secondary-color: #e2e9ff;
-    --dark-secondary-color: #c6d3ff;
+    --light-primary-color: rgb(123, 188, 160);
+    --primary-color: rgb(83, 133, 119);
+    --darkish-primary-color: rgb(64, 119, 96);
+    --dark-primary-color: rgb(28, 67, 58);
+
+    --lightest-khaki: rgb(255, 253, 247);
+    --light-khaki: rgb(248, 243, 232);
+    --normal-khaki: rgb(233, 230, 215);
+    --darkish-khaki: rgb(217, 214, 200);
+
+    --darkest-green: rgb(16, 35, 34);
+    --dark-green: rgb(28, 67, 58);
+    --darkish-green2: rgb(46, 93, 77);
+    --darkish-green: rgb(64, 119, 96);
+    --normal-green: rgb(83, 133, 119);
+    --light-green: rgb(123, 188, 160);
+    --lightest-green: rgb(148, 210, 184);
+    --lightest-green2: rgb(191,227, 210);
+    --lightest-green3: rgb(240, 255, 248);
+
+
+    --accent-green: rgb(149, 184, 142);
+
+    --light-orange: rgb(242, 217, 189);
+    --normal-orange: rgb(218, 175, 119);
+
+    --light-muted-coral: #f4b3a6;
+    --muted-coral: #ff8a65;
+
+    --secondary-color: rgb(148, 210, 184);
+    --dark-secondary-color: rgb(123, 188, 160);
+
+    --white: white;
     --lightest-gray: #f8f9fc;
     --light-gray: #f1f2f6;
+    --normal-gray2: #dde5f3;
     --dark-gray: #4a4a4a;
     --normal-gray: #a4adbc;
     --darkish-gray: #5a5a5a;
 
-    --light-primary-gradient: linear-gradient(
+    --header-footer-gradient: linear-gradient(
         180deg,
-        var(--light-primary-color) 0%,
-        var(--primary-color) 60%
+        var(--light-green) 0%,
+        var(--normal-green) 60%
     );
+
+    --light-gradient: linear-gradient(
+        180deg,
+        var(--light-khaki) 0%,
+        var(--lightest-green2) 60%
+    );
+    
+    --dark-gradient: linear-gradient(
+        180deg,
+        var(--light-green) 0%,
+        var(--normal-green) 100%
+    );
+
+    --outline-gradient: linear-gradient(
+        180deg,
+        var(--dark-green) 0%,
+        var(--normal-green) 100%
+    );
+
+
+    --red-gradient: linear-gradient(
+        180deg,
+        var(--light-analytics-accent) 0%,
+        var(--analytics-accent) 100%
+    );
+
+
+    --analytics-accent: #ff8a65;
+    --light-analytics-accent: #f4b3a6;
 }
+
+/* 
+--light-primary-color: #7f81d5;
+--primary-color: #5a5ac1;
+--darkish-primary-color: #4a4ab0;
+--dark-primary-color: #2c2c74;
+--secondary-color: #e2e9ff;
+--dark-secondary-color: #c6d3ff;
+--lightest-gray: #f8f9fc;
+--light-gray: #f1f2f6;
+--dark-gray: #4a4a4a;
+--normal-gray: #a4adbc;
+--darkish-gray: #5a5a5a; */

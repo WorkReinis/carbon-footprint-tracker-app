@@ -2,13 +2,13 @@ import { ResponsiveContainer, PieChart, Pie, Tooltip, Cell } from "recharts";
 import CustomTooltip01 from "../custom-tooltip-01";
 
 const data = [
-    { name: "Category A", value: 500 },
+    { name: "Category A", value: 400 },
     { name: "Category B", value: 300 },
 ];
 
 const COLORS = [
-    "#5A5AC1" /* --primary-color */,
-    "#E2E9FF" /* --secondary-color */,
+    "var(--analytics-accent)" /* --primary-color */,
+    "var(--normal-green)" /* --secondary-color */,
     "#6969C4" /* light-indigo */,
     "#7878C8" /* soft-blue */,
     "#8787CB" /* pale-lavender */,

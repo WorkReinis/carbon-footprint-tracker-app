@@ -1,4 +1,4 @@
-.home-carousel-card-container-01 {
+.input-carousel-card-container-01 {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 1em;
@@ -6,20 +6,21 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: white;
+    background-color: var(--white);
+
     border-radius: 1em !important;
     box-shadow: var(--card-shadow);
     user-select: none;
     cursor: grabbing;
-    color: var(--primary-color);
+    color: var(--darkish-gray);
 
 }
-.home-visuals-container-01 {
+.input-visuals-container-01 {
     height: auto;
     padding-bottom: 0.5em;
 }
 
-.home-carousel-card-img-01 {
+.input-carousel-card-img-01 {
     width: 100%;
     height: auto; /* Preserves the aspect ratio */
     position: relative;
@@ -28,11 +29,11 @@
     object-fit: contain;
 }
 
-.home-carousel-card-text-01 {
+.input-carousel-card-text-01 {
 
 }
 
-.home-carousel-card-heart-01 {
+.input-carousel-card-heart-01 {
     background-color: white;
     border-radius: 50%;
     width: 2em;
@@ -42,7 +43,7 @@
     transition: transform 0.2s;
 }
 
-.home-carousel-card-heart-01:active {
+.input-carousel-card-heart-01:active {
     transform: scale(1.2);
 }
 

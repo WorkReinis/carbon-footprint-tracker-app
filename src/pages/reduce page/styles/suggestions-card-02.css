@@ -1,4 +1,4 @@
-.suggestions-card-container {
+.suggestions-card-container-2 {
     background-color: var(--white);
     border-radius: 1em;
     padding: 0.5em;
@@ -7,14 +7,14 @@
     
 }
 
-.suggestions-image-placeholder {
+.suggestions-image-placeholder-2 {
     height: 3em;
-    aspect-ratio: 1 / 1;
+    width: 4em;
     border-radius: 0.5em;
+    object-fit: cover;
 }
 
-.suggestions-image {
+.suggestions-image-2 {
     overflow: hidden;
-    object-fit: cover;
 }
 

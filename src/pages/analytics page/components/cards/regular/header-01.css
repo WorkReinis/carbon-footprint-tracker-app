@@ -1,8 +1,13 @@
 .header-container {
-    background: linear-gradient(180deg, var(--light-primary-color) 0%, var(--primary-color) 60%);
+    /* background: linear-gradient(
+        180deg,
+        var(--normal-green) 0%,
+        var(--dark-green) 100%
+    ); */
+
+    background: var(--header-footer-gradient);
     padding: 4em 2em 2em 2em;
     width: 100%;
     color: white;
     user-select: none;
 }
-

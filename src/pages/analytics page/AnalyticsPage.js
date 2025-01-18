@@ -97,18 +97,7 @@ function AnalyticsPage() {
                             />
                         }
                     />
-                    <RegularCard01
-                        title="Diet Footprint Breakdown"
-                        units=""
-                        context="kg CO₂"
-                        graph={<BarChart02 />}
-                        icon={
-                            <IoFastFoodOutline
-                                size={28}
-                                style={{ color: "var(--normal-gray)" }}
-                            />
-                        }
-                    />
+                   
 
                     <RegularCard01
                         title="Travel Footprint Breakdown"
@@ -122,36 +111,7 @@ function AnalyticsPage() {
                         }
                     />
 
-                    <div className="small-cards-container">
-                        <SmallCard01
-                            title="Compare"
-                            value="18%"
-                            units=""
-                            context="above average"
-                            graph={<SmallPieChart01 />}
-                            icon={
-                                <FaScaleUnbalanced
-                                    size={22}
-                                    style={{ color: "var(--normal-gray)" }}
-                                />
-                            }
-                        />
-
-                        <SmallCard01
-                            fade=""
-                            title="Projection"
-                            value="34%"
-                            units=""
-                            context="future reduction"
-                            graph={<SmallComposedChart01 />}
-                            icon={
-                                <SiFuturelearn
-                                    size={20}
-                                    style={{ color: "var(--normal-gray)" }}
-                                />
-                            }
-                        />
-                    </div>
+                   
 
                     {/* <RegularCard01
                         fade="fade-in-1"
@@ -218,7 +178,51 @@ function AnalyticsPage() {
                             />
                         }
                     /> */}
+                    
+                    <div className="small-cards-container">
+                        <SmallCard01
+                            title="Compare"
+                            value="18%"
+                            units=""
+                            context="above average"
+                            graph={<SmallPieChart01 />}
+                            icon={
+                                <FaScaleUnbalanced
+                                    size={22}
+                                    style={{ color: "var(--normal-gray)" }}
+                                />
+                            }
+                        />
 
+                        <SmallCard01
+                            fade=""
+                            title="Projection"
+                            value="34%"
+                            units=""
+                            context="future reduction"
+                            graph={<SmallComposedChart01 />}
+                            icon={
+                                <SiFuturelearn
+                                    size={20}
+                                    style={{ color: "var(--normal-gray)" }}
+                                />
+                            }
+                        />
+                    </div>
+
+                    <RegularCard01
+                        title="Diet Footprint Breakdown"
+                        units=""
+                        context="kg CO₂"
+                        graph={<BarChart02 />}
+                        icon={
+                            <IoFastFoodOutline
+                                size={28}
+                                style={{ color: "var(--normal-gray)" }}
+                            />
+                        }
+                    />
+                    
                     <Footer01 />
                 </div>
             </div>

@@ -1,11 +1,11 @@
 .confirmation-container {
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--dark-secondary-color) 80%);
+    background-color: var(--lightest-gray)
 }
 
 .upper-container {
-    background: linear-gradient(180deg, var(--light-primary-color) 0%, var(--primary-color) 80%);
+    background: var(--header-footer-gradient);
     /* background: linear-gradient(
         180deg,
         var(--secondary-color) 0%,
@@ -13,9 +13,10 @@
     ); */
     border-radius: 0 0 2em 2em;
     padding: 1.5em;
-    padding-top: 4em;
+    padding-top: 5em;
     height: 100%;
     color: white;
+    box-shadow: var(--container-shadow)
 }
 
 .carbon-result {
@@ -36,7 +37,7 @@
     border-radius: 2.5em 2.5em 2.5em 0;
     padding: 1.25em;
     width: 75%;
-
+  
     z-index: 1;
 }
 
@@ -45,7 +46,7 @@
     aspect-ratio: 1 / 1;
     background: radial-gradient(
         circle,
-        var(--dark-secondary-color) 0%,
+        var(--lightest-green) 0%,
         rgba(0, 0, 255, 0) 70%
     );
 
@@ -68,8 +69,7 @@
 }
 
 .lower-container {
-    
-    
+
 }
 
 .lower-container h2 {
@@ -85,7 +85,7 @@
 }
 
 .button-primary {
-    background-color: var(--primary-color);
+    background-color: var(--dark-green);
     color: white;
     border: none;
     transition: transform 0.2s;
@@ -93,7 +93,6 @@
     padding: 1em;
     border-radius: 1em;
     width: 100%;
-
 }
 
 .button-primary:active {
@@ -101,5 +100,5 @@
 }
 
 .button-primary:hover {
-    background-color: var(--darkish-primary-color)
+    background-color: var(--darkest-green);
 }
