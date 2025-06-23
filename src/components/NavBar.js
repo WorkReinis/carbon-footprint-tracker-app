@@ -22,7 +22,9 @@ function NavBar() {
                     setKey((prev) => prev + 1);
                     setActiveButton("home");
                 }}
-                className={`${activeButton === "home" ? "active" : ""} nav-button`}
+                className={`${
+                    activeButton === "home" ? "active" : ""
+                } nav-button`}
             >
                 <GoHome
                     size={24}
@@ -35,7 +37,9 @@ function NavBar() {
                     setPage("analytics");
                     setActiveButton("analytics");
                 }}
-                className={`${activeButton === "analytics" ? "active" : ""} nav-button`}
+                className={`${
+                    activeButton === "analytics" ? "active" : ""
+                } nav-button`}
             >
                 <GrAnalytics size={22} />
             </button>
@@ -45,7 +49,9 @@ function NavBar() {
                     setPage("input");
                     setActiveButton("input");
                 }}
-                className={`${activeButton === "input" ? "active" : ""} nav-button-input`}
+                className={`${
+                    activeButton === "input" ? "active" : ""
+                } nav-button-input`}
             >
                 <IoAddCircle size={50} />
             </button>
@@ -55,7 +61,9 @@ function NavBar() {
                     setPage("reduce");
                     setActiveButton("reduce");
                 }}
-                className={`${activeButton === "reduce" ? "active" : ""} nav-button`}
+                className={`${
+                    activeButton === "reduce" ? "active" : ""
+                } nav-button`}
             >
                 <LuLeaf size={24} />
             </button>
@@ -65,7 +73,9 @@ function NavBar() {
                     setPage("settings");
                     setActiveButton("settings");
                 }}
-                className={`${activeButton === "settings" ? "active" : ""} nav-button`}
+                className={`${
+                    activeButton === "settings" ? "active" : ""
+                } nav-button`}
             >
                 <IoSettingsOutline size={24} />
             </button>
