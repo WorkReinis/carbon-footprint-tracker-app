@@ -5,7 +5,7 @@
 }
 
 .upper-container {
-    background: var(--header-footer-gradient);
+    background: var(--darkest-gradient);
     /* background: linear-gradient(
         180deg,
         var(--secondary-color) 0%,
@@ -85,7 +85,7 @@
 }
 
 .button-primary {
-    background-color: var(--dark-green);
+    background-color: var(--darkish-green2);
     color: white;
     border: none;
     transition: transform 0.2s;
@@ -100,5 +100,5 @@
 }
 
 .button-primary:hover {
-    background-color: var(--darkest-green);
+    background-color: var(--dark-green);
 }

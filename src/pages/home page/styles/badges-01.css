@@ -1,9 +1,16 @@
 .home-badges-container {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    padding-top: 1.5em;
+
+}
+
+.home-badges-card-container {
+    padding: 1em;
+    background-color: var(--white);
+    border-radius: 1em;
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+
 }
 
 .home-see-more-button {
-    color: var(--dark-gray)
+    color: var(--dark-gray);
 }

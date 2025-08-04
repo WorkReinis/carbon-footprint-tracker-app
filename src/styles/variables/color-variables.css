@@ -9,15 +9,17 @@
     --normal-khaki: rgb(233, 230, 215);
     --darkish-khaki: rgb(217, 214, 200);
 
-    --darkest-green: rgb(16, 35, 34);
-    --dark-green: rgb(28, 67, 58);
-    --darkish-green2: rgb(46, 93, 77);
-    --darkish-green: rgb(64, 119, 96);
-    --normal-green: rgb(83, 133, 119);
-    --light-green: rgb(123, 188, 160);
-    --lightest-green: rgb(148, 210, 184);
-    --lightest-green2: rgb(191,227, 210);
-    --lightest-green3: rgb(240, 255, 248);
+
+--darkest-green: rgb(10, 40, 60);        /* Deep teal with blue tone */
+--dark-green: rgb(20, 70, 75);           /* Blue-pine green */
+--darkish-green2: rgb(35, 90, 85);       /* Blue-leaning forest green */
+--darkish-green: rgb(57, 117, 113);      /* Your adjusted tone (cool, balanced) */
+--normal-green: rgb(83, 133, 119);       /* Natural green (original tone) */
+--light-green: rgb(123, 188, 160);       /* Soft green with slight coolness */
+--lightest-green: rgb(148, 210, 184);    /* Natural pastel green */
+--lightest-green2: rgb(191, 227, 210);   /* Gentle, fresh green */
+--lightest-green3: rgb(240, 255, 248);   /* Very light mint/green-tinted white */
+
 
 
     --accent-green: rgb(149, 184, 142);
@@ -42,7 +44,13 @@
     --header-footer-gradient: linear-gradient(
         180deg,
         var(--light-green) 0%,
-        var(--normal-green) 60%
+        var(--darkish-green) 100%
+    );
+
+    --home-page-gradient: linear-gradient(
+        180deg,
+        var(--light-green) 0%,
+        var(--dark-green) 50%
     );
 
     --light-gradient: linear-gradient(
@@ -57,6 +65,11 @@
         var(--normal-green) 100%
     );
 
+        --darkest-gradient: linear-gradient(
+        180deg,
+        var(--light-green) 0%,
+        var(--darkish-green2) 100%
+    );
     --outline-gradient: linear-gradient(
         180deg,
         var(--dark-green) 0%,

@@ -79,7 +79,7 @@ function InputConfirmationPage({ avatarNumber }) {
                                     </h1>
                                     <h1 className="text-3xl font-bold"></h1>
                                 </div>
-                                <h1 className="text-xl ">kg CO₂</h1>
+                                <h1 className="text-xl ">kg CO<sub>2</sub>e</h1>
                             </div>
                             <h1 className="text-2xl ">{avatarText[avatarNumber - 1]}
                             </h1>

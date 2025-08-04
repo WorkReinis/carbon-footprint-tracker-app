@@ -1,0 +1,11 @@
+.home-page {
+    background: var(--home-page-gradient);
+}
+
+.home-page-content {
+    background-color: var(--lightest-gray);
+    border-radius: 2em 2em 0 0;
+
+    padding: 1.5em 1.5em 6em 1.5em;
+    box-shadow: var(--container-shadow)
+}

@@ -25,7 +25,7 @@ function ReduceCarouselCard02({
     const [isLiked, setIsLiked] = useState(false);
 
     return (
-        <div className="reduce-carousel-card-container-02 flex flex-col justify-between hover-scale active-scale">
+        <div className="reduce-carousel-card-container-02 flex flex-col justify-between active-scale">
             <div className="reduce-visuals-container-02">
                 <button className="reduce-carousel-card-heart-02 flex justify-center items-center">
                     <FaPlayCircle size={70} />

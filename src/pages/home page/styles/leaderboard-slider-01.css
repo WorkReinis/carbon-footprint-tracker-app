@@ -1,0 +1,28 @@
+.leaderboard-slider-container {
+    height: 100%;
+}
+
+.leaderboard-slider {
+    background: white;
+    border: 1px solid var(--light-gray);
+    border-radius: 2em;
+    box-shadow: var(--card-shadow);
+}
+
+.leaderboard-slider-item {
+    flex: 1;
+    text-align: center;
+    padding: 0.75em;
+    cursor: pointer;
+    color: var(--dark-gray);
+    transition: all 0.3s ease;
+    user-select: none;
+    width: 5em;
+}
+
+.leaderboard-slider-item.active {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 10em;
+    transition: all 0.3s ease;
+}

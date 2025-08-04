@@ -11,8 +11,8 @@ function BadgesCard01({ img, title, description, date }) {
         <div className="badges-card-container fex flex-col justify-center align-center text-center w-1/3">
             <div className='badges-card-img hover-scale active-scale'style={containerStyle}></div>
             <div className="text-sm font-bold leading-0 pt-2">{title}</div>
-            <div className="text-xs">{description}</div>
-            <div className="text-xs">{date}</div>
+            <div className="text-xs pb-1">{description}</div>
+            <div className="text-xs text-gray-500">{date}</div>
         </div>
     );
 }

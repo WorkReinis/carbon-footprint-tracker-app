@@ -1,0 +1,77 @@
+.home-greeting-container {
+    /* padding-left: 2em;
+    padding-right: 2em; */
+    padding-top: 4em;
+    padding-bottom: 2em;
+    position: relative;
+    border-radius: 0 0 2em 2em;
+}
+
+.greeting-text-box {
+    margin-left: 2em;
+    margin-right: 2em;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1em 1em 1em 0;
+    padding: 0.75em 1em;
+    width: 55%;
+    z-index: 10;
+    position: relative;
+    box-shadow: var(--card-shadow)
+}
+
+.home-avatar-img-container {
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(
+        circle,
+        var(--lightest-green) 0%,
+        rgba(0, 0, 255, 0) 70%
+    );
+    overflow: hidden;
+    margin-top: -4.0em; /* Overlap */
+    position: relative;
+}
+
+.home-avatar-img-outline {
+    width: 65%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    /* background: var(--darkest-gradient); */
+    /* border: 2px solid var(--light-green); */
+      box-shadow: 
+    /* 0 -10px 15px rgba(240, 255, 248, 0.4),   */
+    0 10px 15px rgba(10, 40, 60, 0.5);         
+
+    position: relative;
+
+}
+
+.home-avatar-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    transition: transform 0.3s ease;
+    
+}
+
+.avatar-img:hover:not(:active) {
+    transform: scale(1.05);
+}
+
+.avatar-img:active {
+    transform: rotate(15deg) scale(1.05);
+    cursor: grabbing;
+}
+
+.footprint-value {
+    z-index: 10;
+    margin-top: -4.5em; /* Overlap */
+    margin-bottom: 1.5em;
+    color: white;
+    position: relative;
+}
+
+
+

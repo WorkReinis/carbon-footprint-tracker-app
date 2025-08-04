@@ -1,0 +1,17 @@
+.leaderboard-card-container {
+    cursor: pointer;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.leaderboard-image-placeholder {
+    height: 2.5em;
+    aspect-ratio: 1 / 1;
+}
+
+.leaderboard-image {
+    aspect-ratio: 1 / 1;
+    border-radius: 90em;
+    overflow: hidden;
+    object-fit: cover;
+}

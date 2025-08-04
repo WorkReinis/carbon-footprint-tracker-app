@@ -5,7 +5,7 @@ function Classes01() {
     return (
         <div className="reduce-classes-container flex justify-between items-center">
             <div>
-                <div className="flex flex-row justify-between items-baseline pl-6 pb-4 pr-6">
+                <div className="flex flex-row justify-between items-baseline pl-6 pb-2 pr-6">
                     <span className="font-bold text-xl">Climate Classes</span>
                     <button className="offsets-button font-bold text-sm">
                         See More (8)

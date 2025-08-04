@@ -15,10 +15,10 @@ function Badges01() {
                 </button>
             </div>
 
-            <div className="flex flex-row space-between align-center gap-1">
+            <div className="home-badges-card-container flex flex-row space-between align-center gap-1">
                 <BadgesCard01
                     img={imageMap[1]}
-                    title="12 months climate positive"
+                    title="12 months net positive"
                     description=""
                     date="12/01/2025"
                 />
