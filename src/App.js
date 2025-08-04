@@ -1,10 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect, useRef } from "react";
 import { MyProvider, MyContext } from "./context/pages";
 
 import "./App.css";
-import './styles/phone-frame.css';
-import './styles/variables/color-variables.css'
-import './styles/variables/box-shadow.css'
+import "./styles/phone-frame.css";
+import "./styles/variables/color-variables.css";
+import "./styles/variables/box-shadow.css";
 
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/home page/HomePage";
@@ -15,11 +15,19 @@ import InputEditPage from "./pages/input page/InputEditPage";
 import ReducePage from "./pages/reduce page/ReducePage";
 import SettingsPage from "./pages/settings page/SettingsPage";
 
-
 function App() {
     const { page } = useContext(MyContext);
     const { navBar } = useContext(MyContext);
+    const scrollContainerRef = useRef(null);
 
+    // Scrolls to the top of the page when the page changes
+    useEffect(() => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollTo(0, 0); // or use { top: 0, behavior: "smooth" }
+        }
+    }, [page]);
+
+    //Renders the current page
     const renderPage = () => {
         switch (page) {
             case "home":
@@ -43,6 +51,7 @@ function App() {
         }
     };
 
+    //Renders the NavBar based on the navBar state
     const renderNavBar = () => {
         switch (navBar) {
             case true:
@@ -58,7 +67,7 @@ function App() {
             <div className="app-wrapper">
                 <div className="phone-frame">
                     <div className="phone-bezel">
-                        <div className="app-content">
+                        <div className="app-content" ref={scrollContainerRef}> {/* Scrollable content is within this div */}
                             <div className="page-div">{renderPage()}</div>
                         </div>
                         {renderNavBar()}
