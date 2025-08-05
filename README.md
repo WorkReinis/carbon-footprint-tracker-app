@@ -15,14 +15,26 @@
 
 A mobile app that helps users track their daily carbon footprint using speech-to-text and AI — making sustainable living accessible one habit at a time. This project was built over 10-weeks during [**TechLabs**](https://www.techlabs.org/location/rotterdam) learning program. 
 
-Built with React and styled using TailwindCSS for rapid, responsive UI development. Data visualization is powered by Recharts, and smooth navigation is enabled by Swiper.js.
-
 🚀 [**Live Demo**](https://carbon-footprint-tracker-app.netlify.app/)
+
+Built with React and styled using TailwindCSS for rapid, responsive UI development. Data visualization is powered by Recharts, and smooth navigation is enabled by Swiper.js.
 
 
 <p align="center">
   <img src="./screenshots/panel-01-100r.png" alt="Speech-to-text" style="width:70%" />
 </p>
+
+
+## ✨ Features
+
+- Track daily carbon footprint using **text and speech inputs**
+- AI-assisted footprint estimation (via back-end API)
+- **Reusable React components** built with **TailwindCSS**
+- **Interactive avatar** that responds to user performance (happy/sad earth)
+- **React Hooks** used for state management and component logic
+- Data visualizations built with **Recharts**
+- **Responsive carousels** and sliders using **Swiper.js**
+- Designed with a **mobile-first layout**
 
 
 ## 👨‍💻 My Role & Takeaways – UI Designer & Front-End Developer
@@ -67,24 +79,6 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
    </p>
 </p>
 
-## ✨ Features
-
-- Track carbon footprint using text and speech input
-- AI-powered habit analysis
-- Mobile-first responsive design
-- Swipeable onboarding panels
-- Mock data visualized with Recharts
-
-
-- Track daily carbon footprint using **text and speech inputs**
-- AI-assisted footprint estimation (via back-end API)
-- **Reusable React components** built with **TailwindCSS**
-- **Interactive avatar** that responds to user performance (happy/sad earth)
-- **React Hooks** used for state management and component logic
-- Data visualizations built with **Recharts**
-- **Responsive carousels** and sliders using **Swiper.js**
-- Designed with a **mobile-first layout** 
-
 
 ## 🚀 Future Work  
 
@@ -104,7 +98,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 ## ⚙️ Running Locally
 
 <details>
-  <summary>⚙️ Running Locally</summary>
+  <summary>Instructions</summary>
 
   <p>
 
