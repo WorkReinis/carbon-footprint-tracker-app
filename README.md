@@ -23,7 +23,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 
 <p align="center">
-  <img src="./screenshots/panel-01-100r.png" alt="Text-to-speech" style="width:70%" />
+  <img src="./screenshots/panel-01-100r.png" alt="Text-to-speech" style="width:90%" />
 </p>
 
 
@@ -47,7 +47,11 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 
 <p align="center">
-  <img src="./screenshots/panel-02-100r.png" alt="Text-to-speech" style="width:70%" />
+  <img src="./screenshots/panel-02-100r.png" alt="Text-to-speech" style="width:90%" />
+</p>  
+<p align="center">
+  <img src="./screenshots/panel-03-200r.png" alt="Text-to-speech" width="48%" />
+  <img src="./screenshots/panel-04-200r.png" alt="Text-to-speech" width="48%" />
 </p>
 
 
@@ -61,10 +65,6 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Develop Settings page and user account features
 
 
-<p align="center">
-  <img src="./screenshots/panel-03-200r.png" alt="Text-to-speech" width="48%" />
-  <img src="./screenshots/panel-04-200r.png" alt="Text-to-speech" width="48%" />
-</p>
 
 
 ## ⚙️ Running Locally
