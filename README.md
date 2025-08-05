@@ -22,6 +22,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 <p align="center">
   <img src="./screenshots/panel-01-100r.png" alt="Speech-to-text" style="width:70%" />
+  <p align="center"><em>Image: Speech-to-text input screen</em></p>
 </p>
 
 
