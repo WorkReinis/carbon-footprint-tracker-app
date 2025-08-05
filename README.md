@@ -21,6 +21,15 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 [**Front-End Demo**](https://carbon-footprint-tracker-app.netlify.app/)  
 
+<img src="./screenshots/panel-01.png" alt="Text-to-speech" style="width:60%; border-radius: 12px;" />
+
+<img src="./screenshots/panel-01.png" alt="Text-to-speech" style="width:60%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+
+<p align="center">
+  <img src="./screenshots/panel-01.png" alt="Text-to-speech" style="width:60%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+</p>
+
+
 <p align="center">
   <img src="./screenshots/panel-01.png" alt="Text-to-speech" width="300" style="border-radius: 12px;" />
 </p>
