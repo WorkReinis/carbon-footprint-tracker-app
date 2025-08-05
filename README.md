@@ -4,6 +4,7 @@
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&logoWidth=30)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&logoWidth=30)
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&logoWidth=30)
+![Create React App](https://img.shields.io/badge/-Create%20React%20App-09D3AC?logo=create-react-app&logoColor=white) 
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white&logoWidth=30)
 ![Recharts](https://img.shields.io/badge/-<Recharts%20/>-white?logo=recharts&logoColor=black&logoWidth=30)
 ![Swiper.js](https://img.shields.io/badge/-Swiper.js-6332F6?logo=swiper&logoColor=white&logoWidth=30)
@@ -12,23 +13,27 @@
 ![Netlify](https://img.shields.io/badge/-Netlify-00C7B7?logo=netlify&logoColor=white&logoWidth=30)
 [![TechLabs](https://img.shields.io/badge/->.%20TechLabs-FF007F?)](https://www.techlabs.org/location/rotterdam)
 
-2BB8C2
 
-A mobile-first app that helps users log their daily carbon footprint using speech-to-text and AI. In a world facing environmental challenges, it makes sustainable living simple and accessible—one habit at a time. This project was built over 10-weeks during [**TechLabs**](https://www.techlabs.org/location/rotterdam) learning program. 
+
+A mobile app that helps users track their daily carbon footprint using speech-to-text and AI — making sustainable living accessible one habit at a time. This project was built over 10-weeks during [**TechLabs**](https://www.techlabs.org/location/rotterdam) learning program. 
+
+Built with React and styled using TailwindCSS for rapid, responsive UI development. Data visualization is powered by Recharts, and smooth navigation is enabled by Swiper.js.
 
 [**Front-End Demo**](https://carbon-footprint-tracker-app.netlify.app/)  
+
+
+![Mobile UI](./screenshots/panel-01.png)
 
 
 ## 👨‍💻 My Role & Takeaways – Front-End Developer
 
 - Prototyped the app with **low-fidelity wireframes** in Figma  
-- Built UI in **React** using reusable components
-- Styled the interface using **TailwindCSS**  
+- Developed reusable React components with TailwindCSS styling
 - Integrated libraries like **Recharts** and **Swiper.js** 
 - Created all mock data and content to define app structure and flow
-- Balanced UI design, FE development, and content tasks in parallel
-- Learned the value of MVP as a scope management tool
-- Strengthened remote teamwork and cross-role communication
+- Balanced UI design, front-end development, and content creation simultaneously
+- Learned the importance of MVP for scope management
+- Strengthened remote teamwork and cross-role communication skills
 
 
 ## 👥 Team
@@ -51,19 +56,17 @@ A mobile-first app that helps users log their daily carbon footprint using speec
 
 ## ⚙️ Running Locally
 
-Fork and clone the repo:  
-   `git clone https://github.com/your-username/carbon-footprint-tracker-app.git`  
-   `cd carbon-footprint-tracker-app`
-
-Install dependencies:  
-   `npm install`
-
-Start the app (created with Create React App):  
-   `npm start`
+ 
+```bash
+git clone https://github.com/WorkReinis/carbon-footprint-tracker-app.git
+cd carbon-footprint-tracker-app
+npm install
+npm start
+```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser
 
-*Note: Currently, the front end runs with mock data; [Back-End](https://inspiring-semifreddo-7615dd.netlify.app/) integration is planned for future development.*
+*Currently uses mock data; [Back-End](https://inspiring-semifreddo-7615dd.netlify.app/) integration planned.*
 
 
 ## 📄 License
