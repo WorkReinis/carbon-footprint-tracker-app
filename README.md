@@ -29,7 +29,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 ## 👨‍💻 My Role & Takeaways – Front-End Developer
 
-- Prototyped the app with **low-fidelity wireframes** in Figma  
+- Prototyped the app with **low-fidelity wireframes** in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1) 
 - Developed reusable React components with TailwindCSS styling
 - Integrated libraries like **Recharts** and **Swiper.js** 
 - Created all mock data and content to define app structure and flow
@@ -38,12 +38,21 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Strengthened remote teamwork and cross-role communication skills
 
 
+<p align="center">
+  <img src="./screenshots/Figma 01.png" alt="Text-to-speech" style="width:80%" />
+</p>
+
+
 ## 👥 Team
 
 - 👩‍💻 Maaike Wachters – AI, Speech-to-Text, API Integration  
 - 👩‍💻 Mila Levchenko – Prompt Engineering, Footprint Calculation Logic  
 - 🎨 Natascha Smit – UX/UI Designer  
 - 🧑 [Reinis Pakulis](https://nl.linkedin.com/in/reinis-pakulis) – Front-End Developer (that's me!)  
+
+**TechLabs Mentors**  
+- Jeremy Stryker - UX/UI 
+- Pascal Muller - AI
 
 <p align="center">
    <p align="center">
