@@ -63,6 +63,13 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
   </table>
 </p>
 
+
+<p align="center">
+  <img src="./screenshots/panel-01.png" alt="Text-to-speech" width="48%" />
+  <img src="./screenshots/panel-03.png" alt="Text-to-speech" width="48%" />
+</p>
+
+
 ## 👥 Team
 
 - 👩‍💻 Maaike Wachters – AI, Speech-to-Text, API Integration  
