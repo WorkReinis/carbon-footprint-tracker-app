@@ -46,7 +46,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - 👩‍💻 Maaike Wachters – AI, Speech-to-Text, API Integration  
 - 👩‍💻 Mila Levchenko – Prompt Engineering, Footprint Calculation Logic  
 - 🎨 Natascha Smit – UX/UI Designer  
-- 🧑 [Reinis Pakulis](https://nl.linkedin.com/in/reinis-pakulis) – Front-End Developer (that's me!)  
+- 🧑 [Reinis Pakulis](https://nl.linkedin.com/in/reinis-pakulis) – UI Designer, Front-End Developer (that's me!)  
 
 **TechLabs Mentors**  
 - Jeremy Stryker - UX/UI 
