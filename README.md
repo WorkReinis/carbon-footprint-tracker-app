@@ -29,41 +29,26 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 - Track daily carbon footprint using **text and speech inputs**
 - AI-assisted footprint estimation (via back-end API)
-- **Reusable React components** built with **TailwindCSS**
-- **Interactive avatar** that responds to user performance (happy/sad earth)
-- **React Hooks** used for state management and component logic
-- Data visualizations built with **Recharts**
-- **Responsive carousels** and sliders using **Swiper.js**
-- Designed with a **mobile-first layout**
-
-
-## 👨‍💻 My Role & Takeaways – UI Designer & Front-End Developer
-
-- Prototyped the app with **low-fidelity wire-frames** in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1) 
-- Developed reusable React components with TailwindCSS styling
-- Integrated libraries like **Recharts** and **Swiper.js** 
-- Created all mock data and content to define app structure and flow
-- Balanced UI design, front-end development, and content creation simultaneously
-- Learned the importance of MVP for scope management
-- Strengthened remote teamwork and cross-role communication skills
-
+- Interactive Earth avatar reflects your eco performance (happy/sad states)
+- Visualize habits with dynamic Recharts graphs
+- Swiper.js sliders for smooth content navigation
+- Built with a mobile-first layout for modern users
+- Responsive and intuitive interface powered by React + Tailwind CSS
 
 <p align="center">
   <img src="./screenshots/Figma 01.png" alt="Figma wire-frames" style="width:75%" />
 </p>
+<p align="center"><em>Low-fidelity wireframes created in Figma</em></p>
 
+## 👨‍💻 My Role & Takeaways – UI Designer & Front-End Developer
 
-## 👥 Team
-
-- 🧑 [Reinis Pakulis](https://nl.linkedin.com/in/reinis-pakulis) – UI Designer & Front-End Developer *(you’re here!)*
-- 👩‍💻 Maaike Wachters – AI, Speech-to-Text, API Integration  
-- 👩‍💻 Mila Levchenko – Prompt Engineering, Footprint Calculation Logic  
-- 🎨 Natascha Smit – UX/UI Designer  
-
-**Mentors**  
-- Jeremy Stryker – UX/UI  
-- Pascal Muller – AI
-
+- Prototyped the app with **low-fidelity wireframes** in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1) 
+- Developed responsive UI using React and Tailwind CSS
+- Integrated third-party libraries like Recharts (data viz) and Swiper.js (UX) 
+- Created all mock data and content to define app structure and flow
+- Balanced UI design, front-end development, and content creation simultaneously
+- Learned the importance of MVP for scope management
+- Strengthened remote teamwork and cross-role communication skills
 
 <p align="center">
    <p align="center">
@@ -79,6 +64,23 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
    </p>
 </p>
 
+## 👥 Team
+
+- 🧑 [Reinis Pakulis](https://nl.linkedin.com/in/reinis-pakulis) – UI Designer & Front-End Developer *(you’re here!)*
+- 👩‍💻 Maaike Wachters – AI, Speech-to-Text, API Integration  
+- 👩‍💻 Mila Levchenko – Prompt Engineering, Footprint Calculation Logic  
+- 🎨 Natascha Smit – UX/UI Designer  
+
+**Mentors**  
+- Jeremy Stryker – UX/UI  
+- Pascal Muller – AI
+
+
+<p align="center">
+      <img src="./screenshots/panel-03-200r.png" alt="Footprint analytics" width="49%" />
+      <img src="./screenshots/panel-04-200r.png" alt="Footprint reduction" width="49%" />
+   </p>
+
 
 ## 🚀 Future Work  
 
@@ -89,11 +91,6 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Integrate backend APIs for dynamic, real-time data
 - Develop Settings page and user account features
 
-
-<p align="center">
-      <img src="./screenshots/panel-03-200r.png" alt="Footprint analytics" width="49%" />
-      <img src="./screenshots/panel-04-200r.png" alt="Footprint reduction" width="49%" />
-   </p>
 
 ## ⚙️ Running Locally
 
