@@ -1,72 +1,74 @@
-# Getting Started with Create React App
+# 🌍 Carbon Footprint Tracker App (Front-End)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&logoWidth=30)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&logoWidth=30)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&logoWidth=30)
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&logoWidth=30)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white&logoWidth=30)
+![Recharts](https://img.shields.io/badge/-<Recharts%20/>-white?logo=recharts&logoColor=black&logoWidth=30)
+![Swiper.js](https://img.shields.io/badge/-Swiper.js-6332F6?logo=swiper&logoColor=white&logoWidth=30)
+![React Icons](https://img.shields.io/badge/-React%20Icons-61DAFB?logo=react&logoColor=black&logoWidth=30)
+![Prettier](https://img.shields.io/badge/-Prettier-F7B93E?logo=prettier&logoColor=black&logoWidth=30)
+![Netlify](https://img.shields.io/badge/-Netlify-00C7B7?logo=netlify&logoColor=white&logoWidth=30)
+[![TechLabs](https://img.shields.io/badge/->.%20TechLabs-FF007F?)](https://www.techlabs.org/location/rotterdam)
 
-## Available Scripts
+2BB8C2
 
-In the project directory, you can run:
+A mobile-first app that helps users log their daily carbon footprint using speech-to-text and AI. In a world facing environmental challenges, it makes sustainable living simple and accessible—one habit at a time. This project was built over 10-weeks during [**TechLabs**](https://www.techlabs.org/location/rotterdam) learning program. 
 
-### `npm start`
+[**Front-End Demo**](https://carbon-footprint-tracker-app.netlify.app/)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 👨‍💻 My Role & Takeaways – Front-End Developer
 
-### `npm test`
+- Prototyped the app with **low-fidelity wireframes** in Figma  
+- Built UI in **React** using reusable components
+- Styled the interface using **TailwindCSS**  
+- Integrated libraries like **Recharts** and **Swiper.js** 
+- Created all mock data and content to define app structure and flow
+- Balanced UI design, FE development, and content tasks in parallel
+- Learned the value of MVP as a scope management tool
+- Strengthened remote teamwork and cross-role communication
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 👥 Team
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 👩‍💻 Maaike Wachters – AI, Speech-to-Text, API Integration  
+- 👩‍💻 Mila Levchenko – Prompt Engineering, Footprint Calculation Logic  
+- 🎨 Natascha Smit – UX/UI Designer  
+- 🧑 [Reinis Pakulis](https://nl.linkedin.com/in/reinis-pakulis) – Front-End Developer (that's me!)  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Future Work  
 
-### `npm run eject`
+- Make layout fully responsive (beyond mobile)
+- Polish animations and transitions
+- Improve component structure for scalability
+- Fix slow image loading and optimize overall performance
+- Integrate backend APIs for dynamic, real-time data
+- Develop Settings page and user account features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Running Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Fork and clone the repo:  
+   `git clone https://github.com/your-username/carbon-footprint-tracker-app.git`  
+   `cd carbon-footprint-tracker-app`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install dependencies:  
+   `npm install`
 
-## Learn More
+Start the app (created with Create React App):  
+   `npm start`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open [http://localhost:3000](http://localhost:3000) in your browser
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*Note: Currently, the front end runs with mock data; [Back-End](https://inspiring-semifreddo-7615dd.netlify.app/) integration is planned for future development.*
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📄 License
 
-### Analyzing the Bundle Size
+This project is for educational purposes.  
+Feel free to fork and experiment with it!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# carbon-footprint-tracker-01

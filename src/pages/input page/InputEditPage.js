@@ -41,7 +41,7 @@ I took a flight from New York to Los Angeles.
 
 I also used public transportation for a few short trips around the city.
 
-Oh and I also had a nice stake yesterday.`;
+Oh and I also had a nice steak yesterday.`;
 
     return (
         <>
