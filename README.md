@@ -21,10 +21,9 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 
 <p align="center">
-  <img src="./screenshots/panel-01-100r.png" alt="Speech-to-text" style="width:70%" />
-  <p align="center"><em>Image: Speech-to-text input screen</em></p>
+  <img src="./screenshots/panel-01-100r.png" alt="Speech-to-text input screen" style="width:70%" />
 </p>
-
+<p align="center"><em>Image: Speech-to-text input screen</em></p>
 
 ## ✨ Features
 
@@ -37,7 +36,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Responsive and intuitive interface powered by React + Tailwind CSS
 
 <p align="center">
-  <img src="./screenshots/Figma 01.png" alt="Figma wire-frames" style="width:75%" />
+  <img src="./screenshots/Figma 01.png" alt="Low-fidelity wireframes created in Figma" style="width:75%" />
 </p>
 <p align="center"><em>Low-fidelity wireframes created in Figma</em></p>
 
@@ -53,7 +52,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 <p align="center">
    <p align="center">
-      <img src="./screenshots/panel-02-100r.png" alt="Footprint input" style="width:75%" />
+      <img src="./screenshots/panel-02-100r.png" alt="AI-powered footprint results & Earth avatar reactions" style="width:75%" />
    </p>  
    <p align="center">
       <img src="./screenshots/avatars/avatar-a.png" alt="Avatar 1" width="12%" />
@@ -64,6 +63,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
       <img src="./screenshots/avatars/avatar-f.png" alt="Avatar 6" width="12%" />
    </p>
 </p>
+<p align="center"><em>AI-powered footprint results & Earth avatar reactions</em></p>
 
 ## 👥 Team
 
@@ -81,7 +81,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
       <img src="./screenshots/panel-03-200r.png" alt="Footprint analytics" width="49%" />
       <img src="./screenshots/panel-04-200r.png" alt="Footprint reduction" width="49%" />
    </p>
-
+<p align="center"><em>Footprint analytics & AI-powered reduction tips</em></p>
 
 ## 🚀 Future Work  
 
