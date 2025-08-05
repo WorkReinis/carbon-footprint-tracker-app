@@ -21,7 +21,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 
 <p align="center">
-  <img src="./screenshots/panel-01-100r.png" alt="Speech-to-text" style="width:80%" />
+  <img src="./screenshots/panel-01-100r.png" alt="Speech-to-text" style="width:70%" />
 </p>
 
 
@@ -58,12 +58,12 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
       <img src="./screenshots/panel-02-100r.png" alt="Footprint input" style="width:75%" />
    </p>  
    <p align="center">
-      <img src="./screenshots/avatars/avatar-a.png" alt="Avatar 1" width="13%" />
-      <img src="./screenshots/avatars/avatar-b.png" alt="Avatar 2" width="13%" />
-      <img src="./screenshots/avatars/avatar-c.png" alt="Avatar 3" width="13%" />
-      <img src="./screenshots/avatars/avatar-d.png" alt="Avatar 4" width="13%" />
-      <img src="./screenshots/avatars/avatar-e.png" alt="Avatar 5" width="13%" />
-      <img src="./screenshots/avatars/avatar-f.png" alt="Avatar 6" width="13%" />
+      <img src="./screenshots/avatars/avatar-a.png" alt="Avatar 1" width="12%" />
+      <img src="./screenshots/avatars/avatar-b.png" alt="Avatar 2" width="12%" />
+      <img src="./screenshots/avatars/avatar-c.png" alt="Avatar 3" width="12%" />
+      <img src="./screenshots/avatars/avatar-d.png" alt="Avatar 4" width="12%" />
+      <img src="./screenshots/avatars/avatar-e.png" alt="Avatar 5" width="12%" />
+      <img src="./screenshots/avatars/avatar-f.png" alt="Avatar 6" width="12%" />
    </p>
 </p>
 
