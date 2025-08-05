@@ -15,7 +15,7 @@
 
 A mobile app that helps users track their daily carbon footprint using speech-to-text and AI — making sustainable living accessible one habit at a time. This project was built over 10-weeks during [**TechLabs**](https://www.techlabs.org/location/rotterdam) learning program. 
 
-🚀 [**Live Demo**](https://carbon-footprint-tracker-app.netlify.app/)
+🚀 [**Front-End Live Demo**](https://carbon-footprint-tracker-app.netlify.app/)
 
 Built with React and styled using TailwindCSS for rapid, responsive UI development. Data visualization is powered by Recharts, and smooth navigation is enabled by Swiper.js.
 
