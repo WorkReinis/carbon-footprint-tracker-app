@@ -17,7 +17,7 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 
 Built with React and styled using TailwindCSS for rapid, responsive UI development. Data visualization is powered by Recharts, and smooth navigation is enabled by Swiper.js.
 
-[**Front-End Demo**](https://carbon-footprint-tracker-app.netlify.app/)  
+🚀 [**Live Demo**](https://carbon-footprint-tracker-app.netlify.app/)
 
 
 <p align="center">
@@ -43,14 +43,14 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 ## 👥 Team
 
+- 🧑 [Reinis Pakulis](https://nl.linkedin.com/in/reinis-pakulis) – UI Designer & Front-End Developer *(you’re here!)*
 - 👩‍💻 Maaike Wachters – AI, Speech-to-Text, API Integration  
 - 👩‍💻 Mila Levchenko – Prompt Engineering, Footprint Calculation Logic  
 - 🎨 Natascha Smit – UX/UI Designer  
-- 🧑 [Reinis Pakulis](https://nl.linkedin.com/in/reinis-pakulis) – UI Designer, Front-End Developer (that's me!)  
 
-**TechLabs Mentors**  
-- Jeremy Stryker - UX/UI 
-- Pascal Muller - AI
+**Mentors**  
+- Jeremy Stryker – UX/UI  
+- Pascal Muller – AI
 
 
 <p align="center">
@@ -66,6 +66,24 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
       <img src="./screenshots/avatars/avatar-f.png" alt="Avatar 6" width="12%" />
    </p>
 </p>
+
+## ✨ Features
+
+- Track carbon footprint using text and speech input
+- AI-powered habit analysis
+- Mobile-first responsive design
+- Swipeable onboarding panels
+- Mock data visualized with Recharts
+
+
+- Track daily carbon footprint using **text and speech inputs**
+- AI-assisted footprint estimation (via back-end API)
+- **Reusable React components** built with **TailwindCSS**
+- **Interactive avatar** that responds to user performance (happy/sad earth)
+- **React Hooks** used for state management and component logic
+- Data visualizations built with **Recharts**
+- **Responsive carousels** and sliders using **Swiper.js**
+- Designed with a **mobile-first layout** 
 
 
 ## 🚀 Future Work  
@@ -83,9 +101,10 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
       <img src="./screenshots/panel-04-200r.png" alt="Footprint reduction" width="49%" />
    </p>
 
-
-## ⚙️ Running Locally
+<details>
+  <summary>## ⚙️ Running Locally</summary>
  
+ <br>
 ```bash
 git clone https://github.com/WorkReinis/carbon-footprint-tracker-app.git
 cd carbon-footprint-tracker-app
@@ -97,6 +116,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser
 
 *Currently uses mock data; [Back-End](https://inspiring-semifreddo-7615dd.netlify.app/) integration planned.*
 
+</details>
 
 ## 📄 License
 
