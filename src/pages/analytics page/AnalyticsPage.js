@@ -1,3 +1,4 @@
+import React, { memo } from "react";
 import BarChart01 from "./components/graphs/regular/bar-chart-01";
 import BarChart02 from "./components/graphs/regular/bar-chart-02";
 import BarChart03 from "./components/graphs/regular/bar-chart-03";
@@ -227,4 +228,4 @@ function AnalyticsPage() {
     );
 }
 
-export default AnalyticsPage;
+export default memo(AnalyticsPage); // ✅ Memoized to prevent unnecessary re-renders

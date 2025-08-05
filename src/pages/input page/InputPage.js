@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, useRef } from "react";
+import React, { useState, useEffect, useContext, useRef, useCallback } from "react";
 
 import { MyContext } from "../../context/pages";
 import { IoMicOutline } from "react-icons/io5";
@@ -57,9 +57,7 @@ function InputPage({ sendDataToParent }) {
                 }
             }
 
-            console.log("Interim:", interimTranscript);
-            console.log("Final:", finalTranscript);
-
+            // Remove console.logs for production
             setLiveTranscript(interimTranscript);
             setTranscript((prev) => prev + finalTranscript);
         };
@@ -83,9 +81,9 @@ function InputPage({ sendDataToParent }) {
                 recognitionRef.current.onend = null;
             }
         };
-    }, []);
+    }, [isListening]); // ✅ Added isListening to dependency array
 
-    const startListening = () => {
+    const startListening = useCallback(() => {
         if (!recognitionRef.current) {
             console.warn("Speech recognition is not initialized.");
             return;
@@ -93,9 +91,9 @@ function InputPage({ sendDataToParent }) {
         recognitionRef.current.start();
         setIsListening(true);
         setIsRecording(true); // RP addition
-    };
+    }, []); // ✅ Memoized callback
 
-    const stopListening = () => {
+    const stopListening = useCallback(() => {
         if (!recognitionRef.current) {
             console.warn("Speech recognition is not initialized.");
             return;
@@ -106,7 +104,7 @@ function InputPage({ sendDataToParent }) {
         setNavBar(false);
         setIsRecording(false); //RP addiion
         setPage("input-edit");
-    };
+    }, [transcript, setText, setNavBar, setPage]); // ✅ Memoized callback with dependencies
 
     return (
         <div className="input-container flex flex-col justify-between align-center fade-in-1">

@@ -32,11 +32,26 @@ function InputConfirmationPage({ avatarNumber }) {
     const avatarValue = ["0.67", "4.7", "23", "56", "115", "1.347"];
 
     useEffect(() => {
-        avatarMap.forEach((src) => {
-            const img = new Image();
-            img.src = src;
-        });
-    }, []);
+        const preloadImages = async () => {
+            const imagePromises = avatarMap.map((src) => {
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.onload = () => resolve(src);
+                    img.onerror = () => reject(new Error(`Failed to load ${src}`));
+                    img.src = src;
+                });
+            });
+
+            try {
+                await Promise.all(imagePromises);
+                console.log('All avatar images preloaded successfully');
+            } catch (error) {
+                console.warn('Some avatar images failed to preload:', error.message);
+            }
+        };
+
+        preloadImages();
+    }, []); // ✅ Empty dependency array is correct here
 
     const handleInput = () => {
         setPage("input");
