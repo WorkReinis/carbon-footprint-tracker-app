@@ -22,7 +22,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 [**Front-End Demo**](https://carbon-footprint-tracker-app.netlify.app/)  
 
 
-![Mobile UI](./screenshots/panel-01.png)
+![Text-to-speech](./screenshots/panel-01.png)
 
 
 ## 👨‍💻 My Role & Takeaways – Front-End Developer
@@ -36,12 +36,17 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Strengthened remote teamwork and cross-role communication skills
 
 
+![Avatar-buddy](./screenshots/panel-02.png)
+
 ## 👥 Team
 
 - 👩‍💻 Maaike Wachters – AI, Speech-to-Text, API Integration  
 - 👩‍💻 Mila Levchenko – Prompt Engineering, Footprint Calculation Logic  
 - 🎨 Natascha Smit – UX/UI Designer  
 - 🧑 [Reinis Pakulis](https://nl.linkedin.com/in/reinis-pakulis) – Front-End Developer (that's me!)  
+
+
+![Emission analytics](./screenshots/panel-03.png)
 
 
 ## 🚀 Future Work  
@@ -52,6 +57,9 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Fix slow image loading and optimize overall performance
 - Integrate backend APIs for dynamic, real-time data
 - Develop Settings page and user account features
+
+
+![Reduction suggestions](./screenshots/panel-04.png)
 
 
 ## ⚙️ Running Locally
