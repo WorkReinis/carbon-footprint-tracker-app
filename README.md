@@ -101,21 +101,25 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
       <img src="./screenshots/panel-04-200r.png" alt="Footprint reduction" width="49%" />
    </p>
 
+## ⚙️ Running Locally
+
 <details>
-  <summary>## ⚙️ Running Locally</summary>
- 
- <br>
-```bash
-git clone https://github.com/WorkReinis/carbon-footprint-tracker-app.git
+  <summary>⚙️ Running Locally</summary>
+
+  <p>
+
+  To run this project locally:
+
+  <pre><code>git clone https://github.com/WorkReinis/carbon-footprint-tracker-app.git
 cd carbon-footprint-tracker-app
 npm install
-npm start
-```
+npm start</code></pre>
 
-Open [http://localhost:3000](http://localhost:3000) in your browser
+  Open <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> in your browser.
 
-*Currently uses mock data; [Back-End](https://inspiring-semifreddo-7615dd.netlify.app/) integration planned.*
+  <em>Currently uses static data; <a href="https://inspiring-semifreddo-7615dd.netlify.app/" target="_blank">Back-End</a> integration planned.</em>
 
+  </p>
 </details>
 
 ## 📄 License
