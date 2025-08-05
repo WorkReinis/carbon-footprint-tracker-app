@@ -20,10 +20,7 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 Built with React and styled using TailwindCSS for rapid, responsive UI development. Data visualization is powered by Recharts, and smooth navigation is enabled by Swiper.js.
 
 [**Front-End Demo**](https://carbon-footprint-tracker-app.netlify.app/)  
-<!-- 
-<img src="./screenshots/panel-01.png" alt="Text-to-speech" style="width:60%; border-radius: 12px;" />
 
-<img src="./screenshots/panel-01.png" alt="Text-to-speech" style="width:60%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" /> -->
 
 <p align="center">
   <img src="./screenshots/panel-01-100r.png" alt="Text-to-speech" style="width:70%" />
@@ -40,6 +37,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Learned the importance of MVP for scope management
 - Strengthened remote teamwork and cross-role communication skills
 
+
 ## 👥 Team
 
 - 👩‍💻 Maaike Wachters – AI, Speech-to-Text, API Integration  
@@ -53,7 +51,6 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 </p>
 
 
-
 ## 🚀 Future Work  
 
 - Make layout fully responsive (beyond mobile)
@@ -64,16 +61,13 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Develop Settings page and user account features
 
 
-![Reduction suggestions](./screenshots/panel-04.png)
-
-
 <p align="center">
   <img src="./screenshots/panel-03-200r.png" alt="Text-to-speech" width="48%" />
   <img src="./screenshots/panel-04-200r.png" alt="Text-to-speech" width="48%" />
 </p>
 
-## ⚙️ Running Locally
 
+## ⚙️ Running Locally
  
 ```bash
 git clone https://github.com/WorkReinis/carbon-footprint-tracker-app.git
