@@ -13,8 +13,6 @@
 ![Netlify](https://img.shields.io/badge/-Netlify-00C7B7?logo=netlify&logoColor=white&logoWidth=30)
 [![TechLabs](https://img.shields.io/badge/->.%20TechLabs-FF007F?)](https://www.techlabs.org/location/rotterdam)
 
-
-
 A mobile app that helps users track their daily carbon footprint using speech-to-text and AI — making sustainable living accessible one habit at a time. This project was built over 10-weeks during [**TechLabs**](https://www.techlabs.org/location/rotterdam) learning program. 
 
 Built with React and styled using TailwindCSS for rapid, responsive UI development. Data visualization is powered by Recharts, and smooth navigation is enabled by Swiper.js.
@@ -23,13 +21,13 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 
 <p align="center">
-  <img src="./screenshots/panel-01-100r.png" alt="Text-to-speech" style="width:80%" />
+  <img src="./screenshots/panel-01-100r.png" alt="Speech-to-text" style="width:80%" />
 </p>
 
 
-## 👨‍💻 My Role & Takeaways – Front-End Developer
+## 👨‍💻 My Role & Takeaways – UI Designer & Front-End Developer
 
-- Prototyped the app with **low-fidelity wireframes** in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1) 
+- Prototyped the app with **low-fidelity wire-frames** in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1) 
 - Developed reusable React components with TailwindCSS styling
 - Integrated libraries like **Recharts** and **Swiper.js** 
 - Created all mock data and content to define app structure and flow
@@ -39,7 +37,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 
 <p align="center">
-  <img src="./screenshots/Figma 01.png" alt="Text-to-speech" style="width:80%" />
+  <img src="./screenshots/Figma 01.png" alt="Figma wire-frames" style="width:75%" />
 </p>
 
 
@@ -54,19 +52,21 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Jeremy Stryker - UX/UI 
 - Pascal Muller - AI
 
+
 <p align="center">
    <p align="center">
-      <img src="./screenshots/panel-02-100r.png" alt="Text-to-speech" style="width:80%" />
+      <img src="./screenshots/panel-02-100r.png" alt="Footprint input" style="width:75%" />
    </p>  
    <p align="center">
-      <img src="./screenshots/avatars/avatar-a.png" alt="Text-to-speech" width="12%" />
-      <img src="./screenshots/avatars/avatar-b.png" alt="Text-to-speech" width="12%" />
-      <img src="./screenshots/avatars/avatar-c.png" alt="Text-to-speech" width="12%" />
-      <img src="./screenshots/avatars/avatar-d.png" alt="Text-to-speech" width="12%" />
-      <img src="./screenshots/avatars/avatar-e.png" alt="Text-to-speech" width="12%" />
-      <img src="./screenshots/avatars/avatar-f.png" alt="Text-to-speech" width="12%" />
+      <img src="./screenshots/avatars/avatar-a.png" alt="Avatar 1" width="13%" />
+      <img src="./screenshots/avatars/avatar-b.png" alt="Avatar 2" width="13%" />
+      <img src="./screenshots/avatars/avatar-c.png" alt="Avatar 3" width="13%" />
+      <img src="./screenshots/avatars/avatar-d.png" alt="Avatar 4" width="13%" />
+      <img src="./screenshots/avatars/avatar-e.png" alt="Avatar 5" width="13%" />
+      <img src="./screenshots/avatars/avatar-f.png" alt="Avatar 6" width="13%" />
    </p>
 </p>
+
 
 ## 🚀 Future Work  
 
@@ -79,9 +79,10 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 
 <p align="center">
-      <img src="./screenshots/panel-03-200r.png" alt="Text-to-speech" width="45%" />
-      <img src="./screenshots/panel-04-200r.png" alt="Text-to-speech" width="45%" />
+      <img src="./screenshots/panel-03-200r.png" alt="Footprint analytics" width="45%" />
+      <img src="./screenshots/panel-04-200r.png" alt="Footprint reduction" width="45%" />
    </p>
+
 
 ## ⚙️ Running Locally
  
