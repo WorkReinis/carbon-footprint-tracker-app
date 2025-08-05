@@ -45,15 +45,15 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - 🎨 Natascha Smit – UX/UI Designer  
 - 🧑 [Reinis Pakulis](https://nl.linkedin.com/in/reinis-pakulis) – Front-End Developer (that's me!)  
 
-
 <p align="center">
-  <img src="./screenshots/panel-02-100r.png" alt="Text-to-speech" style="width:90%" />
-</p>  
-<p align="center">
-  <img src="./screenshots/panel-03-200r.png" alt="Text-to-speech" width="40%" />
-  <img src="./screenshots/panel-04-200r.png" alt="Text-to-speech" width="40%" />
+   <p align="center">
+      <img src="./screenshots/panel-02-100r.png" alt="Text-to-speech" style="width:90%" />
+   </p>  
+   <p align="center">
+      <img src="./screenshots/panel-03-200r.png" alt="Text-to-speech" width="45%" />
+      <img src="./screenshots/panel-04-200r.png" alt="Text-to-speech" width="45%" />
+   </p>
 </p>
-
 
 ## 🚀 Future Work  
 
