@@ -23,7 +23,7 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 
 <p align="center">
-  <img src="./screenshots/panel-01-100r.png" alt="Text-to-speech" style="width:90%" />
+  <img src="./screenshots/panel-01-100r.png" alt="Text-to-speech" style="width:80%" />
 </p>
 
 
@@ -47,11 +47,15 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 <p align="center">
    <p align="center">
-      <img src="./screenshots/panel-02-100r.png" alt="Text-to-speech" style="width:90%" />
+      <img src="./screenshots/panel-02-100r.png" alt="Text-to-speech" style="width:80%" />
    </p>  
    <p align="center">
-      <img src="./screenshots/panel-03-200r.png" alt="Text-to-speech" width="45%" />
-      <img src="./screenshots/panel-04-200r.png" alt="Text-to-speech" width="45%" />
+      <img src="./screenshots/avatars/avatar-a.png" alt="Text-to-speech" width="12%" />
+      <img src="./screenshots/avatars/avatar-b.png" alt="Text-to-speech" width="12%" />
+      <img src="./screenshots/avatars/avatar-c.png" alt="Text-to-speech" width="12%" />
+      <img src="./screenshots/avatars/avatar-d.png" alt="Text-to-speech" width="12%" />
+      <img src="./screenshots/avatars/avatar-e.png" alt="Text-to-speech" width="12%" />
+      <img src="./screenshots/avatars/avatar-f.png" alt="Text-to-speech" width="12%" />
    </p>
 </p>
 
@@ -65,7 +69,10 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Develop Settings page and user account features
 
 
-
+<p align="center">
+      <img src="./screenshots/panel-03-200r.png" alt="Text-to-speech" width="45%" />
+      <img src="./screenshots/panel-04-200r.png" alt="Text-to-speech" width="45%" />
+   </p>
 
 ## ⚙️ Running Locally
  
