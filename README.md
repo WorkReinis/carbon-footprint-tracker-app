@@ -79,8 +79,8 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 
 
 <p align="center">
-      <img src="./screenshots/panel-03-200r.png" alt="Footprint analytics" width="45%" />
-      <img src="./screenshots/panel-04-200r.png" alt="Footprint reduction" width="45%" />
+      <img src="./screenshots/panel-03-200r.png" alt="Footprint analytics" width="50%" />
+      <img src="./screenshots/panel-04-200r.png" alt="Footprint reduction" width="50%" />
    </p>
 
 
