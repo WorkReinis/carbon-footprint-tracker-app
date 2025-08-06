@@ -1,8 +1,4 @@
 import "../../styles/input-carousel-card-01.css";
-import { useState } from "react";
-import { IoMdTime } from "react-icons/io";
-import { FaRegHeart } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
 
 function InputCarouselCard01({
     icon,

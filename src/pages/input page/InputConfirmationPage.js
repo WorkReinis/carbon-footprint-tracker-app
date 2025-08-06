@@ -3,7 +3,6 @@ import { MyContext } from "../../context/pages";
 
 import "./styles/InputConfirmationPage.css";
 
-import Carousel from "./components/carousel-01";
 import InputCarousel01 from "./components/input-carousel-01";
 
 function InputConfirmationPage({ avatarNumber }) {
@@ -37,16 +36,20 @@ function InputConfirmationPage({ avatarNumber }) {
                 return new Promise((resolve, reject) => {
                     const img = new Image();
                     img.onload = () => resolve(src);
-                    img.onerror = () => reject(new Error(`Failed to load ${src}`));
+                    img.onerror = () =>
+                        reject(new Error(`Failed to load ${src}`));
                     img.src = src;
                 });
             });
 
             try {
                 await Promise.all(imagePromises);
-                console.log('All avatar images preloaded successfully');
+                console.log("All avatar images preloaded successfully");
             } catch (error) {
-                console.warn('Some avatar images failed to preload:', error.message);
+                console.warn(
+                    "Some avatar images failed to preload:",
+                    error.message
+                );
             }
         };
 
@@ -82,9 +85,6 @@ function InputConfirmationPage({ avatarNumber }) {
 
                 <div className="flex justify-center items-center">
                     <div className="carbon-result flex flex-row justify-center items-center gap-3">
-                        {/* <div className="input-circle-icon flex justify-center items-center">
-                            <LuTrees size={22} color={"var(--dark-gray)"} />
-                        </div> */}
                         <div className="flex flex-col justify-center items-center gap-6 pb-4">
                             <div className="flex flex-col justify-center items-center">
                                 <h1 className="text-lg ">Your Emissions</h1>
@@ -94,9 +94,12 @@ function InputConfirmationPage({ avatarNumber }) {
                                     </h1>
                                     <h1 className="text-3xl font-bold"></h1>
                                 </div>
-                                <h1 className="text-xl ">kg CO<sub>2</sub>e</h1>
+                                <h1 className="text-xl ">
+                                    kg CO<sub>2</sub>e
+                                </h1>
                             </div>
-                            <h1 className="text-2xl ">{avatarText[avatarNumber - 1]}
+                            <h1 className="text-2xl ">
+                                {avatarText[avatarNumber - 1]}
                             </h1>
                         </div>
                     </div>

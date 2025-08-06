@@ -1,9 +1,8 @@
 import "./header-01.css";
-import { IoMdAdd } from "react-icons/io";
 import SmallCard02 from "../small/small-card-02";
 import BarChart04 from "../../graphs/regular/bar-chart-04";
 
-function Header01({ title, value, units, context, icon, fade, user }) {
+function Header01({ title, units, context, fade }) {
     return (
         <div className={`header-container ${fade}`}>
             <div className="flex justify-between items-center ">

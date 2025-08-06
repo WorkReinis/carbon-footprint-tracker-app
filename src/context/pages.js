@@ -8,7 +8,7 @@ function MyProvider({ children }) {
      // States to be shared via context
      const [page, setPage] = useState("input"); // Set page for React to render
      const [key, setKey] = useState(1); //State update to trigger rerender of homepage
-     const [navBar, setNavBar] = useState("true"); // Set navbar for React to render
+     const [navBar, setNavBar] = useState(true); // Set navbar for React to render (fixed: boolean instead of string)
      const [activeButton, setActiveButton] = useState("input"); // Set "active" button on navbar
      const [text, setText] = useState(""); // Set text for React to render
      //<MyContext.Provider> is the provider component created by createContext. It makes the context's value available to all child components.

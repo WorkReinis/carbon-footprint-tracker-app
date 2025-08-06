@@ -4,7 +4,7 @@ function LastActivitiesCard01({ title, date, value, img }) {
     return (
         <div className="last-activities-card flex flex-row gap-2 items-start hover-scale active-scale">
             <div className="last-activities-image-placeholder">
-                <img classname="last-activities-image" src={img}/>
+                <img className="last-activities-image" src={img}/>
             </div>
 
             <div className="flex flex-row justify-between w-full">

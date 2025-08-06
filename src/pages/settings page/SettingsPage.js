@@ -1,3 +1,5 @@
+import React from "react";
+
 function SettingsPage() {
     return (
       <div className="flex items-center justify-center h-screen">

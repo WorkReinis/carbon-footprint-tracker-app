@@ -3,11 +3,7 @@ import "../../../../styles/animation/scale-on-interaction.css";
 
 import { useState } from "react";
 import { IoMdTime } from "react-icons/io";
-import { FaRegHeart } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
 import { FaPlayCircle } from "react-icons/fa";
-import { GrView } from "react-icons/gr";
-import { PiStudent } from "react-icons/pi";
 import { PiStudentBold } from "react-icons/pi";
 
 function ReduceCarouselCard02({

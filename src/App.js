@@ -62,6 +62,7 @@ function App() {
                 return <NavBar />;
         }
     };
+
     return (
         <>
             <div className="app-wrapper">

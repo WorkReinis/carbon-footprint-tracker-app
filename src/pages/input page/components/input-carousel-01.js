@@ -6,13 +6,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import "../styles/input-carousel-01.css";
-import HomeCarouselCard01 from "./cards/input-carousel-card-01.js";
+import HomeCarouselCard01 from "./cards/input-carousel-card-01";
 
-import { FaRegHeart } from "react-icons/fa";
-import { FiSmile } from "react-icons/fi";
-import { LuTreeDeciduous } from "react-icons/lu";
-import { CiCloudOn } from "react-icons/ci";
-import { PiTrainLight } from "react-icons/pi";
 import { FaTrain } from "react-icons/fa6";
 import { FaShower } from "react-icons/fa6";
 import { FaTree } from "react-icons/fa";
@@ -20,13 +15,6 @@ import { FaCarAlt } from "react-icons/fa";
 import { PiForkKnifeFill } from "react-icons/pi";
 
 const InputCarousel01 = () => {
-    const imagesMap = [
-        "/images/salad-01.png",
-        "/images/salad-02.png",
-        "/images/train-01.png",
-        "/images/carbon-offset-01.png",
-        "/images/learning-01.png",
-    ];
 
     return (
         <Swiper

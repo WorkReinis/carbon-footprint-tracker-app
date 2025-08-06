@@ -2,20 +2,6 @@ import SmallCard01 from "../cards/small-card-01";
 import HomeCarousel01 from "../containers/home-carousel-01";
 import "../../styles/home-header-01.css";
 
-import { FaArrowDownLong } from "react-icons/fa6";
-import { FaDownLong } from "react-icons/fa6";
-import { GoArrowDown } from "react-icons/go";
-import { HiOutlineArrowDown } from "react-icons/hi";
-import { ImArrowDown2 } from "react-icons/im";
-import { VscTriangleDown } from "react-icons/vsc";
-import { LuTreeDeciduous } from "react-icons/lu";
-import { PiTreeBold } from "react-icons/pi";
-
-import { AiOutlineGlobal } from "react-icons/ai";
-import { RiShare2Line } from "react-icons/ri";
-
-import { CiCloudOn } from "react-icons/ci";
-
 import { FaRegBell } from "react-icons/fa";
 
 function HomeHeader01({ avatarNumber }) {
