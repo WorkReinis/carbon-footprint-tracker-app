@@ -55,7 +55,8 @@ src/
 ├── context/            # React Context for state management
 │   └── pages.js        # Global state provider
 └── styles/             # CSS files and design variables
-</details> ```
+```
+</details>
 
 
 <p align="center">
