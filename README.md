@@ -35,6 +35,29 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Built with a mobile-first layout for modern users
 - Responsive and intuitive interface powered by React + Tailwind CSS
 
+
+## 🗂️ App Structure
+
+<details>
+  <summary>Expand the project directory layout</summary>
+
+```bash
+src/
+├── App.js              # Main app component with routing logic
+├── components/         # Reusable UI components
+│   └── NavBar.js       # Bottom navigation bar
+├── pages/              # Main application pages
+│   ├── home page/      # Dashboard with Earth avatar
+│   ├── analytics page/ # Data visualization and charts
+│   ├── input page/     # Speech-to-text input forms
+│   ├── reduce page/    # Tips for reducing carbon footprint
+│   └── settings page/  # App configuration
+├── context/            # React Context for state management
+│   └── pages.js        # Global state provider
+└── styles/             # CSS files and design variables
+</details> ```
+
+
 <p align="center">
   <img src="./screenshots/Figma 01.png" alt="Low-fidelity wireframes created in Figma" style="width:75%" />
 </p>
