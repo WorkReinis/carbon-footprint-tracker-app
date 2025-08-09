@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect, useRef } from "react";
 import { MyProvider, MyContext } from "./context/pages";
+// import { Signal, Wifi, Battery } from "lucide-react" 
 
 import "./App.css";
 import "./styles/phone-frame.css";
@@ -14,6 +15,48 @@ import InputConfirmationPage from "./pages/input page/InputConfirmationPage";
 import InputEditPage from "./pages/input page/InputEditPage";
 import ReducePage from "./pages/reduce page/ReducePage";
 import SettingsPage from "./pages/settings page/SettingsPage";
+
+import { IoBatteryHalfOutline } from "react-icons/io5";
+import { IoIosWifi } from "react-icons/io";
+import { BiSignal4 } from "react-icons/bi";
+import { PiCellSignalHighBold } from "react-icons/pi";
+
+
+// --- PhoneFrame Component ---
+function PhoneFrame({ children }) {
+  const currentTime = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+
+  return (
+    <div className="phone-frame">
+      {/* Side Buttons */}
+      <div className="side-button volume-up" />
+      <div className="side-button volume-down" />
+      <div className="side-button silent-switch" />
+      <div className="side-button power-button" />
+
+      <div className="phone-bezel">
+        {/* Status Bar */}
+        <div className="status-bar">
+          <div className="status-bar-left">
+            <span className="status-bar-time">{currentTime}</span>
+          </div>
+          <div className="status-bar-right">
+            <PiCellSignalHighBold className="status-bar-icon"  size={20} />
+            <IoIosWifi className="status-bar-icon" size={19}/>
+            <IoBatteryHalfOutline className="status-bar-icon" size={23} />
+          </div>
+        </div>
+        {/* Dynamic Island */}
+        <div className="dynamic-island">
+          <div className="camera-lens" />
+          <div className="sensor-dot" />
+        </div>
+        {children}
+      </div>
+    </div>
+  )
+}
+
 
 function App() {
     const { page } = useContext(MyContext);
@@ -66,14 +109,12 @@ function App() {
     return (
         <>
             <div className="app-wrapper">
-                <div className="phone-frame">
-                    <div className="phone-bezel">
+                <PhoneFrame>
                         <div className="app-content" ref={scrollContainerRef}> {/* Scrollable content is within this div */}
                             <div className="page-div">{renderPage()}</div>
                         </div>
                         {renderNavBar()}
-                    </div>
-                </div>
+                </PhoneFrame>
             </div>
         </>
     );

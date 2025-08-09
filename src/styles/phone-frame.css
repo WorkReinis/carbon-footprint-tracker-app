@@ -1,44 +1,163 @@
+/* Global styles */
+body {
+    margin: 0;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
 
 .app-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
-  }
-  
-  /* Styling for the phone frame */
-  .phone-frame {
-    width: 375px; /* iPhone Pro width */
-    height: 812px; /* iPhone Pro height */
-    border-radius: 2.4em;
-    background-color: #000; 
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    background-color: var(--light-gray);
+}
+
+/* Phone frame */
+.phone-frame {
+    width: 376px;
+    height: 812px;
+    border-radius: 60px;
+    background: linear-gradient(145deg, #4a4a4a 0%, #1a1a1a 100%);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  /* Styling for the phone bezel */
-  .phone-bezel {
-    width: 360px; /* Inner bezel width */
-    height: 796px; /* Inner bezel height */
-    border-radius: 2em;
+
+}
+
+/* Phone bezel */
+.phone-bezel {
+    width: 360px;
+    height: 796px;
+    border-radius: 52px;
     background-color: white;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     position: relative;
-  }
-  
-  /* App content */
-  .app-content {
+}
+
+/* Dynamic Island */
+.dynamic-island {
+    position: absolute;
+    top: 0.75em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6.25em;
+    height: 1.75em;
+    background-color: black;
+    border-radius: 0.875em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375em;
+    box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.4);
+    z-index: 200;
+}
+
+.camera-lens {
+    width: 0.6em;
+    height: 0.6em;
+    background-color: #222;
+    border-radius: 50%;
+    border: 0.05em solid #333;
+    box-shadow: inset 0 0 0.1875em rgba(0, 0, 0, 0.5),
+        0 0 0.125em rgba(255, 255, 255, 0.1);
+}
+
+.sensor-dot {
+    width: 0.25em;
+    height: 0.25em;
+    background-color: #333;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0.125em rgba(0, 0, 0, 0.5);
+}
+
+/* Status Bar */
+.status-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.75em;
+    padding-right: 2.75em;
+    color: black;
+    font-size: 0.75em;
+    z-index: 11;
+}
+
+.status-bar-left,
+.status-bar-right {
+    display: flex;
+    gap: 0.25em;
+    align-items: center;
+}
+
+.status-bar-time {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Side Buttons */
+.side-button {
+    position: absolute;
+    background-color: #4a4a4a;
+    border-radius: 0.125em;
+    box-shadow: inset 0 0.0625em 0.125em rgba(255, 255, 255, 0.1),
+        0 0.0625em 0.1875em rgba(0, 0, 0, 0.5);
+}
+
+.volume-up {
+    top: 7.5em;
+    left: -0.25em;
+    width: 0.5em;
+    height: 1.875em;
+}
+
+.volume-down {
+    top: 10em;
+    left: -0.25em;
+    width: 0.5em;
+    height: 1.875em;
+}
+
+.silent-switch {
+    top: 5em;
+    left: -0.25em;
+    width: 0.5em;
+    height: 1.125em;
+    border-radius: 0.125em;
+    background-color: #6a6a6a;
+}
+
+.power-button {
+    top: 12.5em;
+    right: -0.25em;
+    width: 0.5em;
+    height: 3.125em;
+}
+
+/* App content area */
+.app-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     overflow-y: auto;
-    overflow-y: scroll; /* Allow vertical scrolling */
-    scrollbar-width: none; /* Firefox */
-  }
-  
-  .app-content::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Edge */
-  }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.app-content::-webkit-scrollbar {
+    display: none;
+}

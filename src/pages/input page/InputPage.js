@@ -98,7 +98,7 @@ function InputPage() {
         setIsListening(false);
         setText(transcript);
         setNavBar(false);
-        setIsRecording(false); //RP addiion
+        setIsRecording(false); //RP addition
         setPage("input-edit");
     }, [transcript, setText, setNavBar, setPage]); // ✅ Memoized callback with dependencies
 

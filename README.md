@@ -70,7 +70,6 @@ src/
 - Developed responsive UI using React and Tailwind CSS
 - Integrated third-party libraries like Recharts (data viz) and Swiper.js (UX) 
 - Created all mock data and content to define app structure and flow
-- Balanced UI design, front-end development, and content creation simultaneously
 - Learned the importance of MVP for scope management
 - Strengthened remote teamwork and cross-role communication skills
 
