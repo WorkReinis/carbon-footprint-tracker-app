@@ -99,7 +99,7 @@ src/
 - Strengthened remote teamwork and cross-role communication skills
 
 
-
+<br>
 <p align="center">
   <img src="./screenshots/Figma 01.png" alt="Low-fidelity wireframes created in Figma" style="width:75%" />
 </p>
@@ -116,7 +116,7 @@ src/
 - Jeremy Stryker – UX/UI  
 - Pascal Muller – AI
 
-
+<br>
 <p align="center">
       <img src="./screenshots/panel-03-200r.png" alt="Footprint analytics" width="49%" />
       <img src="./screenshots/panel-04-200r.png" alt="Footprint reduction" width="49%" />
