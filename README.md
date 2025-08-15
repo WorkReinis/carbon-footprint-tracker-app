@@ -62,7 +62,7 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 | Displaying complex analytics data on small screens | Used **Recharts** for its wide chart variety, React component format, and high customizability. |
 | Need for smooth touch-friendly UI navigation      | Chose **Swiper.js** for smooth, mobile-friendly sliders with easy customization. |
 | No database for storing or fetching data          | Created **mock datasets** for analytics, avatars, and recommendations. |
-| Blocky image loading                              | Tested **preloading**, but further optimization is needed. |
+<!-- | Blocky image loading                              | Tested **preloading**, but further optimization is needed. | -->
 | Maintaining consistent code style                 | Used **Prettier** for automated formatting. |
 
 
@@ -92,8 +92,8 @@ src/
 ## 👨‍💻 My Role & Takeaways – UI Designer & Front-End Developer
 
 - Prototyped the app with **low-fidelity wireframes** in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1) 
-- Developed responsive UI using React, Tailwind, Recharts, Swiper 
-- Created all mock data and content to define app structure and flow
+- Developed UI using React, Tailwind, Recharts, Swiper 
+<!-- - Created all mock data and content to define app structure and flow -->
 - Learned the importance of MVP for scope management
 - Strengthened remote teamwork and cross-role communication skills
 
@@ -102,7 +102,7 @@ src/
 <p align="center">
   <img src="./screenshots/Figma 01.png" alt="Low-fidelity wireframes created in Figma" style="width:75%" />
 </p>
-<p align="center"><em>Low-fidelity wireframes created in Figma</em></p>
+<p align="center"><em>Low-fidelity wireframes</em></p>
 
 ## 👥 Team
 
