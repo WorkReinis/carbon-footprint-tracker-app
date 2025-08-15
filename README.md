@@ -28,8 +28,8 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 ## ✨ Features
 
 - Track daily carbon footprint using **text and speech inputs**
-- AI-assisted footprint estimation (via back-end API)
-- Interactive Earth avatar reflects your eco performance (happy/sad states)
+- AI-assisted footprint estimation (via back-end)
+- Interactive Earth avatar reflects your eco performance (happy/sad faces)
 - Visualize habits with dynamic Recharts graphs
 - Swiper.js sliders for smooth content navigation
 - Mobile interface powered by React + Tailwind CSS
@@ -53,7 +53,7 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 </p>
 <p align="center"><em>AI-powered footprint results & Earth avatar reactions</em></p>
 
-## 🔍 Development Decisions & Challenges
+## 🔍 Challenges
 
 | Challenge                                         | Approach |
 |---------------------------------------------------|---------------------------|
@@ -92,8 +92,7 @@ src/
 ## 👨‍💻 My Role & Takeaways – UI Designer & Front-End Developer
 
 - Prototyped the app with **low-fidelity wireframes** in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1) 
-- Developed responsive UI using React and Tailwind CSS
-- Integrated third-party libraries like Recharts (data viz) and Swiper.js (UX) 
+- Developed responsive UI using React, Tailwind, Recharts, Swiper 
 - Created all mock data and content to define app structure and flow
 - Learned the importance of MVP for scope management
 - Strengthened remote teamwork and cross-role communication skills
@@ -125,7 +124,7 @@ src/
 
 ## 🚀 Future Work  
 
-- Make layout fully responsive (beyond mobile)
+- Expand to tablet/desktop layouts
 - Polish animations and transitions
 - Improve component structure for scalability
 - Fix slow image loading and optimize overall performance
