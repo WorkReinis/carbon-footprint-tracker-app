@@ -88,11 +88,6 @@ src/
 </details>
 
 
-<p align="center">
-  <img src="./screenshots/Figma 01.png" alt="Low-fidelity wireframes created in Figma" style="width:75%" />
-</p>
-<p align="center"><em>Low-fidelity wireframes created in Figma</em></p>
-
 ## 👨‍💻 My Role & Takeaways – UI Designer & Front-End Developer
 
 - Prototyped the app with **low-fidelity wireframes** in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1) 
@@ -102,6 +97,12 @@ src/
 - Learned the importance of MVP for scope management
 - Strengthened remote teamwork and cross-role communication skills
 
+
+
+<p align="center">
+  <img src="./screenshots/Figma 01.png" alt="Low-fidelity wireframes created in Figma" style="width:75%" />
+</p>
+<p align="center"><em>Low-fidelity wireframes created in Figma</em></p>
 
 ## 👥 Team
 
