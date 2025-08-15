@@ -36,6 +36,19 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Responsive and intuitive interface powered by React + Tailwind CSS
 
 
+## 🔍 Development Decisions & Challenges
+
+| Challenge                                         | Approach |
+|---------------------------------------------------|---------------------------|
+| Developing a mobile app with no native framework experience | Built prototype in **React** because of its reusable components. |
+| Slow styling with plain CSS                       | Combined **Tailwind** with custom CSS for rapid UI development. |
+| Displaying complex analytics data on small screens | Used **Recharts** for its wide chart variety, React component format, and high customizability. |
+| Need for smooth touch-friendly UI navigation      | Chose **Swiper.js** for smooth, mobile-friendly sliders with easy customization. |
+| No database for storing or fetching data          | Created **mock datasets** for analytics, avatars, and recommendations. |
+| Blocky image loading                              | Tested **preloading**, but further optimization is needed. |
+| Maintaining consistent code style                 | Used **Prettier** for automated formatting. |
+
+
 ## 🗂️ App Structure
 
 <details>
