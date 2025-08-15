@@ -36,6 +36,22 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Responsive and intuitive interface powered by React + Tailwind CSS
 
 
+
+<p align="center">
+   <p align="center">
+      <img src="./screenshots/panel-02-100r.png" alt="AI-powered footprint results & Earth avatar reactions" style="width:75%" />
+   </p>  
+   <p align="center">
+      <img src="./screenshots/avatars/avatar-a.png" alt="Avatar 1" width="12%" />
+      <img src="./screenshots/avatars/avatar-b.png" alt="Avatar 2" width="12%" />
+      <img src="./screenshots/avatars/avatar-c.png" alt="Avatar 3" width="12%" />
+      <img src="./screenshots/avatars/avatar-d.png" alt="Avatar 4" width="12%" />
+      <img src="./screenshots/avatars/avatar-e.png" alt="Avatar 5" width="12%" />
+      <img src="./screenshots/avatars/avatar-f.png" alt="Avatar 6" width="12%" />
+   </p>
+</p>
+<p align="center"><em>AI-powered footprint results & Earth avatar reactions</em></p>
+
 ## 🔍 Development Decisions & Challenges
 
 | Challenge                                         | Approach |
@@ -86,20 +102,6 @@ src/
 - Learned the importance of MVP for scope management
 - Strengthened remote teamwork and cross-role communication skills
 
-<p align="center">
-   <p align="center">
-      <img src="./screenshots/panel-02-100r.png" alt="AI-powered footprint results & Earth avatar reactions" style="width:75%" />
-   </p>  
-   <p align="center">
-      <img src="./screenshots/avatars/avatar-a.png" alt="Avatar 1" width="12%" />
-      <img src="./screenshots/avatars/avatar-b.png" alt="Avatar 2" width="12%" />
-      <img src="./screenshots/avatars/avatar-c.png" alt="Avatar 3" width="12%" />
-      <img src="./screenshots/avatars/avatar-d.png" alt="Avatar 4" width="12%" />
-      <img src="./screenshots/avatars/avatar-e.png" alt="Avatar 5" width="12%" />
-      <img src="./screenshots/avatars/avatar-f.png" alt="Avatar 6" width="12%" />
-   </p>
-</p>
-<p align="center"><em>AI-powered footprint results & Earth avatar reactions</em></p>
 
 ## 👥 Team
 
