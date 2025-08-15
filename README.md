@@ -37,7 +37,7 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 - Responsive and intuitive interface powered by React + Tailwind CSS -->
 
 
-
+<br></br>
 <p align="center">
    <p align="center">
       <img src="./screenshots/panel-02-100r.png" alt="AI-powered footprint results & Earth avatar reactions" style="width:75%" />
