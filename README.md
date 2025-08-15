@@ -19,7 +19,7 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 
 <!-- Built with React and styled using TailwindCSS for rapid, responsive UI development. Data visualization is powered by Recharts, and smooth navigation is enabled by Swiper.js. -->
 
-
+<br><br>
 <p align="center">
   <img src="./screenshots/panel-01-100r.png" alt="Speech-to-text input screen" style="width:70%" />
 </p>
