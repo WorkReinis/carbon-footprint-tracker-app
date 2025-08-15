@@ -17,7 +17,7 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 
 🚀 [**Front-End Live Demo**](https://carbon-footprint-tracker-app.netlify.app/)
 
-Built with React and styled using TailwindCSS for rapid, responsive UI development. Data visualization is powered by Recharts, and smooth navigation is enabled by Swiper.js.
+<!-- Built with React and styled using TailwindCSS for rapid, responsive UI development. Data visualization is powered by Recharts, and smooth navigation is enabled by Swiper.js. -->
 
 
 <p align="center">
@@ -32,8 +32,9 @@ Built with React and styled using TailwindCSS for rapid, responsive UI developme
 - Interactive Earth avatar reflects your eco performance (happy/sad states)
 - Visualize habits with dynamic Recharts graphs
 - Swiper.js sliders for smooth content navigation
-- Built with a mobile-first layout for modern users
-- Responsive and intuitive interface powered by React + Tailwind CSS
+- Mobile interface powered by React + Tailwind CSS
+<!-- - Built with a mobile-first layout for modern users
+- Responsive and intuitive interface powered by React + Tailwind CSS -->
 
 
 
