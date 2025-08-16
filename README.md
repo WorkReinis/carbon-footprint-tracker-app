@@ -68,9 +68,9 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 
 <br>
    <p align="center">
-      <img src="./screenshots/panel-02-100r.png" alt="AI-powered footprint results & Earth avatar reactions" style="width:75%" />
+      <img src="./screenshots/miro-board-01.png" alt="AI-powered footprint results & Earth avatar reactions" style="width:75%" />
    </p>
-<p align="center"><em>AI-powered footprint results & Earth avatar reactions</em></p>
+<p align="center"><em>Miro Board brainstorming</em></p>
 
 ## 🗂️ App Structure
 
