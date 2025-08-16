@@ -28,13 +28,11 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 ## ✨ Features
 
 -   Track daily carbon footprint using **text and speech inputs**
--   AI-assisted footprint estimation (via back-end)
--   Interactive Earth avatar reflects your eco performance (happy/sad faces)
--   Visualize habits with dynamic Recharts graphs
--   Swiper.js sliders for smooth content navigation
--   Mobile interface powered by React + Tailwind CSS
-<!-- - Built with a mobile-first layout for modern users
--   Responsive and intuitive interface powered by React + Tailwind CSS -->
+-   AI-assisted footprint estimation
+-   Interactive Earth avatar reflects your eco performance
+-   Visualize habits with dynamic graphs
+-   Touch-friendly sliders for smooth content navigation
+-   Mobile-first design for everyday usage
 
 <br>
 <p align="center">
