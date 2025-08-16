@@ -39,15 +39,15 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 <br>
 <p align="center">
    <p align="center">
-      <img src="./screenshots/panel-02-100r.png" alt="AI-powered footprint results & Earth avatar reactions" style="width:75%" />
+      <img src="./screenshots/panel-02-100r.png" alt="AI-powered footprint results & Earth avatar reactions" style="width:70%" />
    </p>  
    <p align="center">
-      <img src="./screenshots/avatars/avatar-a.png" alt="Avatar 1" width="12%" />
-      <img src="./screenshots/avatars/avatar-b.png" alt="Avatar 2" width="12%" />
-      <img src="./screenshots/avatars/avatar-c.png" alt="Avatar 3" width="12%" />
-      <img src="./screenshots/avatars/avatar-d.png" alt="Avatar 4" width="12%" />
-      <img src="./screenshots/avatars/avatar-e.png" alt="Avatar 5" width="12%" />
-      <img src="./screenshots/avatars/avatar-f.png" alt="Avatar 6" width="12%" />
+      <img src="./screenshots/avatars/avatar-a.png" alt="Avatar 1" width="11%" />
+      <img src="./screenshots/avatars/avatar-b.png" alt="Avatar 2" width="11%" />
+      <img src="./screenshots/avatars/avatar-c.png" alt="Avatar 3" width="11%" />
+      <img src="./screenshots/avatars/avatar-d.png" alt="Avatar 4" width="11%" />
+      <img src="./screenshots/avatars/avatar-e.png" alt="Avatar 5" width="11%" />
+      <img src="./screenshots/avatars/avatar-f.png" alt="Avatar 6" width="11%" />
    </p>
 </p>
 <p align="center"><em>AI-powered footprint results & Earth avatar reactions</em></p>
