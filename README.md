@@ -7,7 +7,7 @@
 ![Create React App](https://img.shields.io/badge/-Create%20React%20App-09D3AC?logo=create-react-app&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white&logoWidth=30)
 ![Recharts](https://img.shields.io/badge/-<Recharts%20/>-white?logo=recharts&logoColor=black&logoWidth=30)
-![Swiper.js](https://img.shields.io/badge/-Swiper.js-6332F6?logo=swiper&logoColor=white&logoWidth=30)
+![Swiper](https://img.shields.io/badge/-Swiper-6332F6?logo=swiper&logoColor=white&logoWidth=30)
 ![React Icons](https://img.shields.io/badge/-React%20Icons-61DAFB?logo=react&logoColor=black&logoWidth=30)
 ![Prettier](https://img.shields.io/badge/-Prettier-F7B93E?logo=prettier&logoColor=black&logoWidth=30)
 ![Netlify](https://img.shields.io/badge/-Netlify-00C7B7?logo=netlify&logoColor=white&logoWidth=30)
@@ -58,8 +58,8 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 | Making an app without a set design/UI | Created wireframes in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1), sketched elements in Adobe Illustrator. |
 | Developing a mobile app with no native framework experience | Chose **React** for component architecture and a mature ecosystem. |
 | Cumbersome styling with plain CSS | Combined **Tailwind** with CSS for faster UI development. |
-| Displaying complex analytics data on small screens | Used **Recharts** for its chart type variety and high customizability. |
-| Need for touch-friendly UI navigation | Chose **Swiper.js** for it's smooth sliders and easy customization. |
+| Displaying complex analytics data on small screens | Implemented **Recharts** for customizable, lightweight charts optimized for responsiveness. |
+| Need for touch-friendly UI navigation | Chose **Swiper** for it's smooth sliders and easy customization. |
 | No database for storing or fetching data | Created **mock datasets** for analytics and recommendations. |
 | Maintaining consistent code style | Used **Prettier** for automated formatting. |
 
