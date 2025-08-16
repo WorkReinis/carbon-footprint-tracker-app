@@ -93,6 +93,7 @@ src/
 │   └── pages.js        # Global state provider
 └── styles/             # CSS files and design variables
 ```
+</details>
 
 ## 👥 Team
 
