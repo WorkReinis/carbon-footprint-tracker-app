@@ -13,7 +13,7 @@
 ![Netlify](https://img.shields.io/badge/-Netlify-00C7B7?logo=netlify&logoColor=white&logoWidth=30)
 [![TechLabs](https://img.shields.io/badge/->.%20TechLabs-FF007F?)](https://www.techlabs.org/location/rotterdam)
 
-A mobile app that helps users track their daily carbon footprint using speech-to-text and AI — making sustainable living accessible one habit at a time. This project was built over 10-weeks during [**TechLabs**](https://www.techlabs.org/location/rotterdam) learning program.
+A mobile app that helps users track their daily carbon footprint using speech-to-text and AI — making sustainable living accessible one habit at a time. This project was built over 10-weekends during [**TechLabs**](https://www.techlabs.org/location/rotterdam) learning program.
 
 🚀 [**Front-End Live Demo**](https://carbon-footprint-tracker-app.netlify.app/)
 
@@ -54,11 +54,11 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 
 | **Challenge** | **Approach** |
 |---------------|--------------|
-| Managing scope creep | Focused on **MVP**, developed most essential features first. |
+| Scope creep from too many brainstormed ideas | Focused on **MVP**, developed most essential features first. |
 | Making an app without a set design/UI | Created wireframes in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1), sketched elements in Adobe Illustrator. |
 | Developing a mobile app with no native framework experience | Chose **React** for component architecture and a mature ecosystem. |
-| Cumbersome styling with plain CSS | Combined **Tailwind** with custom CSS for faster UI development. |
-| Displaying complex analytics data on small screens | Used **Recharts** for its chart variety and high customizability. |
+| Cumbersome styling with plain CSS | Combined **Tailwind** with CSS for faster UI development. |
+| Displaying complex analytics data on small screens | Used **Recharts** for its chart type variety and high customizability. |
 | Need for touch-friendly UI navigation | Chose **Swiper.js** for it's smooth sliders and easy customization. |
 | No database for storing or fetching data | Created **mock datasets** for analytics and recommendations. |
 | Maintaining consistent code style | Used **Prettier** for automated formatting. |
