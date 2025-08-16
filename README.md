@@ -65,6 +65,14 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 | No database for storing or fetching data                                                                                                                                                            | Created **mock datasets** for analytics, avatars, and recommendations.                          |
 | Maintaining consistent code style                                                                                                                                                                   | Used **Prettier** for automated formatting.                                                     |
 
+</details>
+
+<br>
+<p align="center">
+  <img src="./screenshots/Figma 01.png" alt="Low-fidelity wireframes created in Figma" style="width:75%" />
+</p>
+<p align="center"><em>Low-fidelity wireframes</em></p>
+
 ## 🗂️ App Structure
 
 <details>
@@ -85,19 +93,6 @@ src/
 │   └── pages.js        # Global state provider
 └── styles/             # CSS files and design variables
 ```
-
-</details>
-
-## 👨‍💻 My Role & Takeaways – UI Designer & Front-End Developer
-
--   Learned the importance of MVP for scope management
--   Strengthened remote teamwork and cross-role communication skills
-
-<br>
-<p align="center">
-  <img src="./screenshots/Figma 01.png" alt="Low-fidelity wireframes created in Figma" style="width:75%" />
-</p>
-<p align="center"><em>Low-fidelity wireframes</em></p>
 
 ## 👥 Team
 
