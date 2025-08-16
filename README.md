@@ -57,7 +57,7 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 | Scope creep from too many brainstormed ideas | Focused on **MVP**, developed most essential features first. |
 | Making an app without a set design/UI | Created wireframes in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1), sketched elements in Adobe Illustrator. |
 | Developing a mobile app with no native framework experience | Chose **React** for component architecture and a mature ecosystem. |
-| Cumbersome styling with plain CSS | Combined **Tailwind** with CSS for faster UI development. |
+| Cumbersome styling with plain CSS | Combined **Tailwind's** utility classes with CSS for faster UI development. |
 | Displaying complex analytics data on small screens | Implemented **Recharts** for customizable, lightweight charts optimized for responsiveness. |
 | Need for touch-friendly UI navigation | Chose **Swiper** for it's smooth sliders and easy customization. |
 | No database for storing or fetching data | Created **mock datasets** for analytics and recommendations. |
