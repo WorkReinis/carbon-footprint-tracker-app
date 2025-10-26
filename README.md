@@ -23,11 +23,11 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 <p align="center">
   <img src="./screenshots/panel-01-100r.png" alt="Speech-to-text input screen" style="width:70%" />
 </p>
-<p align="center"><em>Image: Speech-to-text input screen</em></p>
+<p align="center"><em>Speech-to-text input screen</em></p>
 
 ## ✨ Features
 
--   Track daily carbon footprint using **text and speech inputs**
+-   Track daily carbon footprint using text and speech inputs
 -   AI-assisted footprint estimation
 -   Interactive Earth avatar reflects your eco performance
 -   Visualize habits with dynamic graphs
@@ -52,16 +52,16 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 
 ## 🔍 Challenges & My Approach
 
-| **Challenge** | **Approach** |
-|---------------|--------------|
-| Scope creep from too many brainstormed ideas | Focused on **MVP**, developed most essential features first. |
-| Making an app without a set design/UI | Created wireframes in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1), sketched elements in Adobe Illustrator. |
-| Developing a mobile app with no native framework experience | Chose **React** for component architecture and a mature ecosystem. |
-| Cumbersome styling with plain CSS | Combined **Tailwind's** utility classes with CSS for faster UI development. |
-| Displaying complex analytics data on small screens | Implemented **Recharts** for customizable, lightweight charts optimized for responsiveness. |
-| Need for touch-friendly UI navigation | Chose **Swiper** for it's smooth sliders and easy customization. |
-| No database for storing or fetching data | Created **mock datasets** for analytics and recommendations. |
-| Maintaining consistent code style | Used **Prettier** for automated formatting. |
+| **Challenge**                                               | **Approach**                                                                                                                                                                           |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Scope creep from too many brainstormed ideas                | Focused on MVP, developed most essential features first.                                                                                                                           |
+| Making an app without a set design/UI                       | Created wireframes in [Figma](https://www.figma.com/design/DOi1GQXIGjJzYai86D1mMY/Carbon-Footprint-App?node-id=177-1077&t=VRWisJnakS3HhSOG-1), sketched elements in Adobe Illustrator. |
+| Developing a mobile app with no native framework experience | Chose React for component architecture and a mature ecosystem.                                                                                                                     |
+| Cumbersome styling with plain CSS                           | Used Tailwind's utility classes for speed.                                                                                                            |
+| Displaying complex analytics data on small screens          | Implemented Recharts for customizable, lightweight charts optimized for responsiveness.                                                                                            |
+| Need for touch-friendly UI navigation                       | Chose Swiper for it's smooth sliders and easy customization.                                                                                                                       |
+| No database for storing or fetching data                    | Created mock datasets for analytics and recommendations.                                                                                                                           |
+| Maintaining consistent code style                           | Used Prettier for automated formatting.                                                                                                                                            |
 
 </details>
 
@@ -79,18 +79,17 @@ A mobile app that helps users track their daily carbon footprint using speech-to
 ```bash
 src/
 ├── App.js              # Main app component with routing logic
-├── components/         # Reusable UI components
-│   └── NavBar.js       # Bottom navigation bar
+├── components/         # Reusable UI components like navbar
+├── context/            # React Context for state management
 ├── pages/              # Main application pages
 │   ├── home page/      # Dashboard with Earth avatar
 │   ├── analytics page/ # Data visualization and charts
 │   ├── input page/     # Speech-to-text input forms
 │   ├── reduce page/    # Tips for reducing carbon footprint
 │   └── settings page/  # App configuration
-├── context/            # React Context for state management
-│   └── pages.js        # Global state provider
 └── styles/             # CSS files and design variables
 ```
+
 </details>
 
 ## 👥 Team
@@ -120,6 +119,7 @@ src/
 -   Fix slow image loading and optimize overall performance
 -   Integrate backend APIs for dynamic, real-time data
 -   Develop Settings page and user account features
+-   Add news feed with sustainability articles
 
 <br>
    <p align="center">
@@ -132,9 +132,7 @@ src/
 <details>
   <summary>Instructions</summary>
 
-  <p>
-
-To run this project locally:
+This project was bootstrapped with Create React App. To run this project locally:
 
   <pre><code>git clone https://github.com/WorkReinis/carbon-footprint-tracker-app.git
 cd carbon-footprint-tracker-app
@@ -150,5 +148,6 @@ Open <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> i
 
 ## 📄 License
 
-This project is for educational purposes.  
-Feel free to fork and experiment with it!
+This project is for educational purposes. Feel free to fork and experiment with
+it!
+
